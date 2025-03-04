@@ -1,0 +1,164 @@
+---
+title: "Intro to GitHub Enterprise"
+subtitle: "...and how it is and isn't different"
+author: "Eli Holmes"
+format: 
+    revealjs:
+        theme: moon
+        controls: true
+---
+
+## What is GitHub Enterprise?
+
+-   An account with GitHub organizations (orgs) that has more controls than GitHub Free.
+
+-   Your personal GitHub account can have repos in GitHub Free orgs or GitHub Enterprise orgs.
+
+-   Your identity (username) does not change -- as long as your user account uses your noaa.gov email.
+
+## How is GitHub Enterprise different?
+
+-   It is controlled by work and has more rules
+
+-   It requires CAC sign-in.
+
+-   It requires a license.
+
+-   Outside (non NOAA) collaborators have to be added by an admin to repos. They use a license if the repo is private or internal.
+
+-   GitHub 3rd party applications require approval
+
+## How is GitHub Enterprise different?
+
+-   It is more security since it has CAC sign-in
+
+-   It has more features: private and internal GitHub Pages, more GitHub Action minutes, bigger files allowed.
+
+-   Allows internal repositories only visible to NMFS GitHub users across GHEC. See code from other science centers (if they made it internal)
+
+-   Collaborate on repos with any other NMFS GHEC org. You can be on orgs at other centers
+
+-   Has IT managed automatic backups.
+
+-   NMFS doesn't lose code due to repo owner leaving NOAA
+
+-   FedRAMP approved unlike GitHub free
+
+
+## How is GitHub Enterprise not different?
+
+-   You can create repos just like in GitHub Free
+
+-   You have access to the usual collaboration tools: projects, GitHub Actions, GitHub Pages
+
+-   You are admin on your own repos and can admin them as usual...except re outside collaborators.
+
+## Signing up for GHEC
+
+-   Follow the [instructions](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/github-users?pli=1) on the GGT website to request access. 
+
+-   Wait to be invited to GHEC and accept
+
+-   Then you can sign in to an org like <https://github.com/noaa-nwfsc> with CAC or password+authentication
+
+## Authenticating to GHEC
+
+### Using GitHub Desktop
+
+1. Go to GitHub Desktop > Settings > Accounts
+
+2. Sign into GitHub.com. **Ignore GitHub Enterprise!!**
+
+3. DONE!
+
+## Authenticating to GHEC
+
+### Using GitHub Desktop
+
+![](img/g_desktop_signin.png)
+
+**Help! I signed up for GitHub Enterprise and GitHub Desktop will not authenticate!!** Log out of GitHub Desktop under GitHub Desktop > Settings (or Options) > Account and log back in.
+
+## Authenticating to GHEC: Using RStudio
+
+### Tell RStudio about Git
+
+1. In RStudio, Tools > Terminal > New Terminal
+
+2. At the command line (in the new terminal), type `which git` if on a Mac and `where git` if in Windows.
+
+3. Copy that path. 
+
+4. In RStudio, Tools > Global Options > Git/SVN There is a box at top that asks for the location of the Git binary.
+
+5. Paste that path in.
+
+## Authenticating to GHEC: Using RStudio
+
+You have to authenticate to GitHub separately for RStudio even if you are signed in on GitHub Desktop.
+
+If you see anything like this, you have not authenticated.
+
+![](img/no_token_error.png)
+
+## Authenticating to GHEC: Using RStudio
+
+### Set up
+
+1. Install `usethis` R package
+
+2. Run this code:
+
+```
+usethis::use_git_config(user.name = "your username", user.email = "you@noaa.gov")
+```
+
+## Authenticating to GHEC: Using RStudio
+
+### Create Token
+
+```
+usethis::create_github_token(
+  scopes = c("repo", "workflow"),
+  description = "DESCRIBE THE TOKEN'S USE CASE",
+  host = NULL
+)
+```
+
+![](img/new_token.png)
+
+## Authenticating to GHEC: Using RStudio
+
+### Create Token
+
+1. Set the date when the token will expire. 
+
+4. Scroll to bottom and click "Generate token"
+
+5. **Copy the long PAT.**
+
+
+## Authenticating to GHEC: Using RStudio
+
+### Configure PAT for GHEC
+
+1. Next to the PAT, you will see "Configure for SSO".
+
+2. Click that and authenticate to your GHEC org
+
+![](img/configure_sso_token.png)
+
+## Authenticating to GHEC: Using RStudio
+
+### Tell RSTudio about the PAT
+
+Run this code.
+
+```
+credentials::set_github_pat("THE LONG PAT)
+```
+
+
+
+
+

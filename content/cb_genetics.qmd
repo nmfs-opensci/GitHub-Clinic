@@ -19,6 +19,9 @@ date: '2025-03-05'
 
 ## GitHub Enterprise
 
+<iframe class="slide-deck" src="ghec.html" width="900" height="600"></iframe>
+
+
 ## Introduction to GitHub
 
 [GitHub Skills - Introduction to GitHub](https://github.com/skills/introduction-to-github)

@@ -1,5 +1,215 @@
 [
   {
+    "objectID": "content/cb_genetics.html#agenda",
+    "href": "content/cb_genetics.html#agenda",
+    "title": "GitHub Workshop for CB Genetics and Evolution Program",
+    "section": "Agenda",
+    "text": "Agenda\n\n10:00-10:15 Why Git/GitHub?\n10:15-10:30 GitHub Enterprise\n10:30-11:00 Introduction to GitHub\n11:00-11:30 Pull Requests and Collaboration\n11:30-11:45 Break\n11:45-12:15 Project Management\n12:15-13:00 Putting Everything Together",
+    "crumbs": [
+      "JupyterHub",
+      "In-Person Workshops",
+      "GitHub Workshop for CB Genetics and Evolution Program"
+    ]
+  },
+  {
+    "objectID": "content/cb_genetics.html#why-gitgithub",
+    "href": "content/cb_genetics.html#why-gitgithub",
+    "title": "GitHub Workshop for CB Genetics and Evolution Program",
+    "section": "Why Git/GitHub?",
+    "text": "Why Git/GitHub?",
+    "crumbs": [
+      "JupyterHub",
+      "In-Person Workshops",
+      "GitHub Workshop for CB Genetics and Evolution Program"
+    ]
+  },
+  {
+    "objectID": "content/cb_genetics.html#github-enterprise",
+    "href": "content/cb_genetics.html#github-enterprise",
+    "title": "GitHub Workshop for CB Genetics and Evolution Program",
+    "section": "GitHub Enterprise",
+    "text": "GitHub Enterprise",
+    "crumbs": [
+      "JupyterHub",
+      "In-Person Workshops",
+      "GitHub Workshop for CB Genetics and Evolution Program"
+    ]
+  },
+  {
+    "objectID": "content/cb_genetics.html#introduction-to-github",
+    "href": "content/cb_genetics.html#introduction-to-github",
+    "title": "GitHub Workshop for CB Genetics and Evolution Program",
+    "section": "Introduction to GitHub",
+    "text": "Introduction to GitHub\nGitHub Skills - Introduction to GitHub",
+    "crumbs": [
+      "JupyterHub",
+      "In-Person Workshops",
+      "GitHub Workshop for CB Genetics and Evolution Program"
+    ]
+  },
+  {
+    "objectID": "content/cb_genetics.html#pull-requests-and-collaboration",
+    "href": "content/cb_genetics.html#pull-requests-and-collaboration",
+    "title": "GitHub Workshop for CB Genetics and Evolution Program",
+    "section": "Pull Requests and Collaboration",
+    "text": "Pull Requests and Collaboration\nGitHub Skills - Review Pull Requests\nGitHub Skills - Resolve Merge Conflicts",
+    "crumbs": [
+      "JupyterHub",
+      "In-Person Workshops",
+      "GitHub Workshop for CB Genetics and Evolution Program"
+    ]
+  },
+  {
+    "objectID": "content/cb_genetics.html#project-management",
+    "href": "content/cb_genetics.html#project-management",
+    "title": "GitHub Workshop for CB Genetics and Evolution Program",
+    "section": "Project Management",
+    "text": "Project Management",
+    "crumbs": [
+      "JupyterHub",
+      "In-Person Workshops",
+      "GitHub Workshop for CB Genetics and Evolution Program"
+    ]
+  },
+  {
+    "objectID": "content/cb_genetics.html#putting-everything-together",
+    "href": "content/cb_genetics.html#putting-everything-together",
+    "title": "GitHub Workshop for CB Genetics and Evolution Program",
+    "section": "Putting Everything Together",
+    "text": "Putting Everything Together",
+    "crumbs": [
+      "JupyterHub",
+      "In-Person Workshops",
+      "GitHub Workshop for CB Genetics and Evolution Program"
+    ]
+  },
+  {
+    "objectID": "content/ghec.html#what-is-github-enterprise",
+    "href": "content/ghec.html#what-is-github-enterprise",
+    "title": "Intro to GitHub Enterprise",
+    "section": "What is GitHub Enterprise?",
+    "text": "What is GitHub Enterprise?\n\nAn account with GitHub organizations (orgs) that has more controls than GitHub Free.\nYour personal GitHub account can have repos in GitHub Free orgs or GitHub Enterprise orgs.\nYour identity (username) does not change – as long as your user account uses your noaa.gov email."
+  },
+  {
+    "objectID": "content/ghec.html#how-is-github-enterprise-different",
+    "href": "content/ghec.html#how-is-github-enterprise-different",
+    "title": "Intro to GitHub Enterprise",
+    "section": "How is GitHub Enterprise different?",
+    "text": "How is GitHub Enterprise different?\n\nIt is controlled by work and has more rules\nIt requires CAC sign-in.\nIt requires a license.\nOutside (non NOAA) collaborators have to be added by an admin to repos. They use a license if the repo is private or internal.\nGitHub 3rd party applications require approval"
+  },
+  {
+    "objectID": "content/ghec.html#how-is-github-enterprise-different-1",
+    "href": "content/ghec.html#how-is-github-enterprise-different-1",
+    "title": "Intro to GitHub Enterprise",
+    "section": "How is GitHub Enterprise different?",
+    "text": "How is GitHub Enterprise different?\n\nIt is more security since it has CAC sign-in\nIt has more features: private and internal GitHub Pages, more GitHub Action minutes, bigger files allowed.\nAllows internal repositories only visible to NMFS GitHub users across GHEC. See code from other science centers (if they made it internal)\nCollaborate on repos with any other NMFS GHEC org. You can be on orgs at other centers\nHas IT managed automatic backups.\nNMFS doesn’t lose code due to repo owner leaving NOAA\nFedRAMP approved unlike GitHub free"
+  },
+  {
+    "objectID": "content/ghec.html#how-is-github-enterprise-not-different",
+    "href": "content/ghec.html#how-is-github-enterprise-not-different",
+    "title": "Intro to GitHub Enterprise",
+    "section": "How is GitHub Enterprise not different?",
+    "text": "How is GitHub Enterprise not different?\n\nYou can create repos just like in GitHub Free\nYou have access to the usual collaboration tools: projects, GitHub Actions, GitHub Pages\nYou are admin on your own repos and can admin them as usual…except re outside collaborators."
+  },
+  {
+    "objectID": "content/ghec.html#signing-up-for-ghec",
+    "href": "content/ghec.html#signing-up-for-ghec",
+    "title": "Intro to GitHub Enterprise",
+    "section": "Signing up for GHEC",
+    "text": "Signing up for GHEC\n\nFollow the instructions on the GGT website to request access.\nWait to be invited to GHEC and accept\nThen you can sign in to an org like https://github.com/noaa-nwfsc with CAC or password+authentication"
+  },
+  {
+    "objectID": "content/ghec.html#authenticating-to-ghec",
+    "href": "content/ghec.html#authenticating-to-ghec",
+    "title": "Intro to GitHub Enterprise",
+    "section": "Authenticating to GHEC",
+    "text": "Authenticating to GHEC\nUsing GitHub Desktop\n\nGo to GitHub Desktop &gt; Settings &gt; Accounts\nSign into GitHub.com. Ignore GitHub Enterprise!!\nDONE!"
+  },
+  {
+    "objectID": "content/ghec.html#authenticating-to-ghec-1",
+    "href": "content/ghec.html#authenticating-to-ghec-1",
+    "title": "Intro to GitHub Enterprise",
+    "section": "Authenticating to GHEC",
+    "text": "Authenticating to GHEC\nUsing GitHub Desktop\n\nHelp! I signed up for GitHub Enterprise and GitHub Desktop will not authenticate!! Log out of GitHub Desktop under GitHub Desktop &gt; Settings (or Options) &gt; Account and log back in."
+  },
+  {
+    "objectID": "content/ghec.html#authenticating-to-ghec-using-rstudio",
+    "href": "content/ghec.html#authenticating-to-ghec-using-rstudio",
+    "title": "Intro to GitHub Enterprise",
+    "section": "Authenticating to GHEC: Using RStudio",
+    "text": "Authenticating to GHEC: Using RStudio\nTell RStudio about Git\n\nIn RStudio, Tools &gt; Terminal &gt; New Terminal\nAt the command line (in the new terminal), type which git if on a Mac and where git if in Windows.\nCopy that path.\nIn RStudio, Tools &gt; Global Options &gt; Git/SVN There is a box at top that asks for the location of the Git binary.\nPaste that path in."
+  },
+  {
+    "objectID": "content/ghec.html#authenticating-to-ghec-using-rstudio-1",
+    "href": "content/ghec.html#authenticating-to-ghec-using-rstudio-1",
+    "title": "Intro to GitHub Enterprise",
+    "section": "Authenticating to GHEC: Using RStudio",
+    "text": "Authenticating to GHEC: Using RStudio\nYou have to authenticate to GitHub separately for RStudio even if you are signed in on GitHub Desktop.\nIf you see anything like this, you have not authenticated."
+  },
+  {
+    "objectID": "content/ghec.html#authenticating-to-ghec-using-rstudio-2",
+    "href": "content/ghec.html#authenticating-to-ghec-using-rstudio-2",
+    "title": "Intro to GitHub Enterprise",
+    "section": "Authenticating to GHEC: Using RStudio",
+    "text": "Authenticating to GHEC: Using RStudio\nSet up\n\nInstall usethis R package\nRun this code:\n\nusethis::use_git_config(user.name = \"your username\", user.email = \"you@noaa.gov\")"
+  },
+  {
+    "objectID": "content/ghec.html#authenticating-to-ghec-using-rstudio-3",
+    "href": "content/ghec.html#authenticating-to-ghec-using-rstudio-3",
+    "title": "Intro to GitHub Enterprise",
+    "section": "Authenticating to GHEC: Using RStudio",
+    "text": "Authenticating to GHEC: Using RStudio\nCreate Token\nRun this:\nusethis::create_github_token(\n  scopes = c(\"repo\", \"workflow\"),\n  description = \"DESCRIBE THE TOKEN'S USE CASE\",\n  host = NULL\n)"
+  },
+  {
+    "objectID": "content/ghec.html#authenticating-to-ghec-using-rstudio-4",
+    "href": "content/ghec.html#authenticating-to-ghec-using-rstudio-4",
+    "title": "Intro to GitHub Enterprise",
+    "section": "Authenticating to GHEC: Using RStudio",
+    "text": "Authenticating to GHEC: Using RStudio\nCreate Token\n\nSet the date when the token will expire.\nScroll to bottom and click “Generate token”\nCopy the long PAT."
+  },
+  {
+    "objectID": "content/ghec.html#authenticating-to-ghec-using-rstudio-5",
+    "href": "content/ghec.html#authenticating-to-ghec-using-rstudio-5",
+    "title": "Intro to GitHub Enterprise",
+    "section": "Authenticating to GHEC: Using RStudio",
+    "text": "Authenticating to GHEC: Using RStudio\nConfigure PAT for GHEC\n\nNext to the PAT, you will see “Configure for SSO”.\nClick that and authenticate to your GHEC org"
+  },
+  {
+    "objectID": "content/ghec.html#authenticating-to-ghec-using-rstudio-6",
+    "href": "content/ghec.html#authenticating-to-ghec-using-rstudio-6",
+    "title": "Intro to GitHub Enterprise",
+    "section": "Authenticating to GHEC: Using RStudio",
+    "text": "Authenticating to GHEC: Using RStudio\nTell RSTudio about the PAT\nRun this code.\ncredentials::set_github_pat(\"THE LONG PAT)"
+  },
+  {
+    "objectID": "content/reuse.html",
+    "href": "content/reuse.html",
+    "title": "Reuse Statement",
+    "section": "",
+    "text": "This content is released under CC0 Creative Commons.\nPermissive Re-Mix and No Attribution Needed: You may reuse the content in this repository—excluding the NMFS Open Science logo and any NOAA logos—in any way you like. You do not need permission. You do not need to give attribution, but if you use large parts of tutorials or content it is polite to give acknowledgement of the source. Please check each NMFS Open Science repository for its reuse statement. Some of the content is from Carl Boettiger and from NASA Openscapes. This will be noted and you should check the original content for its reuse statement."
+  },
+  {
+    "objectID": "content/project_management.html#why-use-github-for-project-management",
+    "href": "content/project_management.html#why-use-github-for-project-management",
+    "title": "GitHub for Project Management",
+    "section": "Why use GitHub for project management?",
+    "text": "Why use GitHub for project management?\n\nIssues and projects stoke collaboration\nIssues act as short-term to-do lists\nProjects capture longer-term goals and organize short-term issues"
+  },
+  {
+    "objectID": "content/project_management.html#issues",
+    "href": "content/project_management.html#issues",
+    "title": "GitHub for Project Management",
+    "section": "Issues",
+    "text": "Issues\n\nTasks for things to do\nPlace to provide detail\nChecklists, labels, tags"
+  },
+  {
+    "objectID": "content/project_management.html#projects",
+    "href": "content/project_management.html#projects",
+    "title": "GitHub for Project Management",
+    "section": "Projects",
+    "text": "Projects\n\nGroup issues to view everything together\nWork across repositories"
+  },
+  {
     "objectID": "content/why_git.html#what-is-git",
     "href": "content/why_git.html#what-is-git",
     "title": "What are Git and GitHub?",
@@ -61,96 +271,5 @@
     "title": "What are Git and GitHub?",
     "section": "Branching",
     "text": "Branching\n\nCopies of repos housed within the repo structure\nAllow for working on repo without changing main branch\nCan help for more complex collaboration"
-  },
-  {
-    "objectID": "content/cb_genetics.html#agenda",
-    "href": "content/cb_genetics.html#agenda",
-    "title": "GitHub Workshop for CG Genetics and Evolution Program",
-    "section": "Agenda",
-    "text": "Agenda\n\n10:00-10:15 Why Git/GitHub?\n10:15-10:30 GitHub Enterprise\n10:30-11:00 Introduction to GitHub\n11:00-11:30 Pull Requests and Collaboration\n11:30-11:45 Break\n11:45-12:15 Project Management\n12:15-13:00 Putting Everything Together",
-    "crumbs": [
-      "JupyterHub",
-      "In-Person Workshops",
-      "GitHub Workshop for CG Genetics and Evolution Program"
-    ]
-  },
-  {
-    "objectID": "content/cb_genetics.html#why-gitgithub",
-    "href": "content/cb_genetics.html#why-gitgithub",
-    "title": "GitHub Workshop for CG Genetics and Evolution Program",
-    "section": "Why Git/GitHub?",
-    "text": "Why Git/GitHub?",
-    "crumbs": [
-      "JupyterHub",
-      "In-Person Workshops",
-      "GitHub Workshop for CG Genetics and Evolution Program"
-    ]
-  },
-  {
-    "objectID": "content/cb_genetics.html#github-enterprise",
-    "href": "content/cb_genetics.html#github-enterprise",
-    "title": "GitHub Workshop for CG Genetics and Evolution Program",
-    "section": "GitHub Enterprise",
-    "text": "GitHub Enterprise",
-    "crumbs": [
-      "JupyterHub",
-      "In-Person Workshops",
-      "GitHub Workshop for CG Genetics and Evolution Program"
-    ]
-  },
-  {
-    "objectID": "content/cb_genetics.html#introduction-to-github",
-    "href": "content/cb_genetics.html#introduction-to-github",
-    "title": "GitHub Workshop for CG Genetics and Evolution Program",
-    "section": "Introduction to GitHub",
-    "text": "Introduction to GitHub",
-    "crumbs": [
-      "JupyterHub",
-      "In-Person Workshops",
-      "GitHub Workshop for CG Genetics and Evolution Program"
-    ]
-  },
-  {
-    "objectID": "content/cb_genetics.html#pull-requests-and-collaboration",
-    "href": "content/cb_genetics.html#pull-requests-and-collaboration",
-    "title": "GitHub Workshop for CG Genetics and Evolution Program",
-    "section": "Pull Requests and Collaboration",
-    "text": "Pull Requests and Collaboration",
-    "crumbs": [
-      "JupyterHub",
-      "In-Person Workshops",
-      "GitHub Workshop for CG Genetics and Evolution Program"
-    ]
-  },
-  {
-    "objectID": "content/cb_genetics.html#project-management",
-    "href": "content/cb_genetics.html#project-management",
-    "title": "GitHub Workshop for CG Genetics and Evolution Program",
-    "section": "Project Management",
-    "text": "Project Management",
-    "crumbs": [
-      "JupyterHub",
-      "In-Person Workshops",
-      "GitHub Workshop for CG Genetics and Evolution Program"
-    ]
-  },
-  {
-    "objectID": "content/cb_genetics.html#putting-everything-together",
-    "href": "content/cb_genetics.html#putting-everything-together",
-    "title": "GitHub Workshop for CG Genetics and Evolution Program",
-    "section": "Putting Everything Together",
-    "text": "Putting Everything Together",
-    "crumbs": [
-      "JupyterHub",
-      "In-Person Workshops",
-      "GitHub Workshop for CG Genetics and Evolution Program"
-    ]
-  },
-  {
-    "objectID": "content/reuse.html",
-    "href": "content/reuse.html",
-    "title": "Reuse Statement",
-    "section": "",
-    "text": "This content is released under CC0 Creative Commons.\nPermissive Re-Mix and No Attribution Needed: You may reuse the content in this repository—excluding the NMFS Open Science logo and any NOAA logos—in any way you like. You do not need permission. You do not need to give attribution, but if you use large parts of tutorials or content it is polite to give acknowledgement of the source. Please check each NMFS Open Science repository for its reuse statement. Some of the content is from Carl Boettiger and from NASA Openscapes. This will be noted and you should check the original content for its reuse statement."
   }
 ]
