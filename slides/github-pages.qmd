@@ -1,0 +1,41 @@
+---
+title: "GitHub Pages"
+subtitle: "Hosting your repository content on the web"
+author: "Jonathan Peake"
+brand: slides-light-brand.yml
+output-dir: ../docs/slides/
+format: 
+    nmfs-slides-revealjs: 
+        title-slide-attributes:
+          data-background-image: "styles/horiz-swoop-1.png"
+          data-background-color: '{{< brand color dark-blue >}}'
+        footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
+        controls: true
+        navigation-mode: linear
+        transition: slide
+        transition-speed: default
+        background-transition: none
+        scrollable: true
+---
+
+## What is GitHub Pages?
+
+-   Turn your repository into a website
+
+-   Share your project, resume, portfolio, documentation, or even a blog with the world
+
+-   Takes content from main branch and publishes to a website
+
+## Why use GitHub Pages?
+
+-   Easy and free way to publish content
+
+-   Can make internal, private web-pages with GHEC
+
+-   In NMFS:
+
+    -   Make a sleek web-hosted lab manual
+
+    -   Share reports in HTML
+
+    -   Make a landing page for a lab or program

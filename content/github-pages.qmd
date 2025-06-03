@@ -1,0 +1,22 @@
+---
+title: "Hosting a repository as a website with GitHub Pages"
+---
+
+## Aims and Objectives
+
+GitHub Pages lets you turn your repository into a website. This is a great way to share your project, resume, portfolio, documentation, or even a blog with the world. When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch (or you can specify a different branch) and publishes a website based on its contents. This GitHub Pages skills session will use a a mixture of directed, interactive lessons and GitHub Skills to provide NOAA Fisheries staff with a foundation in hosting web content through GitHub Pages.
+
+## Prerequisites: What do I need before this workshop to follow along on my own?
+
+1.  This stand-alone skills session is meant for those with a basic understanding of Git and GitHub. Check out our [Introduction to Git and GitHub](intro.qmd) lessons if you are new to Git and GitHub or need a refresher.
+2.  We will also be using a bit of Markdown, so you may want to refresh yourself on Markdown language with our [Introduction to Markdown](markdown.qmd) lesson.
+
+## What is GitHub Pages?
+
+<iframe class="slide-deck" src="../slides/markdown.html" width="900" height="600">
+
+</iframe>
+
+## Tutorial: Making a basic webpage with GitHub Pages
+
+## Tutorial: GitHub Pages x Quarto templates for NMFS-branded websites
