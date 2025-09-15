@@ -1,13 +1,20 @@
 ---
 title: "Git & GitHub for the Command Line"
 date: 9/18/2025
-format:
-  revealjs:
-    theme: simple
-    slide-number: true
-    css: styles.css 
-    preview-links: true
-    editor: visual
+brand: slides-light-brand.yml
+output-dir: ../docs/slides/
+format: 
+    nmfs-slides-revealjs: 
+        title-slide-attributes:
+          data-background-image: "styles/horiz-swoop-1.png"
+          data-background-color: '{{< brand color dark-blue >}}'
+        footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
+        controls: true
+        navigation-mode: linear
+        transition: slide
+        transition-speed: default
+        background-transition: none
+        scrollable: true
 ---
 
 ## Why learn command line git?
