@@ -1,0 +1,34 @@
+---
+title: "Advanced Git: Git on the command line"
+---
+
+## Aims and Objectives
+
+Many of the features that we have covered over the course of this clinic are easily implemented on the web through GitHub or locally through a Git interface like GitHub Desktop or RStudio. However, Git is a complex piece of software that relies on the command line for all of its functions. To fully unlock the power of Git, we need to dig into Git's Command Line Interface (CLI). These skills sessions will use directed, interactive lessons to provide NOAA Fisheries staff with a foundation in using Git on the command line and the advanced features that can be done with the Git CLI.
+
+::: callout-important
+# This is a two-part lesson!
+
+Throughout this workshop, each lesson has been given in a standard 1-hour sessions, with material repeated on different days. For this session, we are splitting the content into two 1-hour sessions: the first session will introduce the different Git commands, and the second sessions will be a live follow-along coding session demonstrating these commands. Both sessions will be recorded, so if you miss one be sure to check out the recording to get the full experience.
+:::
+
+## Prerequisites: What do I need before this workshop to follow along on my own?
+
+1.  This stand-alone skills session is intended for those with a strong grounding in Git and GitHub. If you are new to GitHub, take a look at our other lessons in the GitHub Clinic series before tackling this lesson.
+2.  We will be using the Git Command Line Interface (CLI). Make sure you have Git Bash installed on your local machine (typically installed alongside GitHub Desktop).
+
+## Why use Git on the Command line?
+
+You may want to attend these sessions if:
+
+-   You are part of a large team developing software: A team of developers working on an application needs a clean and understandable history to debug issues, roll back changes, and integrate new features without breaking existing code.
+
+-   You are a researcher working on a project that you need to keep your commit history organized to track the evolution of your project over time
+
+-   You are building a website, user manual, or other documentation with multiple authors and need to ensure new articles and updates are merged correctly without conflicts or confusion
+
+## Git on the Command Line: a primer
+
+<iframe class="slide-deck" src="../../slides/advanced.html" width="900" height="600">
+
+</iframe>
