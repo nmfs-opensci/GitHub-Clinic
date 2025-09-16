@@ -1,0 +1,301 @@
+---
+title: "Git & GitHub for the Command Line"
+date: 9/18/2025
+brand: slides-light-brand.yml
+output-dir: ../docs/slides/
+format: 
+    nmfs-slides-revealjs: 
+        title-slide-attributes:
+          data-background-image: "styles/horiz-swoop-1.png"
+          data-background-color: '{{< brand color dark-blue >}}'
+        footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
+        controls: true
+        navigation-mode: linear
+        transition: slide
+        transition-speed: default
+        background-transition: none
+        scrollable: true
+---
+
+## Why learn command line git?
+
+Here are some types of projects where these more advanced commands become really useful:
+
+1.  Software development (R package, modeling software, etc.): A team of developers working on an application needs a clean and understandable history to debug issues, roll back changes, and integrate new features without breaking existing code.
+2.  Data analysis, modeling, and research projects:
+
+-   Researchers often experiment with different approaches and need to keep their commit history organized to track the evolution of their analysis and results.
+-   A reproducible and well-documented workflow is important.
+-   Knowing exactly when a change was made, by whom, and why is critical for auditing findings and ensuring that results are transparent.
+
+3.  Website & Documentation Management: When multiple authors are contributing to a website, user manual, or other documentation, a clean history ensures that new articles and updates are merged correctly, without causing conflicts or confusion. This also applies to templates that are built for use beyond your specific project.
+
+A lot of this is supplemented by useful issue tracking and pull requests.
+
+## Why does a clean git history matter?
+
+1.  Easier Debugging: When every commit represents a single, logical change, it's much easier to do things like find the exact commit that introduced a bug. A history full of "fix typo" or "oops" commits makes debugging a nightmare.
+2.  Simplified Collaboration: A clean history makes it easier to understand the project's evolution. When your team's commits are well-organized and linear, it's easier to review code, merge branches, and avoid conflicts. It reduces the cognitive load on every developer.
+3.  Clearer Project Narrative: Think of your Git history as a story of your project's development. A clean, linear history tells how a project evolved. This is invaluable for new team members or contributors who need to get up to speed quickly.
+
+## The Basics
+
+### 1. Cloning an Existing Repository
+
+To get a copy of a remote repository from GitHub, use `git clone`.
+
+```         
+git clone [https://github.com/e-perl-NOAA/git-command-line.git](https://github.com/e-perl-NOAA/git-command-line.git)  
+```
+
+### 2. Staging and Committing
+
+This is the **core loop** of Git. - `git status`: See which files have changed. - `git add <file>`: Stage changes for a file. - `git add .`: Stage all changes. - `git commit -m "Your commit message"`: Save the staged changes to your local history.
+
+### 3. Pushing to GitHub
+
+To share your local commits with the remote repository, use `git push`. `origin` is the default name for your remote, and `main` is the branch.
+
+```         
+git push origin main  
+```
+
+## Branching & Merging
+
+### Why Use Branches?
+
+Branches allow you to work on new features or bug fixes in **isolation** from the `main` branch, which keeps the main project stable.
+
+### Basic Branch Commands
+
+-   `git branch <branch-name>`: Create a new branch.
+-   `git checkout <branch-name>`: Switch to an existing branch. (or `git switch` in newer Git)
+-   `git checkout -b <branch-name>`: Create and switch in one step.
+-   `git merge <branch-name>`: Merge changes from a specified branch into your current branch.
+
+## Dealing with a Merge Conflict
+
+### Scenario
+
+Two people are working on a report. Person 1 makes a change on `main` and pushes it. Person 2 is working at the same time on a branch called `changes` and edit the **same line** of code and push their change.
+
+### The Conflict
+
+When Person 2 tries to merge my changes into `main` (either locally or through a pull request), Git will pause and report a **merge conflict**.
+
+```         
+# My terminal 
+git checkout main 
+git pull origin main # Pull the latest from Person 1
+git merge changes 
+```
+
+**Expected output:**
+
+```         
+Auto-merging README.md 
+CONFLICT (content): Merge conflict in README.md  
+Automatic merge failed; fix conflicts and then commit the result.  
+```
+
+### Resolving the Conflict
+
+The conflicting file (`README.md`) will contain special markers. You must manually edit the file to resolve the issue.
+
+```         
+# In the conflicting file... 
+<<<<<<< HEAD
+# git-command-line PRESENTATION
+=======
+# git-command-line presentation
+>>>>>>> ep-changes
+# Edit the file to the desired state, for example: 
+# git-command-line presentation 
+# Then, stage and commit the resolved file 
+git add README.md
+git commit -m "Resolved merge conflict"  
+```
+
+## Stashing and "Popping" 🎉
+
+Use `git stash` when you need to quickly save your uncommitted changes to work on something else, but you're not ready to commit them yet.
+
+Commands: - `git stash save "Your stash message"`: Save your current changes to the stash. - `git stash pop`: Apply the most recent stash and remove it from the stash list. - `git stash list`: View all your stashes.
+
+### Example:
+
+```         
+# Make some changes in a file
+# Save your uncommitted work
+git stash save "Work on new feature"
+
+# Your working directory is now clean, switch to the bugfix branch
+git checkout bugfix-branch
+
+# After the bug is fixed and committed, switch back to your original branch
+git checkout my-feature-branch
+
+# Reapply your saved work
+git stash pop
+```
+
+## Rewriting History: `amend` & `rebase`
+
+### `git commit --amend`
+
+Use this to modify your **last commit**. It's useful for fixing typos in a commit message, adding a forgotten file, or making a small fix.
+
+**Caution:** You generally do **not** amend commits that have already been pushed to a shared branch. This is because it rewrites the git history, which can confuse collaborators. **However**, if you do end up doing this, you'll need to force push with `git push --force`. After that, your collaborators will need to sync their local copies with the updated history otherwise they will run into issues. To resolve those issues they will need to run `git fetch` followed by `git reset --hard origin/main` (or the appropriate branch name) or `git pull --rebase`.
+
+#### Changing a commit message
+
+```         
+# Made a commit with a typo in the message 
+git commit -m "Added more text to README.md flie"  
+# Now, let's fix it 
+git add . 
+git commit --amend -m "Added more text to README.md file"  
+```
+
+This replaces the last commit with a new one, so the old commit history is gone.
+
+#### Adding a forgotten file
+
+```         
+# Create a new file or make a change
+touch forgotten_file.txt
+
+# Instead of making a new "oops, forgot a file" commit, you amend the previous one
+git add forgotten_file.txt
+git commit --amend --no-edit # This will add the file without changing the commit message
+```
+
+#### Fixing a small bug
+
+```         
+# Made a commit with some new code
+git commit -m "Implemented user login logic"
+
+# Now you find a bug and fix it
+# ... edit the code ...
+
+# Stage the fix and amend the previous commit
+git add .
+git commit --amend -m "Implemented user login logic" # This updates the commit with the fix
+```
+
+## Interactive Rebasing: The Ultimate Cleanup
+
+### What is Interactive Rebasing?
+
+`git rebase -i` lets you rewrite a series of commits in your branch history to create a clean, easy-to-read commit history.
+
+### Example: Squashing Commits
+
+Let's say that you have been working on a feature and has a series of small "fix" commits you want to combine into a single, clean commit.
+
+```         
+# View the last 3 commits on the current branch 
+git log --oneline -3  
+# Rebase the last 3 commits interactively 
+git rebase -i HEAD~3  
+```
+
+Git will open your text editor.
+
+**Original editor content:**
+
+```         
+pick 691e84a Added a new file for the feature 
+pick 5c4456b Fix a typo 
+pick f83f739 Forgot to add a comment  
+```
+
+To squash the last two commits into the first one, you would edit the file.
+
+-   `squash` (`s`): Combines a commit into the previous one and prompts for a new commit message.
+-   `fixup` (`f`): Combines a commit into the previous one and **discards** its commit message.
+
+**Edited editor content:**
+
+```         
+pick 691e84a Added a new file for the feature 
+squash 5c4456b Fix a typo 
+fixup f83f739 Forgot to add a comment  
+```
+
+Save and close the editor. Git will then prompt you to write a single, clean commit message for the combined commits. The result is a single, clean commit in your history.
+
+### VS Code
+
+There is a much easier way to do this using VS Code by doing the following: 1. Install the GitLens extension 2. `CTL + SHIFT + P` and search "GitLens: Enable Interactive Rebase Editor" 3. Close out VS Code and reopen 4. `git rebase -i` should open the interactive rebase editor. 5. Generally `use git push -f` after doing this
+
+![](https://user-images.githubusercontent.com/641685/102309169-31ba2a00-3f36-11eb-8b26-050c7d83fa3f.png)
+
+## Cherry-picking 🍒 commits
+
+Use git cherry-pick to apply a single, specific commit from one branch onto another such as: - A collaborator has made a useful commit on their branch that you want to include in your branch without merging all their changes - You need to fix a bug on a stable branch but the fix was developed and committed on a different, in-progress feature branch.
+
+Commands:
+
+-   `git log --oneline`: Find the commit ID (SHA) of the commit you want to pick.
+-   `git cherry-pick <commit-sha>`: Apply that commit to your current branch.
+
+### Example: Cherry-pick a commit from another branch
+
+Let's say a collaborator has a great commit on a feature branch that you need right now. You need to find the commit SHA (you can do this on GitHub or locally)
+
+```         
+# Find the commit on the other branch
+git log --oneline other-branch
+
+# Output:
+# 8a2f5b3 Implemented new sorting algorithm
+# ...
+
+# Switch to your current branch and apply the commit
+git checkout my-branch
+git cherry-pick 8a2f5b3
+```
+
+This command applies just that one change to your branch without bringing in any other commits from the other branch.
+
+## Bug 🐛 hunting with `git bisect`
+
+`git bisect` is a powerful tool for finding the exact commit that introduced a bug. It uses a binary search algorithm to quickly narrow down the commit history and identify the point where the code went from "good" to "bad".
+
+### Example: Finding and removing bug
+
+Imagine you run an R script that was working yesterday, but today it fails. You know it's a recent change, but you don't want to manually check each of the 20 commits made since then.
+
+```         
+# 1. Start the bisect session
+git bisect start
+
+# 2. Mark the current, broken state as 'bad'
+git bisect bad
+
+# 3. Mark the last known working commit as 'good'
+#    (You can find this SHA using 'git log')
+git bisect good 1a2b3c4
+```
+
+Git will now check out a commit halfway between the good and bad commits. You then test the code. - If the code still has the bug, you run `git bisect bad`. - If the code works correctly, you run `git bisect good`. Git continues this process, cutting the number of commits in half each time, until it finds the first bad commit.
+
+```         
+# Git's final output:
+# 691e84a is the first bad commit
+# Author: First Last <first.last@noaa.gov>
+# Commit: a2f5b3a FIX: Corrected bug in natural mortality calculation
+
+# 4. Exit the bisect session
+git bisect reset
+```
+
+## Final Takeaways
+
+-   **Commit Often:** Save your work frequently with descriptive messages.
+-   **Use Branches:** Create a new branch for each feature or bug fix.
+-   **Pull First:** Always run `git pull` before starting work to get the latest changes.
+-   **Don't Rebase Shared Branches (though this is sometimes unavoidable):** `rebase` is a powerful tool for cleaning your **local** history, but never use it on a branch that has been shared with collaborators.
+-   **When in Doubt, Ask!** There's a rich community and great documentation available. Also, the more you use these commands, the more comfortable you will become with them!

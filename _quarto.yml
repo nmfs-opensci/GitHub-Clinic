@@ -60,6 +60,7 @@ website:
           - content/merge-conflicts/merge-conflicts.qmd
           - content/issues/issues.qmd
           - content/projects/projects.qmd
+          - content/advanced/advanced.qmd
       - href: content/resources.qmd
         text: "Resources"
       - section: "In-Person Workshops"
