@@ -45,7 +45,7 @@ A lot of this is supplemented by useful issue tracking and pull requests.
 To get a copy of a remote repository from GitHub, use `git clone`.
 
 ```         
-git clone [https://github.com/e-perl-NOAA/git-command-line.git](https://github.com/e-perl-NOAA/git-command-line.git)  
+git clone [https://github.com/nmfs-opensci/GitHub-Clinic-demos.git](https://github.com/nmfs-opensci/GitHub-Clinic-demos.git)  
 ```
 
 ### 2. Staging and Committing
