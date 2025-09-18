@@ -50,11 +50,17 @@ git clone [https://github.com/nmfs-opensci/GitHub-Clinic-demos.git](https://gith
 
 ### 2. Staging and Committing
 
-This is the **core loop** of Git. - `git status`: See which files have changed. - `git add <file>`: Stage changes for a file. - `git add .`: Stage all changes. - `git commit -m "Your commit message"`: Save the staged changes to your local history.
+This is the **core loop** of Git. 
+
+- `git status`: See which files have changed.
+- `git add <file>`: Stage changes for a file. 
+- `git add .`: Stage all changes. 
+- `git commit -m "Your commit message"`: Save the staged changes to your local history.
 
 ### 3. Pushing to GitHub
 
-To share your local commits with the remote repository, use `git push`. `origin` is the default name for your remote, and `main` is the branch.
+To share your local commits with the remote repository, use `git push`. 
+`origin` is the default name for your remote, and `main` is the branch.
 
 ```         
 git push origin main  
