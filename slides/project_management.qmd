@@ -17,45 +17,48 @@ format:
         scrollable: true
 ---
 
+## What are GitHub Projects?
+
+-   Adaptable, flexible tool for planning and tracking work on GitHub
+
+-   Spreadsheet, task-board, and roadmap integrated with issues and pull requests
+
+-   Provide multiple views by filtering, sorting, grouping issues/PRs
+
+-   Visualize work with configurable charts
+
+-   Add custom fields to track team-specific metadata
+
 ## Why use GitHub for project management?
 
-::::: columns
-::: column
 -   Issues and projects stoke collaboration
+
 -   Issues act as short-term to-do lists
+
 -   Projects capture longer-term goals and organize short-term issues
-:::
 
-::: column
-![https://albertobasalo.medium.com/project-management-with-github-issues-and-projects-cb8eb6da966f](images/paste-54.png)
-:::
-:::::
+## Project views {auto-animate="'true'"}
 
-## Issues
+**Table layout** - Excel-style spreadsheet of project issues and metadata
 
-::::: columns
-::: column
--   Tasks for things to do
--   Place to provide detail
--   Checklists, labels, tags
--   Assign to collaborators
-:::
+![](images/paste-92.png)
 
-::: column
-![](images/paste-55.png)
-:::
-:::::
+## Project views {auto-animate="'true'"}
 
-## Projects
+**Board layout** - Kanban-style board for organizing issues by status or label
 
-::::: columns
-::: {.column width="30%"}
--   Group issues to view everything together
--   Work across repositories
--   Show progress by collaborators
-:::
+![](images/paste-93.png)
 
-::: {.column width="70%"}
-![](images/paste-57.png)
-:::
-:::::
+## Project views {auto-animate="'true'"}
+
+**Roadmap layout**- High-level visualization of project over time
+
+![](images/paste-94.png)
+
+## Adding views
+
+-   You can have multiple views in one project
+
+-   Views can be tailored to many different needs through layouts, fields, and filters
+
+-   Views can be temporary for a single session or saved to the project

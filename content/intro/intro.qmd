@@ -238,6 +238,6 @@ Open the repository in GitHub in your browser to see what the changes we made to
 
 ## Project Management
 
-<iframe class="slide-deck" src="../../slides/projects.html" width="900" height="600">
+<iframe class="slide-deck" src="../../slides/project_management.html" width="900" height="600">
 
 </iframe>
