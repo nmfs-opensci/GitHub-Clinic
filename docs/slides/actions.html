@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="actions_files/libs/clipboard/clipboard.min.js"></script>
-<script src="actions_files/libs/quarto-html/tabby.min.js"></script>
-<script src="actions_files/libs/quarto-html/popper.min.js"></script>
-<script src="actions_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="actions_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="actions_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="actions_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.32">
+<link href="../images/favicon-16x16.png" rel="icon" type="image/png">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.24">
 
   <meta name="author" content="Jonathan Peake">
-  <title>Automating Workflows with GitHub Actions</title>
+  <title>NOAA Fisheries GitHub Clinic – Automating Workflows with GitHub Actions</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="actions_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="actions_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -95,11 +96,11 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="actions_files/libs/revealjs/dist/theme/quarto-a263f7242592291f17a08cc6632b9238.css">
-  <link href="actions_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="actions_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="actions_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="actions_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-22cad69b2ac5d478ddaf4775d751bf72.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -228,19 +229,19 @@ Jonathan Peake
 <section id="anatomy-of-a-workflow-file" class="slide level2">
 <h2>Anatomy of a Workflow File</h2>
 <p>Workflows are defined in YAML files located in the <code>.github/workflows/</code> directory of your repository.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href=""></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Simple Workflow</span></span>
-<span id="cb1-2"><a href=""></a></span>
-<span id="cb1-3"><a href=""></a><span class="fu">on</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">push</span><span class="kw">]</span></span>
-<span id="cb1-4"><a href=""></a></span>
-<span id="cb1-5"><a href=""></a><span class="fu">jobs</span><span class="kw">:</span></span>
-<span id="cb1-6"><a href=""></a><span class="at">  </span><span class="fu">build</span><span class="kw">:</span></span>
-<span id="cb1-7"><a href=""></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
-<span id="cb1-8"><a href=""></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
-<span id="cb1-9"><a href=""></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Check out repository code</span></span>
-<span id="cb1-10"><a href=""></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
-<span id="cb1-11"><a href=""></a></span>
-<span id="cb1-12"><a href=""></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Greet the world</span></span>
-<span id="cb1-13"><a href=""></a><span class="at">        </span><span class="fu">run</span><span class="kw">:</span><span class="at"> echo "Hello, world!"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Simple Workflow</span></span>
+<span id="cb1-2"><a></a></span>
+<span id="cb1-3"><a></a><span class="fu">on</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">push</span><span class="kw">]</span></span>
+<span id="cb1-4"><a></a></span>
+<span id="cb1-5"><a></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb1-6"><a></a><span class="at">  </span><span class="fu">build</span><span class="kw">:</span></span>
+<span id="cb1-7"><a></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<span id="cb1-8"><a></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb1-9"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Check out repository code</span></span>
+<span id="cb1-10"><a></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
+<span id="cb1-11"><a></a></span>
+<span id="cb1-12"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Greet the world</span></span>
+<span id="cb1-13"><a></a><span class="at">        </span><span class="fu">run</span><span class="kw">:</span><span class="at"> echo "Hello, world!"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="events-on" class="slide level2">
 <h2>Events (<code>on</code>)</h2>
@@ -252,11 +253,11 @@ Jonathan Peake
 <li><code>workflow_dispatch</code>: Manual trigger from the GitHub UI.</li>
 </ul>
 <p>…and many more!</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href=""></a><span class="co"># Run on pushes to the main branch</span></span>
-<span id="cb2-2"><a href=""></a><span class="fu">on</span><span class="kw">:</span></span>
-<span id="cb2-3"><a href=""></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
-<span id="cb2-4"><a href=""></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span></span>
-<span id="cb2-5"><a href=""></a><span class="at">      </span><span class="kw">-</span><span class="at"> main</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a></a><span class="co"># Run on pushes to the main branch</span></span>
+<span id="cb2-2"><a></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb2-3"><a></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb2-4"><a></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span></span>
+<span id="cb2-5"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> main</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="jobs-runners" class="slide level2">
 <h2>Jobs &amp; Runners</h2>
@@ -267,11 +268,11 @@ Jonathan Peake
 <li>Each job runs in a fresh virtual environment on a <strong>runner</strong>.</li>
 </ul>
 <p>You specify the runner type with <code>runs-on</code>:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href=""></a><span class="fu">jobs</span><span class="kw">:</span></span>
-<span id="cb3-2"><a href=""></a><span class="at">  </span><span class="fu">my_first_job</span><span class="kw">:</span></span>
-<span id="cb3-3"><a href=""></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
-<span id="cb3-4"><a href=""></a><span class="at">  </span><span class="fu">my_second_job</span><span class="kw">:</span></span>
-<span id="cb3-5"><a href=""></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> windows-latest</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb3-2"><a></a><span class="at">  </span><span class="fu">my_first_job</span><span class="kw">:</span></span>
+<span id="cb3-3"><a></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<span id="cb3-4"><a></a><span class="at">  </span><span class="fu">my_second_job</span><span class="kw">:</span></span>
+<span id="cb3-5"><a></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> windows-latest</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="steps-actions-and-commands" class="slide level2">
 <h2>Steps, Actions, and Commands</h2>
@@ -280,17 +281,17 @@ Jonathan Peake
 <li><strong><code>uses</code></strong>: Specifies an <strong>action</strong> to run. Actions are reusable units of code. You can find thousands on the GitHub Marketplace.</li>
 <li><strong><code>run</code></strong>: Executes command-line programs using the runner’s shell.</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href=""></a><span class="fu">steps</span><span class="kw">:</span></span>
-<span id="cb4-2"><a href=""></a><span class="co">  # Use a pre-built action from the marketplace</span></span>
-<span id="cb4-3"><a href=""></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
-<span id="cb4-4"><a href=""></a></span>
-<span id="cb4-5"><a href=""></a><span class="co">  # Run a command</span></span>
-<span id="cb4-6"><a href=""></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Install dependencies</span></span>
-<span id="cb4-7"><a href=""></a><span class="at">    </span><span class="fu">run</span><span class="kw">:</span><span class="at"> npm install</span></span>
-<span id="cb4-8"><a href=""></a></span>
-<span id="cb4-9"><a href=""></a><span class="co">  # Run another command</span></span>
-<span id="cb4-10"><a href=""></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Run tests</span></span>
-<span id="cb4-11"><a href=""></a><span class="at">    </span><span class="fu">run</span><span class="kw">:</span><span class="at"> npm test</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a></a><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb4-2"><a></a><span class="co">  # Use a pre-built action from the marketplace</span></span>
+<span id="cb4-3"><a></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
+<span id="cb4-4"><a></a></span>
+<span id="cb4-5"><a></a><span class="co">  # Run a command</span></span>
+<span id="cb4-6"><a></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Install dependencies</span></span>
+<span id="cb4-7"><a></a><span class="at">    </span><span class="fu">run</span><span class="kw">:</span><span class="at"> npm install</span></span>
+<span id="cb4-8"><a></a></span>
+<span id="cb4-9"><a></a><span class="co">  # Run another command</span></span>
+<span id="cb4-10"><a></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Run tests</span></span>
+<span id="cb4-11"><a></a><span class="at">    </span><span class="fu">run</span><span class="kw">:</span><span class="at"> npm test</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="use-cases" class="slide level2">
 <h2>Use Cases</h2>
@@ -320,29 +321,30 @@ Jonathan Peake
 <li>Review third-party actions for security.</li>
 </ul>
 
+
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="logos\logo.png" class="slide-logo"></p>
+<p><img src="../slides\logos\logo.png" alt="NOAA logo" class="slide-logo"></p>
 <div class="footer footer-default">
 <p>U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service</p>
 </div>
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="actions_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="actions_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="actions_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="actions_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="actions_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="actions_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="actions_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="actions_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="actions_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="actions_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -511,7 +513,7 @@ Jonathan Peake
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -585,13 +587,14 @@ Jonathan Peake
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
@@ -606,7 +609,7 @@ Jonathan Peake
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp('/' + window.location.host + '/');
+            var filterRegex = new RegExp("https:\/\/nmfs-opensci\.github\.io\/GitHub-Clinic");
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }

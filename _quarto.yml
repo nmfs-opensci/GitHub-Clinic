@@ -3,7 +3,7 @@ project:
   output-dir: docs
   render:     
     - "*.qmd"
-    - "!slides/"
+    # - "!slides/"
 
 execute:
   freeze: auto

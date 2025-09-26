@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/workflows.html</loc>
+    <lastmod>2025-07-23T23:09:02.814Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/projects.html</loc>
+    <lastmod>2025-09-02T17:05:50.912Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/merge-conflicts.html</loc>
+    <lastmod>2025-07-29T19:58:53.519Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/issues.html</loc>
+    <lastmod>2025-09-15T17:09:37.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/git_basics.html</loc>
+    <lastmod>2025-06-03T17:04:32.823Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/forking.html</loc>
+    <lastmod>2025-06-16T16:56:28.498Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/advanced.html</loc>
+    <lastmod>2025-09-18T15:51:23.573Z</lastmod>
+  </url>
+  <url>
     <loc>https://nmfs-opensci.github.io/GitHub-Clinic/index.html</loc>
     <lastmod>2025-06-16T18:15:32.992Z</lastmod>
   </url>
@@ -71,5 +99,33 @@
   <url>
     <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/workflows/workflows.html</loc>
     <lastmod>2025-07-29T19:58:38.690Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/actions.html</loc>
+    <lastmod>2025-09-26T18:06:48.043Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/branches.html</loc>
+    <lastmod>2025-07-28T17:14:53.041Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/ghec.html</loc>
+    <lastmod>2025-05-30T15:03:48.482Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/github-pages.html</loc>
+    <lastmod>2025-06-12T15:20:04.413Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/markdown.html</loc>
+    <lastmod>2025-06-03T21:31:19.257Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/project_management.html</loc>
+    <lastmod>2025-09-22T18:33:34.094Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/why_git.html</loc>
+    <lastmod>2025-05-30T15:03:48.900Z</lastmod>
   </url>
 </urlset>

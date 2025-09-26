@@ -6,3 +6,4 @@
 /.quarto/
 GitHubClinic.Rproj
 GitHub-Clinic.code-workspace
+**/*.quarto_ipynb

@@ -1,5 +1,488 @@
 [
   {
+    "objectID": "slides/workflows.html#what-is-a-git-workflow",
+    "href": "slides/workflows.html#what-is-a-git-workflow",
+    "title": "Development Workflows in Git and GitHub",
+    "section": "What is a Git workflow?",
+    "text": "What is a Git workflow?\n\nUsing branches to control where, when, and by whom a project is developed\nAlso called a “branching strategy”\nDifferent strategies work best for teams of differing sizes and goals"
+  },
+  {
+    "objectID": "slides/workflows.html#why-use-git-workflows",
+    "href": "slides/workflows.html#why-use-git-workflows",
+    "title": "Development Workflows in Git and GitHub",
+    "section": "Why use Git workflows?",
+    "text": "Why use Git workflows?\n\nConsistent strategy for project development\nBetter collaboration with team members\nParallel development\nOrganize releases\nFix issues and add features without disrupting development"
+  },
+  {
+    "objectID": "slides/workflows.html#main-branch",
+    "href": "slides/workflows.html#main-branch",
+    "title": "Development Workflows in Git and GitHub",
+    "section": "Main branch",
+    "text": "Main branch\n\nAlso called the “default” or “trunk” branch\nFinalized, production-ready code and files\nPermanent"
+  },
+  {
+    "objectID": "slides/workflows.html#feature-branch",
+    "href": "slides/workflows.html#feature-branch",
+    "title": "Development Workflows in Git and GitHub",
+    "section": "Feature branch",
+    "text": "Feature branch\n\nCatered to feature development\nShort-lived"
+  },
+  {
+    "objectID": "slides/workflows.html#release-branch",
+    "href": "slides/workflows.html#release-branch",
+    "title": "Development Workflows in Git and GitHub",
+    "section": "Release branch",
+    "text": "Release branch\n\nPrepare specific version of project for release\nLonger-lived but ephemeral"
+  },
+  {
+    "objectID": "slides/workflows.html#develop-branch",
+    "href": "slides/workflows.html#develop-branch",
+    "title": "Development Workflows in Git and GitHub",
+    "section": "Develop branch",
+    "text": "Develop branch\n\nStaging branch for ongoing development\nChanges are tested and integrated into project before merged into main\nPermanent"
+  },
+  {
+    "objectID": "slides/workflows.html#trunk-based-workflow",
+    "href": "slides/workflows.html#trunk-based-workflow",
+    "title": "Development Workflows in Git and GitHub",
+    "section": "Trunk-based workflow",
+    "text": "Trunk-based workflow\nRelease focused development\nContinuous integration into main branch\nWith or without separate ephemeral branches"
+  },
+  {
+    "objectID": "slides/workflows.html#github-flow",
+    "href": "slides/workflows.html#github-flow",
+    "title": "Development Workflows in Git and GitHub",
+    "section": "GitHub flow",
+    "text": "GitHub flow\nFeature focused development optimized for web-based projects\nPeriodic integration into main branch\nEach “feature” gets a new ephemeral branch"
+  },
+  {
+    "objectID": "slides/workflows.html#git-flow",
+    "href": "slides/workflows.html#git-flow",
+    "title": "Development Workflows in Git and GitHub",
+    "section": "Git flow",
+    "text": "Git flow\nComplex development using release, develop, and feature branches"
+  },
+  {
+    "objectID": "slides/workflows.html#balance-project-complexity-and-team-size",
+    "href": "slides/workflows.html#balance-project-complexity-and-team-size",
+    "title": "Development Workflows in Git and GitHub",
+    "section": "Balance project complexity and team size",
+    "text": "Balance project complexity and team size\n\nTrunk-based workflow - New projects, small teams and individuals\nGitHub flow - Established projects, small and medium teams\nGit flow - Mature or complex projects, large teams"
+  },
+  {
+    "objectID": "slides/workflows.html#set-expectations-early-evolve-with-your-project",
+    "href": "slides/workflows.html#set-expectations-early-evolve-with-your-project",
+    "title": "Development Workflows in Git and GitHub",
+    "section": "Set expectations early, evolve with your project",
+    "text": "Set expectations early, evolve with your project\nExperiment with workflows and find one that works for your project and team\nAs your project evolves, you may need to change your workflow to accommodate your needs"
+  },
+  {
+    "objectID": "slides/projects.html#what-are-github-projects",
+    "href": "slides/projects.html#what-are-github-projects",
+    "title": "GitHub for Project Management",
+    "section": "What are GitHub Projects?",
+    "text": "What are GitHub Projects?\n\nAdaptable, flexible tool for planning and tracking work on GitHub\nSpreadsheet, task-board, and roadmap integrated with issues and pull requests\nProvide multiple views by filtering, sorting, grouping issues/PRs\nVisualize work with configurable charts\nAdd custom fields to track team-specific metadata"
+  },
+  {
+    "objectID": "slides/projects.html#why-use-github-for-project-management",
+    "href": "slides/projects.html#why-use-github-for-project-management",
+    "title": "GitHub for Project Management",
+    "section": "Why use GitHub for project management?",
+    "text": "Why use GitHub for project management?\n\nIssues and projects stoke collaboration\nIssues act as short-term to-do lists\nProjects capture longer-term goals and organize short-term issues"
+  },
+  {
+    "objectID": "slides/projects.html#project-views",
+    "href": "slides/projects.html#project-views",
+    "title": "GitHub for Project Management",
+    "section": "Project views",
+    "text": "Project views\nTable layout - Excel-style spreadsheet of project issues and metadata"
+  },
+  {
+    "objectID": "slides/projects.html#project-views-1",
+    "href": "slides/projects.html#project-views-1",
+    "title": "GitHub for Project Management",
+    "section": "Project views",
+    "text": "Project views\nBoard layout - Kanban-style board for organizing issues by status or label"
+  },
+  {
+    "objectID": "slides/projects.html#project-views-2",
+    "href": "slides/projects.html#project-views-2",
+    "title": "GitHub for Project Management",
+    "section": "Project views",
+    "text": "Project views\nRoadmap layout- High-level visualization of project over time"
+  },
+  {
+    "objectID": "slides/projects.html#fields-table-and-board-layouts",
+    "href": "slides/projects.html#fields-table-and-board-layouts",
+    "title": "GitHub for Project Management",
+    "section": "Fields (Table and Board layouts)",
+    "text": "Fields (Table and Board layouts)\n\nBased on issue metadata\nIn Table view, these add columns to the table to let you view, sort, and filter\nIn Board view, these are shown on each board item\nFully customizable"
+  },
+  {
+    "objectID": "slides/projects.html#grouping-all-layouts",
+    "href": "slides/projects.html#grouping-all-layouts",
+    "title": "GitHub for Project Management",
+    "section": "Grouping (All layouts)",
+    "text": "Grouping (All layouts)\n\nHorizontally split issues by certain aspects of an issue (metadata)"
+  },
+  {
+    "objectID": "slides/projects.html#sorting-all-layouts",
+    "href": "slides/projects.html#sorting-all-layouts",
+    "title": "GitHub for Project Management",
+    "section": "Sorting (All layouts)",
+    "text": "Sorting (All layouts)\n\nSort project issues by issue metadata\nMulti-field sorting available\nCan sort ascending or descending\nCan manually sort by dragging and dropping issues"
+  },
+  {
+    "objectID": "slides/projects.html#slicing-all-layouts",
+    "href": "slides/projects.html#slicing-all-layouts",
+    "title": "GitHub for Project Management",
+    "section": "Slicing (All layouts)",
+    "text": "Slicing (All layouts)\n\nSplit issues by metadata fields into subsets of issues\nMore akin to filtering than grouping"
+  },
+  {
+    "objectID": "slides/projects.html#field-sum-board-layout-only",
+    "href": "slides/projects.html#field-sum-board-layout-only",
+    "title": "GitHub for Project Management",
+    "section": "Field sum (Board layout only)",
+    "text": "Field sum (Board layout only)\n\nAdd a count of the number of issues in each section of the board"
+  },
+  {
+    "objectID": "slides/projects.html#roadmap-features",
+    "href": "slides/projects.html#roadmap-features",
+    "title": "GitHub for Project Management",
+    "section": "Roadmap features",
+    "text": "Roadmap features\n\nDate fields\n\nUsed to set start and end dates\nIterations: special date fields for repeating blocks of time\n\nVertical markers\n\nAdds a vertical marker to show iterations, dates, and milestones\n\nZoom level\n\nChange density and zoom level of roadmap: month, quarter, and year"
+  },
+  {
+    "objectID": "slides/projects.html#filters",
+    "href": "slides/projects.html#filters",
+    "title": "GitHub for Project Management",
+    "section": "Filters",
+    "text": "Filters\n\nAdd field-based filters to further customize views\nCan be used for very specific purposes and are saved with each view\nCombine filters across fields for hyper-specific filtering"
+  },
+  {
+    "objectID": "slides/projects.html#adding-views",
+    "href": "slides/projects.html#adding-views",
+    "title": "GitHub for Project Management",
+    "section": "Adding views",
+    "text": "Adding views\n\nYou can have multiple views in one project\nViews can be tailored to many different needs through layouts, fields, and filters\nViews can be temporary for a single session or saved to the project"
+  },
+  {
+    "objectID": "slides/merge-conflicts.html#what-is-a-merge-conflict",
+    "href": "slides/merge-conflicts.html#what-is-a-merge-conflict",
+    "title": "Merge Conflicts in Git and GitHub",
+    "section": "What is a merge conflict?",
+    "text": "What is a merge conflict?\n\nGit normally can resolve differences between branches automatically\nChanges on different branches that compete with each other are more difficult to resolve\nRequires manually choosing which changes to keep"
+  },
+  {
+    "objectID": "slides/merge-conflicts.html#when-do-merge-conflicts-occur",
+    "href": "slides/merge-conflicts.html#when-do-merge-conflicts-occur",
+    "title": "Merge Conflicts in Git and GitHub",
+    "section": "When do merge conflicts occur?",
+    "text": "When do merge conflicts occur?\n\nChanges to the same line of the same file on different branches\nDeletion of a file edited in another branch\nDeletion of a line edited in another branch\n\n(more advanced scenarios)\n\nCherry-picking commits\nRebasing a branch"
+  },
+  {
+    "objectID": "slides/merge-conflicts.html#what-does-a-merge-conflict-look-like",
+    "href": "slides/merge-conflicts.html#what-does-a-merge-conflict-look-like",
+    "title": "Merge Conflicts in Git and GitHub",
+    "section": "What does a merge conflict look like?",
+    "text": "What does a merge conflict look like?\n\nMerge conflicts are denoted by conflict markers: &lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, &gt;&gt;&gt;&gt;&gt;&gt;&gt;\nAnything between &lt;&lt;&lt;&lt;&lt;&lt;&lt; and ======= is from the base branch\nAnything between ======= and &gt;&gt;&gt;&gt;&gt;&gt;&gt; is from the compare branch\nThe name of the base and compare branches are denoted in line with &lt;&lt;&lt;&lt;&lt;&lt;&lt; and &gt;&gt;&gt;&gt;&gt;&gt;&gt;"
+  },
+  {
+    "objectID": "slides/merge-conflicts.html#what-does-a-merge-conflict-look-like-1",
+    "href": "slides/merge-conflicts.html#what-does-a-merge-conflict-look-like-1",
+    "title": "Merge Conflicts in Git and GitHub",
+    "section": "What does a merge conflict look like?",
+    "text": "What does a merge conflict look like?\nIn this example, we have  \n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD \na change made in the base branch.\n======= \na change made to the same line of the compare branch.\n&gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-a"
+  },
+  {
+    "objectID": "slides/merge-conflicts.html#resolving-a-merge-conflict",
+    "href": "slides/merge-conflicts.html#resolving-a-merge-conflict",
+    "title": "Merge Conflicts in Git and GitHub",
+    "section": "Resolving a merge conflict",
+    "text": "Resolving a merge conflict\n\nOpen the file where the conflict occurred\nFind any instances of &lt;&lt;&lt;&lt;&lt;&lt;&lt;\nDecide what to keep and what to replace\nDelete the lines containing &lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, and &gt;&gt;&gt;&gt;&gt;&gt;&gt;\nCommit your changes and complete the merge"
+  },
+  {
+    "objectID": "slides/merge-conflicts.html#resolving-a-merge-conflict-1",
+    "href": "slides/merge-conflicts.html#resolving-a-merge-conflict-1",
+    "title": "Merge Conflicts in Git and GitHub",
+    "section": "Resolving a merge conflict",
+    "text": "Resolving a merge conflict\nIn this example, we have:  \n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD \n- a change made in the base branch.\n======= \n- a change made to the same line of the compare branch.\n&gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-a"
+  },
+  {
+    "objectID": "slides/merge-conflicts.html#resolving-a-merge-conflict-2",
+    "href": "slides/merge-conflicts.html#resolving-a-merge-conflict-2",
+    "title": "Merge Conflicts in Git and GitHub",
+    "section": "Resolving a merge conflict",
+    "text": "Resolving a merge conflict\nIn this example, we have:\n- a change made to the same line of the compare branch."
+  },
+  {
+    "objectID": "slides/merge-conflicts.html#how-to-avoid-merge-conflicts",
+    "href": "slides/merge-conflicts.html#how-to-avoid-merge-conflicts",
+    "title": "Merge Conflicts in Git and GitHub",
+    "section": "How to avoid merge conflicts",
+    "text": "How to avoid merge conflicts\n\nCommunicate\nMake small, frequent commits and pull requests\nReview others’ pull requests"
+  },
+  {
+    "objectID": "slides/issues.html#what-are-issues",
+    "href": "slides/issues.html#what-are-issues",
+    "title": "GitHub Issues and Discussions",
+    "section": "What are Issues?",
+    "text": "What are Issues?\nGitHub Issues are a tool that allows users to create, discuss, and track work in a repository: \n\nTracking: Use issues to track tasks, bugs, ideas, and feedback \nCollaboration: Use issues to collaborate on ideas and tasks \nCommunication: Use issues to communicate with others \nPlanning: Use issues to plan and track work"
+  },
+  {
+    "objectID": "slides/issues.html#what-are-discussions",
+    "href": "slides/issues.html#what-are-discussions",
+    "title": "GitHub Issues and Discussions",
+    "section": "What are Discussions?",
+    "text": "What are Discussions?\nGitHub Discussions are a collaborative communication forum for the community around an open source or internal project:\n\nShare announcements and information\nPlan and make decisions with community input\nEncourage and answer questions, and mark them answered as you respond to them\nGauge community opinion using polls"
+  },
+  {
+    "objectID": "slides/issues.html#when-to-use-issues-vs-discussions",
+    "href": "slides/issues.html#when-to-use-issues-vs-discussions",
+    "title": "GitHub Issues and Discussions",
+    "section": "When to use Issues vs Discussions",
+    "text": "When to use Issues vs Discussions\n\nIssues: specific, actionable items\nDiscussions: Q&A, triage bugs, transparent conversations about broader vision\nIssues can spin off of discussions"
+  },
+  {
+    "objectID": "slides/issues.html#anatomy-of-an-issue",
+    "href": "slides/issues.html#anatomy-of-an-issue",
+    "title": "GitHub Issues and Discussions",
+    "section": "Anatomy of an Issue",
+    "text": "Anatomy of an Issue\nhttps://github.com/nmfs-opensci/GitHub-Clinic-demos/issues/7\n\n\nTitle: simple but descriptive\n\n\nDescription: issue context\n\n\nTask lists: break work into smaller tasks, track progress\n\n\nReprex: bare minimal example of the issue\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAssignees: who is responsible for the issue\n\n\nLabels: categorize and prioritize issues\n\n\nProjects: link issues to project boards\n\n\nMilestones: track progress towards a goal\n\n\nDevelopment: link issues to code changes"
+  },
+  {
+    "objectID": "slides/issues.html#other-issue-features",
+    "href": "slides/issues.html#other-issue-features",
+    "title": "GitHub Issues and Discussions",
+    "section": "Other Issue features",
+    "text": "Other Issue features\n\nMarkdown: use markdown language features like headings, lists, links, code chunks, and images\nMentions: type @ in an issue description or comment to ping a collaborator\nLink issues: type # and part of an issue title to link out to a related issue\nSub-issues: add nested issues within an overarching broader issue"
+  },
+  {
+    "objectID": "slides/issues.html#issue-types-and-templates",
+    "href": "slides/issues.html#issue-types-and-templates",
+    "title": "GitHub Issues and Discussions",
+    "section": "Issue types and templates",
+    "text": "Issue types and templates\nDifferent kinds of repositories need different kinds of issue templates.\n\nBlank issue: standard, blank issue for things that don’t fall under other templates\nBug report: bring attention to a bug or problem in the repo\nFeature request: ideas for improvements or additions to a repo"
+  },
+  {
+    "objectID": "slides/issues.html#issue-types-and-templates-1",
+    "href": "slides/issues.html#issue-types-and-templates-1",
+    "title": "GitHub Issues and Discussions",
+    "section": "Issue types and templates",
+    "text": "Issue types and templates\nDifferent kinds of repositories need different kinds of issue templates.\n\nQuestions: general question about the repository (may be better for Discussion)\nTasks: tasks and project management related to the repository (generally reserved for development team)\nCustom templates: tailored to needs of the team"
+  },
+  {
+    "objectID": "slides/issues.html#discussion-types-and-templates",
+    "href": "slides/issues.html#discussion-types-and-templates",
+    "title": "GitHub Issues and Discussions",
+    "section": "Discussion types and templates",
+    "text": "Discussion types and templates\nSimilarly, there are different kinds of Discussion templates for different purposes\n\nAnnouncements: updates from maintainers\nGeneral: equivalent of a blank issue; general chat\nIdeas: discuss new features you would like to see\nPolls: take a vote from developers and users\nQ&A: ask the community for help\nShow and tell: showcase a new feature or use case"
+  },
+  {
+    "objectID": "slides/issues.html#advanced-issues-management-configuring-issue-forms",
+    "href": "slides/issues.html#advanced-issues-management-configuring-issue-forms",
+    "title": "GitHub Issues and Discussions",
+    "section": "Advanced issues management: Configuring issue forms",
+    "text": "Advanced issues management: Configuring issue forms\nUse YAML to make an issue template into a web form\n\nSee GitHub documentation for more info"
+  },
+  {
+    "objectID": "slides/issues.html#issues-and-discussions-etiquette",
+    "href": "slides/issues.html#issues-and-discussions-etiquette",
+    "title": "GitHub Issues and Discussions",
+    "section": "Issues and discussions etiquette",
+    "text": "Issues and discussions etiquette\n\nSearch for your issue prior to submitting a new one\nUse the right forum (issues vs discussions)\nUse templates if provided\nProvide minimal reproducible examples\nUse mentions sparingly"
+  },
+  {
+    "objectID": "slides/git_basics.html#users-organizations-and-teams",
+    "href": "slides/git_basics.html#users-organizations-and-teams",
+    "title": "Git and GitHub: The Basics",
+    "section": "Users, organizations, and teams",
+    "text": "Users, organizations, and teams\n\n\n\n\n \n\n\n\n\nUsers\n\nYour account\nConnected to your NOAA email\nCan add secondary email"
+  },
+  {
+    "objectID": "slides/git_basics.html#users-organizations-and-teams-1",
+    "href": "slides/git_basics.html#users-organizations-and-teams-1",
+    "title": "Git and GitHub: The Basics",
+    "section": "Users, organizations, and teams",
+    "text": "Users, organizations, and teams\n\n\n\n\n \n\n\n\n\nOrganizations\n\nShared account with large number of people\nCan be housed under Enterprise\nCollaboration and controlled access"
+  },
+  {
+    "objectID": "slides/git_basics.html#users-organizations-and-teams-2",
+    "href": "slides/git_basics.html#users-organizations-and-teams-2",
+    "title": "Git and GitHub: The Basics",
+    "section": "Users, organizations, and teams",
+    "text": "Users, organizations, and teams\n\n\n\n\n \n\n\n\n\nTeams\n\nNested within organization\nSub-groups for collaboration and access\nCan have teams within teams for more fine-scale structure"
+  },
+  {
+    "objectID": "slides/git_basics.html#repositories---the-main-unit",
+    "href": "slides/git_basics.html#repositories---the-main-unit",
+    "title": "Git and GitHub: The Basics",
+    "section": "Repositories - the main unit",
+    "text": "Repositories - the main unit\n\n\n\nSets the folder and file structure\nContained and permissioned\nPublic, private, or internal (Enterprise)\nCommits and issues - Contributing through GitHub"
+  },
+  {
+    "objectID": "slides/git_basics.html#commit",
+    "href": "slides/git_basics.html#commit",
+    "title": "Git and GitHub: The Basics",
+    "section": "Commit",
+    "text": "Commit\n\n\n\nA specific “thing” that you want to save and keep a record for\nSnapshot of all the files in the entire project\nCommit messages provide info about the “thing” you’ve done\nCommits give a history of the project"
+  },
+  {
+    "objectID": "slides/git_basics.html#cloning",
+    "href": "slides/git_basics.html#cloning",
+    "title": "Git and GitHub: The Basics",
+    "section": "Cloning",
+    "text": "Cloning\n\n\n\nMaking a local copy from GitHub\nAllows local sync within and across devices\nPush local changes, fetch remote changes\n\n\n\n\n\nImage credit: https://jaisriram.hashnode.dev/how-to-clone-a-github-repository-to-local-machine"
+  },
+  {
+    "objectID": "slides/git_basics.html#forking",
+    "href": "slides/git_basics.html#forking",
+    "title": "Git and GitHub: The Basics",
+    "section": "Forking",
+    "text": "Forking\n\n\n\nAdding to or modifying repository hosted on someone else’s account\n“Sees” changes from parent repo - allows syncing with parent\nCan be for personal purposes - doesn’t have to be pushed to original repo!\n\n\n\n\n\nImage credit: https://www.earthdatascience.org/workshops/intro-version-control-git/pull-request/"
+  },
+  {
+    "objectID": "slides/git_basics.html#importing",
+    "href": "slides/git_basics.html#importing",
+    "title": "Git and GitHub: The Basics",
+    "section": "Importing",
+    "text": "Importing\n\n\n\nUse another repo as starting point for your own\nCopy not connected to original\nUsually meant for importing from a different version control system (e.g., GitLab)\n\nCan be employed to use another GitHub repo as a “pseudo-template”"
+  },
+  {
+    "objectID": "slides/git_basics.html#branching",
+    "href": "slides/git_basics.html#branching",
+    "title": "Git and GitHub: The Basics",
+    "section": "Branching",
+    "text": "Branching\n\nCopies of repos housed within the repo structure\nAllow for working on repo without changing main branch\nCan help for more complex collaboration"
+  },
+  {
+    "objectID": "slides/forking.html#what-is-a-fork",
+    "href": "slides/forking.html#what-is-a-fork",
+    "title": "Forking in Git and GitHub",
+    "section": "What is a Fork?",
+    "text": "What is a Fork?\n\nA fork is a new repository that shares code with the original “upstream” repository\n\nAdd to or modify repository hosted on someone else’s account\n“Sees” changes from parent repo - allows syncing with parent\nCan be for personal purposes - doesn’t have to be pushed to original repo!"
+  },
+  {
+    "objectID": "slides/forking.html#why-fork",
+    "href": "slides/forking.html#why-fork",
+    "title": "Forking in Git and GitHub",
+    "section": "Why fork?",
+    "text": "Why fork?\n\nAllows users to contribute to projects they are not directly a part of\nAllows faster development and bug fixes\nOutside contributors are what make a project truly “open source”"
+  },
+  {
+    "objectID": "slides/forking.html#several-forking-scenarios",
+    "href": "slides/forking.html#several-forking-scenarios",
+    "title": "Forking in Git and GitHub",
+    "section": "Several forking scenarios",
+    "text": "Several forking scenarios\n\nPropose changes or fix bugs on a package or software\nAdd a feature to open source software\nUse someone else’s repository as a basis for your own"
+  },
+  {
+    "objectID": "slides/forking.html#the-process-of-forking",
+    "href": "slides/forking.html#the-process-of-forking",
+    "title": "Forking in Git and GitHub",
+    "section": "The process of forking",
+    "text": "The process of forking\n\nCreate a fork from the parent repository\nIf not making changes in GitHub, clone your forked repository to your local machine\nMake and commit your changes, making commits along the way if necessary\nIf necessary, sync any changes made to the parent repository with your fork"
+  },
+  {
+    "objectID": "slides/forking.html#the-process-of-forking-1",
+    "href": "slides/forking.html#the-process-of-forking-1",
+    "title": "Forking in Git and GitHub",
+    "section": "The process of forking",
+    "text": "The process of forking\n\n(Optional) Create a pull request to contribute your changes back to the parent repository\n\n\nMake any changes suggested/requested by the parent repository owner\nThe repository owner will decide whether or not to merge your pull request"
+  },
+  {
+    "objectID": "slides/forking.html#things-to-keep-in-mind-when-forking",
+    "href": "slides/forking.html#things-to-keep-in-mind-when-forking",
+    "title": "Forking in Git and GitHub",
+    "section": "Things to keep in mind when forking",
+    "text": "Things to keep in mind when forking\n\nPeople (generally) want your engagement, suggestions, ideas, and contributions\n\nEspecially true for NMFS\n\nLook for a contributing guide (commonly a CONTRIBUTING.md file) or wiki instructions for contributing\nBe descriptive with your pull requests\nPull requests can be iterative conversations with the repo owner"
+  },
+  {
+    "objectID": "slides/forking.html#forking-as-a-worldview",
+    "href": "slides/forking.html#forking-as-a-worldview",
+    "title": "Forking in Git and GitHub",
+    "section": "Forking as a Worldview",
+    "text": "Forking as a Worldview\nForks and forking are concepts that can be applied outside of the Git/GitHub realm\n\nSlides\nDocumentation\nCode/packages\nTutorials\nIdeas\nMovements\nMany other examples"
+  },
+  {
+    "objectID": "slides/advanced.html#why-learn-command-line-git",
+    "href": "slides/advanced.html#why-learn-command-line-git",
+    "title": "Git & GitHub for the Command Line",
+    "section": "Why learn command line git?",
+    "text": "Why learn command line git?\nHere are some types of projects where these more advanced commands become really useful:\n\nSoftware development (R package, modeling software, etc.): A team of developers working on an application needs a clean and understandable history to debug issues, roll back changes, and integrate new features without breaking existing code.\nData analysis, modeling, and research projects:\n\n\nResearchers often experiment with different approaches and need to keep their commit history organized to track the evolution of their analysis and results.\nA reproducible and well-documented workflow is important.\nKnowing exactly when a change was made, by whom, and why is critical for auditing findings and ensuring that results are transparent.\n\n\nWebsite & Documentation Management: When multiple authors are contributing to a website, user manual, or other documentation, a clean history ensures that new articles and updates are merged correctly, without causing conflicts or confusion. This also applies to templates that are built for use beyond your specific project.\n\nA lot of this is supplemented by useful issue tracking and pull requests."
+  },
+  {
+    "objectID": "slides/advanced.html#why-does-a-clean-git-history-matter",
+    "href": "slides/advanced.html#why-does-a-clean-git-history-matter",
+    "title": "Git & GitHub for the Command Line",
+    "section": "Why does a clean git history matter?",
+    "text": "Why does a clean git history matter?\n\nEasier Debugging: When every commit represents a single, logical change, it’s much easier to do things like find the exact commit that introduced a bug. A history full of “fix typo” or “oops” commits makes debugging a nightmare.\nSimplified Collaboration: A clean history makes it easier to understand the project’s evolution. When your team’s commits are well-organized and linear, it’s easier to review code, merge branches, and avoid conflicts. It reduces the cognitive load on every developer.\nClearer Project Narrative: Think of your Git history as a story of your project’s development. A clean, linear history tells how a project evolved. This is invaluable for new team members or contributors who need to get up to speed quickly."
+  },
+  {
+    "objectID": "slides/advanced.html#the-basics",
+    "href": "slides/advanced.html#the-basics",
+    "title": "Git & GitHub for the Command Line",
+    "section": "The Basics",
+    "text": "The Basics\n1. Cloning an Existing Repository\nTo get a copy of a remote repository from GitHub, use git clone.\ngit clone [https://github.com/nmfs-opensci/GitHub-Clinic-demos.git](https://github.com/nmfs-opensci/GitHub-Clinic-demos.git)  \n2. Staging and Committing\nThis is the core loop of Git.\n\ngit status: See which files have changed.\ngit add &lt;file&gt;: Stage changes for a file.\ngit add .: Stage all changes.\ngit commit -m \"Your commit message\": Save the staged changes to your local history.\n\n3. Pushing to GitHub\nTo share your local commits with the remote repository, use git push. origin is the default name for your remote, and main is the branch.\ngit push origin main"
+  },
+  {
+    "objectID": "slides/advanced.html#branching-merging",
+    "href": "slides/advanced.html#branching-merging",
+    "title": "Git & GitHub for the Command Line",
+    "section": "Branching & Merging",
+    "text": "Branching & Merging\nWhy Use Branches?\nBranches allow you to work on new features or bug fixes in isolation from the main branch, which keeps the main project stable.\nBasic Branch Commands\n\ngit branch &lt;branch-name&gt;: Create a new branch.\ngit checkout &lt;branch-name&gt;: Switch to an existing branch. (or git switch in newer Git)\ngit checkout -b &lt;branch-name&gt;: Create and switch in one step.\ngit merge &lt;branch-name&gt;: Merge changes from a specified branch into your current branch."
+  },
+  {
+    "objectID": "slides/advanced.html#dealing-with-a-merge-conflict",
+    "href": "slides/advanced.html#dealing-with-a-merge-conflict",
+    "title": "Git & GitHub for the Command Line",
+    "section": "Dealing with a Merge Conflict",
+    "text": "Dealing with a Merge Conflict\nScenario\nTwo people are working on a report. Person 1 makes a change on main and pushes it. Person 2 is working at the same time on a branch called changes and edit the same line of code and push their change.\nThe Conflict\nWhen Person 2 tries to merge my changes into main (either locally or through a pull request), Git will pause and report a merge conflict.\n# My terminal \ngit checkout main \ngit pull origin main # Pull the latest from Person 1\ngit merge changes \nExpected output:\nAuto-merging README.md \nCONFLICT (content): Merge conflict in README.md  \nAutomatic merge failed; fix conflicts and then commit the result.  \nResolving the Conflict\nThe conflicting file (README.md) will contain special markers. You must manually edit the file to resolve the issue.\n# In the conflicting file... \n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD\n# git-command-line PRESENTATION\n=======\n# git-command-line presentation\n&gt;&gt;&gt;&gt;&gt;&gt;&gt; ep-changes\n# Edit the file to the desired state, for example: \n# git-command-line presentation \n# Then, stage and commit the resolved file \ngit add README.md\ngit commit -m \"Resolved merge conflict\""
+  },
+  {
+    "objectID": "slides/advanced.html#stashing-and-popping",
+    "href": "slides/advanced.html#stashing-and-popping",
+    "title": "Git & GitHub for the Command Line",
+    "section": "Stashing and “Popping” 🎉",
+    "text": "Stashing and “Popping” 🎉\nUse git stash when you need to quickly save your uncommitted changes to work on something else, but you’re not ready to commit them yet.\nCommands: - git stash save \"Your stash message\": Save your current changes to the stash. - git stash pop: Apply the most recent stash and remove it from the stash list. - git stash list: View all your stashes.\nExample:\n# Make some changes in a file\n# Save your uncommitted work\ngit stash save \"Work on new feature\"\n\n# Your working directory is now clean, switch to the bugfix branch\ngit checkout bugfix-branch\n\n# After the bug is fixed and committed, switch back to your original branch\ngit checkout my-feature-branch\n\n# Reapply your saved work\ngit stash pop"
+  },
+  {
+    "objectID": "slides/advanced.html#rewriting-history-amend-rebase",
+    "href": "slides/advanced.html#rewriting-history-amend-rebase",
+    "title": "Git & GitHub for the Command Line",
+    "section": "Rewriting History: amend & rebase",
+    "text": "Rewriting History: amend & rebase\ngit commit --amend\nUse this to modify your last commit. It’s useful for fixing typos in a commit message, adding a forgotten file, or making a small fix.\nCaution: You generally do not amend commits that have already been pushed to a shared branch. This is because it rewrites the git history, which can confuse collaborators. However, if you do end up doing this, you’ll need to force push with git push --force. After that, your collaborators will need to sync their local copies with the updated history otherwise they will run into issues. To resolve those issues they will need to run git fetch followed by git reset --hard origin/main (or the appropriate branch name) or git pull --rebase.\nChanging a commit message\n# Made a commit with a typo in the message \ngit commit -m \"Added more text to README.md flie\"  \n# Now, let's fix it \ngit add . \ngit commit --amend -m \"Added more text to README.md file\"  \nThis replaces the last commit with a new one, so the old commit history is gone.\nAdding a forgotten file\n# Create a new file or make a change\ntouch forgotten_file.txt\n\n# Instead of making a new \"oops, forgot a file\" commit, you amend the previous one\ngit add forgotten_file.txt\ngit commit --amend --no-edit # This will add the file without changing the commit message\nFixing a small bug\n# Made a commit with some new code\ngit commit -m \"Implemented user login logic\"\n\n# Now you find a bug and fix it\n# ... edit the code ...\n\n# Stage the fix and amend the previous commit\ngit add .\ngit commit --amend -m \"Implemented user login logic\" # This updates the commit with the fix"
+  },
+  {
+    "objectID": "slides/advanced.html#interactive-rebasing-the-ultimate-cleanup",
+    "href": "slides/advanced.html#interactive-rebasing-the-ultimate-cleanup",
+    "title": "Git & GitHub for the Command Line",
+    "section": "Interactive Rebasing: The Ultimate Cleanup",
+    "text": "Interactive Rebasing: The Ultimate Cleanup\nWhat is Interactive Rebasing?\ngit rebase -i lets you rewrite a series of commits in your branch history to create a clean, easy-to-read commit history.\nExample: Squashing Commits\nLet’s say that you have been working on a feature and has a series of small “fix” commits you want to combine into a single, clean commit.\n# View the last 3 commits on the current branch \ngit log --oneline -3  \n# Rebase the last 3 commits interactively \ngit rebase -i HEAD~3  \nGit will open your text editor.\nOriginal editor content:\npick 691e84a Added a new file for the feature \npick 5c4456b Fix a typo \npick f83f739 Forgot to add a comment  \nTo squash the last two commits into the first one, you would edit the file.\n\nsquash (s): Combines a commit into the previous one and prompts for a new commit message.\nfixup (f): Combines a commit into the previous one and discards its commit message.\n\nEdited editor content:\npick 691e84a Added a new file for the feature \nsquash 5c4456b Fix a typo \nfixup f83f739 Forgot to add a comment  \nSave and close the editor. Git will then prompt you to write a single, clean commit message for the combined commits. The result is a single, clean commit in your history.\nVS Code\nThere is a much easier way to do this using VS Code by doing the following: 1. Install the GitLens extension 2. CTL + SHIFT + P and search “GitLens: Enable Interactive Rebase Editor” 3. Close out VS Code and reopen 4. git rebase -i should open the interactive rebase editor. 5. Generally use git push -f after doing this"
+  },
+  {
+    "objectID": "slides/advanced.html#cherry-picking-commits",
+    "href": "slides/advanced.html#cherry-picking-commits",
+    "title": "Git & GitHub for the Command Line",
+    "section": "Cherry-picking 🍒 commits",
+    "text": "Cherry-picking 🍒 commits\nUse git cherry-pick to apply a single, specific commit from one branch onto another such as: - A collaborator has made a useful commit on their branch that you want to include in your branch without merging all their changes - You need to fix a bug on a stable branch but the fix was developed and committed on a different, in-progress feature branch.\nCommands:\n\ngit log --oneline: Find the commit ID (SHA) of the commit you want to pick.\ngit cherry-pick &lt;commit-sha&gt;: Apply that commit to your current branch.\n\nExample: Cherry-pick a commit from another branch\nLet’s say a collaborator has a great commit on a feature branch that you need right now. You need to find the commit SHA (you can do this on GitHub or locally)\n# Find the commit on the other branch\ngit log --oneline other-branch\n\n# Output:\n# 8a2f5b3 Implemented new sorting algorithm\n# ...\n\n# Switch to your current branch and apply the commit\ngit checkout my-branch\ngit cherry-pick 8a2f5b3\nThis command applies just that one change to your branch without bringing in any other commits from the other branch."
+  },
+  {
+    "objectID": "slides/advanced.html#bug-hunting-with-git-bisect",
+    "href": "slides/advanced.html#bug-hunting-with-git-bisect",
+    "title": "Git & GitHub for the Command Line",
+    "section": "Bug 🐛 hunting with git bisect",
+    "text": "Bug 🐛 hunting with git bisect\ngit bisect is a powerful tool for finding the exact commit that introduced a bug. It uses a binary search algorithm to quickly narrow down the commit history and identify the point where the code went from “good” to “bad”.\nExample: Finding and removing bug\nImagine you run an R script that was working yesterday, but today it fails. You know it’s a recent change, but you don’t want to manually check each of the 20 commits made since then.\n# 1. Start the bisect session\ngit bisect start\n\n# 2. Mark the current, broken state as 'bad'\ngit bisect bad\n\n# 3. Mark the last known working commit as 'good'\n#    (You can find this SHA using 'git log')\ngit bisect good 1a2b3c4\nGit will now check out a commit halfway between the good and bad commits. You then test the code. - If the code still has the bug, you run git bisect bad. - If the code works correctly, you run git bisect good. Git continues this process, cutting the number of commits in half each time, until it finds the first bad commit.\n# Git's final output:\n# 691e84a is the first bad commit\n# Author: First Last &lt;first.last@noaa.gov&gt;\n# Commit: a2f5b3a FIX: Corrected bug in natural mortality calculation\n\n# 4. Exit the bisect session\ngit bisect reset"
+  },
+  {
+    "objectID": "slides/advanced.html#final-takeaways",
+    "href": "slides/advanced.html#final-takeaways",
+    "title": "Git & GitHub for the Command Line",
+    "section": "Final Takeaways",
+    "text": "Final Takeaways\n\nCommit Often: Save your work frequently with descriptive messages.\nUse Branches: Create a new branch for each feature or bug fix.\nPull First: Always run git pull before starting work to get the latest changes.\nDon’t Rebase Shared Branches (though this is sometimes unavoidable): rebase is a powerful tool for cleaning your local history, but never use it on a branch that has been shared with collaborators.\nWhen in Doubt, Ask! There’s a rich community and great documentation available. Also, the more you use these commands, the more comfortable you will become with them!"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "NOAA Fisheries GitHub Clinic",
@@ -143,7 +626,7 @@
     "href": "content/merge-conflicts/merge-conflicts.html#tutorial-resolve-merge-conflicts-with-github-skills",
     "title": "Merge Conflits in Git and GitHub",
     "section": "Tutorial: Resolve merge conflicts with GitHub Skills",
-    "text": "Tutorial: Resolve merge conflicts with GitHub Skills\nGitHub Skills: Resolve merge conflicts\nWe’ll be using the Resolve merge conflicts GitHub Skills tutorial to practice creating a resolving a merge conflict. Follow along with the tutorial using your own GitHub account.\n\nStep 1: Start the course\nOpen the GitHub Skills link, and make sure you are logged into GitHub. Use the “Start course” button to make a new repository on your account:\n\nWhen you open up the “Start course” link, you will be presented with the “Create a new repository” interface. Keep all of the defaults, and click the green “Create repository button:\n\n\n\n\n\n\n\nGitHub Skills tutorials use GitHub Actions in the background.\n\n\n\nThese actions use “minutes”, which are limited in a private repository, but unlimited in a public one. We suggest keeping your GitHub Skills tutorial repositories public to avoid any minutes limitations.\n\n\n\n\n\n\n\n\nYou’ll notice that most steps in a GitHub Skills tutorial feature a message to wait about 20 seconds for the exercise to update.\n\n\n\nGitHub Actions can take a little bit of time to run, so waiting this requisite time is important! Refresh the instructions after 20 seconds to make sure everything updates properly.\n\n\n\n\nStep 2: Start the exercise\nAfter waiting the suggested 20 seconds, refresh the repository.\n\n\n\n\n\n\nTip\n\n\n\nI suggest moving the instructions tab into another window so you can work side-by-side with the instructions to limit switching back and forth between tabs.\n\n\n\n\n\nStep 3: Follow the exercise\nIn this exercise, we will be demonstrating how to resolve a merge conflict. GitHub Actions has introduced a change to a file on a branch that conflicts with another branch. We’ll go through the process of merging that change in, creating the merge conflict, and fixing it.\n\nCreate a pull request\nSince merge conflicts occur when merging from a pull request, we’ll start by creating a new pull request.\n\nOn the Pull requests tab of the repository, open a new pull request by clicking the green New button. Keep main as the base branch, and set the compare branch to my-resume. Click the green Create pull request button.\n\nEnter “Resolving merge conflicts” as the title of the pull request, and click Create pull request.\n\nWait 20 seconds and refresh the instructions README page.\n\n\n\nResolve a merge conflict\n\nThe pull request we created has a conflict. Click the Resolve conflicts button in your pull request.\n\nLook for the line that starts with &lt;&lt;&lt;&lt;&lt;&lt;&lt; my-resume and ends with &gt;&gt;&gt;&gt;&gt;&gt;&gt; main (it should be lines 5-9). These are your merge conflict indicators.\n\nNow we have to choose what to keep and what to get rid of. For this exercise, we’ll keep the changes made on the my-resume branch and remove the changes made on the main branch. Do this by deleting all content below the ======= and above &gt;&gt;&gt;&gt;&gt;&gt;&gt; main (this should just be one line).\n\nDelete the merge conflict indicators on lines 5, 7, and 8 to retain only the change that was made on the my-resume branch.\n\nClick the Mark as resolved button in the upper right, and commit the merge.\n\nWait about 20 seconds and refresh the instructions README page.\n\n\n\nCreate your own conflict\nNow that we know how to resolve a merge conflict, let’s create one of our own to see how they may occur. The GitHub Actions bot added a new file to the main branch. We’ll create the same file in the my-resume branch that has different content.\n\nOn the Code tab, click the dropdown where it says main and switch to the my-resume branch.\n\nClick the Add file dropdown (it might look like a + if you’re in a condensed window) and create a new file. Name it references.md.\n\nAdd some content to the file. The content doesn’t really matter, as long as it’s different from the copy on main. Commit your changes directly to the my-resume branch with an appropriate commit message.\n\nWait 20 seconds and refresh the instructions README page.\n\n\n\nMerge your pull request\nOur commit created a merge conflict in our existing pull request. Let’s deal with that before we finalize our new merge.\n\nIn the Pull requests tab, open your “Resolving merge conflicts” merge request. Click the Resolve conflicts button at the bottom of the pull request.\n\nFollowing the instructions from above, resolve the merge conflict.\n\nMark the conflict as resolved, and commit your merge.\n\nMerge your pull request, and delete the my-resume branch.\n\nWait 20 seconds then refresh the instructions README page.\nYou’re finished with the tutorial! Feel free to experiment with creating and resolving merge conflicts to get comfortable with the process.",
+    "text": "Tutorial: Resolve merge conflicts with GitHub Skills\nGitHub Skills: Resolve merge conflicts\nWe’ll be using the Resolve merge conflicts GitHub Skills tutorial to practice creating a resolving a merge conflict. Follow along with the tutorial using your own GitHub account.\n\nStep 1: Start the course\nOpen the GitHub Skills link, and make sure you are logged into GitHub. Use the “Start course” button to make a new repository on your account:\n\nWhen you open up the “Start course” link, you will be presented with the “Create a new repository” interface. Keep all of the defaults, and click the green “Create repository button:\n\n\n\n\n\n\n\nImportantGitHub Skills tutorials use GitHub Actions in the background.\n\n\n\nThese actions use “minutes”, which are limited in a private repository, but unlimited in a public one. We suggest keeping your GitHub Skills tutorial repositories public to avoid any minutes limitations.\n\n\n\n\n\n\n\n\nTipYou’ll notice that most steps in a GitHub Skills tutorial feature a message to wait about 20 seconds for the exercise to update.\n\n\n\nGitHub Actions can take a little bit of time to run, so waiting this requisite time is important! Refresh the instructions after 20 seconds to make sure everything updates properly.\n\n\n\n\nStep 2: Start the exercise\nAfter waiting the suggested 20 seconds, refresh the repository.\n\n\n\n\n\n\nTip\n\n\n\nI suggest moving the instructions tab into another window so you can work side-by-side with the instructions to limit switching back and forth between tabs.\n\n\n\n\n\nStep 3: Follow the exercise\nIn this exercise, we will be demonstrating how to resolve a merge conflict. GitHub Actions has introduced a change to a file on a branch that conflicts with another branch. We’ll go through the process of merging that change in, creating the merge conflict, and fixing it.\n\nCreate a pull request\nSince merge conflicts occur when merging from a pull request, we’ll start by creating a new pull request.\n\nOn the Pull requests tab of the repository, open a new pull request by clicking the green New button. Keep main as the base branch, and set the compare branch to my-resume. Click the green Create pull request button.\n\nEnter “Resolving merge conflicts” as the title of the pull request, and click Create pull request.\n\nWait 20 seconds and refresh the instructions README page.\n\n\n\nResolve a merge conflict\n\nThe pull request we created has a conflict. Click the Resolve conflicts button in your pull request.\n\nLook for the line that starts with &lt;&lt;&lt;&lt;&lt;&lt;&lt; my-resume and ends with &gt;&gt;&gt;&gt;&gt;&gt;&gt; main (it should be lines 5-9). These are your merge conflict indicators.\n\nNow we have to choose what to keep and what to get rid of. For this exercise, we’ll keep the changes made on the my-resume branch and remove the changes made on the main branch. Do this by deleting all content below the ======= and above &gt;&gt;&gt;&gt;&gt;&gt;&gt; main (this should just be one line).\n\nDelete the merge conflict indicators on lines 5, 7, and 8 to retain only the change that was made on the my-resume branch.\n\nClick the Mark as resolved button in the upper right, and commit the merge.\n\nWait about 20 seconds and refresh the instructions README page.\n\n\n\nCreate your own conflict\nNow that we know how to resolve a merge conflict, let’s create one of our own to see how they may occur. The GitHub Actions bot added a new file to the main branch. We’ll create the same file in the my-resume branch that has different content.\n\nOn the Code tab, click the dropdown where it says main and switch to the my-resume branch.\n\nClick the Add file dropdown (it might look like a + if you’re in a condensed window) and create a new file. Name it references.md.\n\nAdd some content to the file. The content doesn’t really matter, as long as it’s different from the copy on main. Commit your changes directly to the my-resume branch with an appropriate commit message.\n\nWait 20 seconds and refresh the instructions README page.\n\n\n\nMerge your pull request\nOur commit created a merge conflict in our existing pull request. Let’s deal with that before we finalize our new merge.\n\nIn the Pull requests tab, open your “Resolving merge conflicts” merge request. Click the Resolve conflicts button at the bottom of the pull request.\n\nFollowing the instructions from above, resolve the merge conflict.\n\nMark the conflict as resolved, and commit your merge.\n\nMerge your pull request, and delete the my-resume branch.\n\nWait 20 seconds then refresh the instructions README page.\nYou’re finished with the tutorial! Feel free to experiment with creating and resolving merge conflicts to get comfortable with the process.",
     "crumbs": [
       "JupyterHub",
       "Tutorials",
@@ -155,7 +638,7 @@
     "href": "content/markdown/markdown-legacy.html#using-markdown-in-github---tutorial",
     "title": "Introduction to Markdown and README files",
     "section": "Using Markdown in GitHub - Tutorial",
-    "text": "Using Markdown in GitHub - Tutorial\n\n\n\n\n\n\nImportant\n\n\n\nGitHub Skills are systematically being updated to an issue-based workflow from the legacy README-based workflow. If you began this exercise before 5-30-2025, your skills repository will look different from the current skills repository template. The following tutorial follows the legacy README-based workflow.\n\n\nGitHub Skills: Communicate using markdown\nWe’ll be using the Communicate Using Markdown Skills Tutorial to get some practice with markdown in GitHub. Follow along with the tutorial using your own GitHub account.\n\nStep 1: Copy the exercise\nOpen the GitHub Skills link, and make sure you are logged into GitHub. Use the “Start Course” button to make a new repository on your account:\nWhen you open up the “Copy Exercise” link, you will be presented with the “Create a new repository” interface. Keep all of the defaults, and click the green “Create repository” button:\n\n\n\n\n\n\n\nGitHub Skills tutorials use GitHub Actions in the background.\n\n\n\nThese actions use “minutes”, which are limited in a private repository, but unlimited in a public one. We suggest keeping your GitHub Skills tutorial repositories public to avoid any minutes limitations.\n\n\n\n\n\n\n\n\nYou’ll notice that most steps in a GitHub Skills tutorial feature a message to wait about 20 seconds for the exercise to update.\n\n\n\nGitHub Actions can take a little bit of time to run, so waiting this requisite time is important! Refresh the instructions after 20 seconds to make sure everything updates properly.\n\n\n\n\nStep 2: Start the exercise\nAfter waiting the suggested 20 seconds, refresh the instructions page. You’ll notice that the README output has changed to show the steps for the tutorial:\n\n\n\n\n\n\n\nI suggest moving the instructions tab into another window so you can work side-by-side with the instructions to limit switching back and forth between tabs. \n\n\n\n\n\n\n\n\nStep 3: Follow the exercise\n\nOpen a pull request\nCreate a new pull request following the instructions in the tutorial: \nOpen a new window and navigate to the Pull Requests tab in GitHub, then click the green New button to open a new Pull Request:\n\nClick the “compare” dropdown and select “start-markdown”\n\nMake sure the green “Able to merge” message shows, and click “Create pull request”, then “Create pull request” again.\n\nNavigate to the “Files changed” tab after the pull request has been created\n\nScroll to the bottom of the page to the index.md file, click the three dots, and select “Edit file”\n\nAdd a first-level header by entering # followed by a space in the Edit textbox. You can play around with adding other levels of headers.\n\nClick the “Preview” button above the dialogue box to see what your headers will look like in your file.\n\nClick the “Commit changes” button at the top of your file (note that this is different from the instructions from GitHub Skills). Add a meaningful message, and click the Commit changes button.\n\n\n\nWait 20 seconds for GitHub Actions to run in the background, then refresh the instructions page.\n\n\n\n\nAdd an image\nWhen you committed the changes, GitHub should have taken you back to the bottom of the “Files changed” page. If not, navigate to this pane and scroll to the bottom, click the three dots, and click the “Edit file” option again.\n\nIn the file, add a markdown image. For this example, we can use our SCUBAtocat.\n\nClick the Preview tab to check your Markdown formatting \nCommit your changes, and wait another 20 seconds for GitHub actions to update to the next step.\n\n\n\nAdd a code example\nEdit the index.md file again.\n\nAdd some code in a code block (you can use either example in the instructions)\n\nPreview your code block.\n\nCommit your changes to the file, and wait another 20 seconds before refreshing the instructions page.\n\n\n\nAdd a task list\nEdit the index.md file again.\n\nMake a markdown task list using the - [] notation\n\nPreview your task list.\n\nCommit your changes to the file, and wait another 20 seconds before refreshing the instructions page.\n\n\n\nMerge the pull request\nClick the Conversation tab in your pull request\n\nScroll to the bottom of the page, click “Merge pull request”, and confirm the merge. Wait 20 more seconds, then refresh the instructions page to finish the course."
+    "text": "Using Markdown in GitHub - Tutorial\n\n\n\n\n\n\nImportant\n\n\n\nGitHub Skills are systematically being updated to an issue-based workflow from the legacy README-based workflow. If you began this exercise before 5-30-2025, your skills repository will look different from the current skills repository template. The following tutorial follows the legacy README-based workflow.\n\n\nGitHub Skills: Communicate using markdown\nWe’ll be using the Communicate Using Markdown Skills Tutorial to get some practice with markdown in GitHub. Follow along with the tutorial using your own GitHub account.\n\nStep 1: Copy the exercise\nOpen the GitHub Skills link, and make sure you are logged into GitHub. Use the “Start Course” button to make a new repository on your account:\nWhen you open up the “Copy Exercise” link, you will be presented with the “Create a new repository” interface. Keep all of the defaults, and click the green “Create repository” button:\n\n\n\n\n\n\n\nImportantGitHub Skills tutorials use GitHub Actions in the background.\n\n\n\nThese actions use “minutes”, which are limited in a private repository, but unlimited in a public one. We suggest keeping your GitHub Skills tutorial repositories public to avoid any minutes limitations.\n\n\n\n\n\n\n\n\nTipYou’ll notice that most steps in a GitHub Skills tutorial feature a message to wait about 20 seconds for the exercise to update.\n\n\n\nGitHub Actions can take a little bit of time to run, so waiting this requisite time is important! Refresh the instructions after 20 seconds to make sure everything updates properly.\n\n\n\n\nStep 2: Start the exercise\nAfter waiting the suggested 20 seconds, refresh the instructions page. You’ll notice that the README output has changed to show the steps for the tutorial:\n\n\n\n\n\n\n\nTipI suggest moving the instructions tab into another window so you can work side-by-side with the instructions to limit switching back and forth between tabs. \n\n\n\n\n\n\n\n\nStep 3: Follow the exercise\n\nOpen a pull request\nCreate a new pull request following the instructions in the tutorial: \nOpen a new window and navigate to the Pull Requests tab in GitHub, then click the green New button to open a new Pull Request:\n\nClick the “compare” dropdown and select “start-markdown”\n\nMake sure the green “Able to merge” message shows, and click “Create pull request”, then “Create pull request” again.\n\nNavigate to the “Files changed” tab after the pull request has been created\n\nScroll to the bottom of the page to the index.md file, click the three dots, and select “Edit file”\n\nAdd a first-level header by entering # followed by a space in the Edit textbox. You can play around with adding other levels of headers.\n\nClick the “Preview” button above the dialogue box to see what your headers will look like in your file.\n\nClick the “Commit changes” button at the top of your file (note that this is different from the instructions from GitHub Skills). Add a meaningful message, and click the Commit changes button.\n\n\n\nWait 20 seconds for GitHub Actions to run in the background, then refresh the instructions page.\n\n\n\n\nAdd an image\nWhen you committed the changes, GitHub should have taken you back to the bottom of the “Files changed” page. If not, navigate to this pane and scroll to the bottom, click the three dots, and click the “Edit file” option again.\n\nIn the file, add a markdown image. For this example, we can use our SCUBAtocat.\n\nClick the Preview tab to check your Markdown formatting \nCommit your changes, and wait another 20 seconds for GitHub actions to update to the next step.\n\n\n\nAdd a code example\nEdit the index.md file again.\n\nAdd some code in a code block (you can use either example in the instructions)\n\nPreview your code block.\n\nCommit your changes to the file, and wait another 20 seconds before refreshing the instructions page.\n\n\n\nAdd a task list\nEdit the index.md file again.\n\nMake a markdown task list using the - [] notation\n\nPreview your task list.\n\nCommit your changes to the file, and wait another 20 seconds before refreshing the instructions page.\n\n\n\nMerge the pull request\nClick the Conversation tab in your pull request\n\nScroll to the bottom of the page, click “Merge pull request”, and confirm the merge. Wait 20 more seconds, then refresh the instructions page to finish the course."
   },
   {
     "objectID": "content/markdown/markdown-legacy.html#what-about-readme-files",
@@ -241,7 +724,7 @@
     "href": "content/intro/intro.html#introduction-to-github---tutorial",
     "title": "Introduction to Git and GitHub",
     "section": "Introduction to GitHub - Tutorial",
-    "text": "Introduction to GitHub - Tutorial\nGitHub Skills - Introduction to GitHub\nWe’ll be using the Introduction to GitHub Skills Tutorial to get our feet wet with Git and GitHub. Follow along with the tutorial using your personal GitHub account.\n\nStep 1: Copy the exercise\nOpen the GitHub Skills link, and make sure you are logged into GitHub. Use the “Copy Exercise” button to make a new repository on your account:\n\nWhen you open up the “Copy Exercise” link, you will be presented with the “Create a new repository” interface. Keep all of the defaults, and click the green “Create repository” button: \n\n\n\n\n\n\nGitHub Skills tutorials use GitHub Actions in the background.\n\n\n\nThese actions use “minutes”, which are limited in a private repository, but unlimited in a public one. We suggest keeping your GitHub Skills tutorial repositories public to avoid any minutes limitations.\n\n\n\n\n\n\n\n\nYou’ll notice that most steps in a GitHub Skills tutorial feature a message to wait about 20 seconds for the exercise to update.\n\n\n\nGitHub Actions can take a little bit of time to run, so waiting this requisite time is important! Refresh the instructions after 20 seconds to make sure everything updates properly.\n\n\n\n\nStep 2: Start the exercise\nAfter waiting the suggested 20 seconds, refresh the instructions page. You’ll notice that the “Copy Exercise” button has switched from green to gray, and the “Start Exercise” button has switched from gray to green.\nRight click the “Start Exercise” button and open it in a new tab. This will open an Issue for this repository that will serve as the instructions for the exercise.\n\n\n\n\n\n\n\nI suggest moving the instructions tab into another window so you can work side-by-side with the instructions to limit switching back and forth between tabs. \n\n\n\n\n\n\n\n\nStep 3: Follow the exercise\n\nCreate a new branch\nCreate a new branch following the instructions in the tutorial:\n\n\n\n\n\n\n\nIf you have the instructions open in side-by-side mode, you may notice that the github-actions bot will be producing new comments in the instructions.\n\n\n\nBe sure to wait until the bot is finished before starting the next part of the exercise!\n\n\n\n\nCreate a commit with a new file\nClick the “Add file” button to create a new file named PROFILE.md\n\n\n\n\n\n\n\nIf you’ve arranged your screen in a side-by-side mode, the “Add file” button may look a bit different!\n\n\n\nGitHub dynamically shortens certain buttons and tabs based on the size of the window. In this case, the “Add file” button becomes the “+” button:\n\n\n\nAdd a line to the new file, and click the “Commit changes” green button:\n\nChange the “Commit message” to “Add PROFILE.md” and click “Commit changes” to confirm the commit\n\n\n\nOpen a pull request\nRefresh the repository and click the “Compare & pull request” button.\n\nEdit the title field to read “Add my first file”, and provide a brief description of your pull request. Click “Create pull request”\n\n\n\n\n\n\n\nYou can follow the progress of the GitHub Actions running in the background after this step!\n\n\n\n\n\n\n\n\nMerge the pull request\nClick the green “Merge pull request” button, and confirm the merge. Delete the branch after merging (don’t worry, you can always restore a deleted branch)",
+    "text": "Introduction to GitHub - Tutorial\nGitHub Skills - Introduction to GitHub\nWe’ll be using the Introduction to GitHub Skills Tutorial to get our feet wet with Git and GitHub. Follow along with the tutorial using your personal GitHub account.\n\nStep 1: Copy the exercise\nOpen the GitHub Skills link, and make sure you are logged into GitHub. Use the “Copy Exercise” button to make a new repository on your account:\n\nWhen you open up the “Copy Exercise” link, you will be presented with the “Create a new repository” interface. Keep all of the defaults, and click the green “Create repository” button: \n\n\n\n\n\n\nImportantGitHub Skills tutorials use GitHub Actions in the background.\n\n\n\nThese actions use “minutes”, which are limited in a private repository, but unlimited in a public one. We suggest keeping your GitHub Skills tutorial repositories public to avoid any minutes limitations.\n\n\n\n\n\n\n\n\nTipYou’ll notice that most steps in a GitHub Skills tutorial feature a message to wait about 20 seconds for the exercise to update.\n\n\n\nGitHub Actions can take a little bit of time to run, so waiting this requisite time is important! Refresh the instructions after 20 seconds to make sure everything updates properly.\n\n\n\n\nStep 2: Start the exercise\nAfter waiting the suggested 20 seconds, refresh the instructions page. You’ll notice that the “Copy Exercise” button has switched from green to gray, and the “Start Exercise” button has switched from gray to green.\nRight click the “Start Exercise” button and open it in a new tab. This will open an Issue for this repository that will serve as the instructions for the exercise.\n\n\n\n\n\n\n\nTipI suggest moving the instructions tab into another window so you can work side-by-side with the instructions to limit switching back and forth between tabs. \n\n\n\n\n\n\n\n\nStep 3: Follow the exercise\n\nCreate a new branch\nCreate a new branch following the instructions in the tutorial:\n\n\n\n\n\n\n\nNoteIf you have the instructions open in side-by-side mode, you may notice that the github-actions bot will be producing new comments in the instructions.\n\n\n\nBe sure to wait until the bot is finished before starting the next part of the exercise!\n\n\n\n\nCreate a commit with a new file\nClick the “Add file” button to create a new file named PROFILE.md\n\n\n\n\n\n\n\nTipIf you’ve arranged your screen in a side-by-side mode, the “Add file” button may look a bit different!\n\n\n\nGitHub dynamically shortens certain buttons and tabs based on the size of the window. In this case, the “Add file” button becomes the “+” button:\n\n\n\nAdd a line to the new file, and click the “Commit changes” green button:\n\nChange the “Commit message” to “Add PROFILE.md” and click “Commit changes” to confirm the commit\n\n\n\nOpen a pull request\nRefresh the repository and click the “Compare & pull request” button.\n\nEdit the title field to read “Add my first file”, and provide a brief description of your pull request. Click “Create pull request”\n\n\n\n\n\n\n\nTipYou can follow the progress of the GitHub Actions running in the background after this step!\n\n\n\n\n\n\n\n\nMerge the pull request\nClick the green “Merge pull request” button, and confirm the merge. Delete the branch after merging (don’t worry, you can always restore a deleted branch)",
     "crumbs": [
       "JupyterHub",
       "Tutorials",
@@ -253,7 +736,7 @@
     "href": "content/intro/intro.html#working-in-github-desktop---tutorial",
     "title": "Introduction to Git and GitHub",
     "section": "Working in GitHub Desktop - Tutorial",
-    "text": "Working in GitHub Desktop - Tutorial\nTo get a bit more experience working with GitHub repositories, we are going to clone our tutorial repository, create a repository in GitHub Desktop, make a commit, and push our changes up to GitHub.\n\nStep 1: Log into GitHub\nIf this is your first time using GitHub Desktop, you will need to log in to your GitHub account. Open a browser window to GitHub, and make sure you’re logged in to your GitHub account. If you are on the NMFS GitHub Enterprise Cloud, you will also need to be logged in using SSO.\n\n\nStep 2: Open GitHub Desktop and clone a repository\nOn your local computer, open GitHub Desktop. Click “Clone a repository from the Internet…”\n\nClick “Sign in” and “Continue with browser” to open a browser window and sign into GitHub Desktop.\n\n\n\n\n\n\nWhen logging into GitHub Desktop for the first time, you will be presented with a tabbed window as shown below. To access GitHub Enterprise, do not use the Enterprise tab on the login window! This is for a locally-hosted GitHub Enterprise server. The NMFS GitHub Enterprise is cloud-hosted, so to access enterprise repositories from GitHub Desktop, you will need to be logged into the enterprise (via SSO) through your browser.\n\n\n\n\n\n\nEnter the name of the GitHub Skills repository we just finished (skills-introduction-to-github) into the search box. Select the repository, choose where to clone the repository to on your local machine, and click “Clone”.\n\n\n\n\n\n\n\nWhere should you clone your repository to?\n\n\n\nFor transient repositories (i.e., repositories that you only plan to work on briefly or occasionally), I suggest creating a folder on your local file system just for these GitHub repositories. If you’re working on a project and already have a file folder structure for that project, you can clone and/or create your repository inside the existing folder structure.\n\n\n\n\nStep 3: Create a new repository\nClick the dropdown where it says “Current repository” in the upper left corner of GitHub Desktop. This will bring up a list of your repositories available on your local machine. For those who are new to GitHub Desktop, this should only include our GitHub Skills repository. Click the “Add” dropdown menu, and click “Create new repository…”\n\nThere are several aspects of a repository you will need to keep in mind when creating a new one from scratch:\n\nName: Make your name distinct and descriptive, but not too long. Don’t use spaces (remember, this will be included as part of the URL). Git and GitHub repositories often use kebab case.\nDescription:Add a brief description to your repository that describes its purpose\nLocal path: Similarly to when you clone a repository into a folder, you need to tell GitHub Desktop where to start a new repository. This will autofill to the directory you specified when installing GitHub Desktop for the first time, but you are welcome to change it to wherever you want your repository stored on your local computer. You can always move a repository after creation.\nREADME file: It is always a good idea to initialize the repository with a README file. This file will serve as the “front page” of your repository on GitHub. You can add a more detailed description of the repository, what it will be used for, instructions for how it should be used by others, etc. If your repository contains datasets, you can also use the README to add metadata. See this link for more information on README files.\nGit ignore: A .gitignore file tells Git what files and folders to not track. These files will still reside on your local repository, but will not be included in a Commit action or accessible on GitHub. Typically, these files are system files for the coding language or IDE you’re using, but can also include files that you don’t want to be shown on GitHub. This may include things like data files that are too big or too sensitive to be hosted on GitHub, code files that include sensitive material, and scratch or intermediate files. When creating a new repository, you can choose to pre-populate the .gitignore file based on the primary coding language you expect to use most in the repository.\nLicense: Any public-hosted GitHub repository should contain a license for open source use. The latest NOAA recommendation is to use Apache License 2.0\n\nGo ahead and fill in the fields and Create your repository.\n\n\n\nStep 4: Publish your repository to GitHub\nAfter creating your repository, GitHub Desktop will open it automatically. However, at this point your repository is only available on your local machine. Go ahead and click the button to publish your repository to GitHub.\n\nYou can choose whether to keep your repository private or let it be viewed by the public. You can also choose to publish the repo to your personal account, or to an organization (e.g., your center’s Enterprise account). In general, for the sake of open science we normally suggest keeping a repository public unless it contains sensitive or proprietary data. For now, we’ll keep this practice repo public.\n\n\n\nStep 5: Modify the README file in your repository\nYou can now open your repository in an editor or IDE (e.g., RStudio), show the files in a file explorer window, or view the repository on GitHub. We will take advantage of the ability to open the repo in the editor to make a change to our repository’s README file.\nOpen your repository in whatever editor you choose (I have mine configured to use RStudio) by clicking the button in GitHub Desktop.\n\nIn your editor, open the README.md file. You will notice that the README file is prepopulated with the title of your repository as a first-level header and your brief description. Make a change to your README file (maybe change the title and add a bit more context to the description), and save your changes. Close your editing program.\n\n\n\nStep 5: Commit your changes\nIn GitHub Desktop, you will notice that the README.md file has now been added to the “Changed files” list on the left-hand side, and the changes are shown in the main pane as a series of deletions and additions. The check-marks indicate that those changes are staged and should be included in the commit. If you change your mind and don’t want a change to be committed, you can click the check mark and it will change to an “unstaged” state. For now, leave all changes staged.\n\nIn the bottom left, you will see a box for your commit message and a description. These allow you to describe the changes made in a particular commit. A more descriptive message can help others (and future you) to understand why you made a particular change. GitHub Desktop will prepopulate the message field if you’re only modifying one file, but it’s often a good idea to change this to something more descriptive. You can go into more details in the description field if necessary, but this is optional.\nChange your commit file, and commit to the “main” branch.\n\n\n\nStep 6: Push your commit to GitHub\nAfter you commit your changes, GitHub Desktop will prompt you to “Push commits to the origin remote”. This is how we will get our local changes up on GitHub. Click the “Push origin” button.\n\nOpen the repository in GitHub in your browser to see what the changes we made to our README look like on GitHub.",
+    "text": "Working in GitHub Desktop - Tutorial\nTo get a bit more experience working with GitHub repositories, we are going to clone our tutorial repository, create a repository in GitHub Desktop, make a commit, and push our changes up to GitHub.\n\nStep 1: Log into GitHub\nIf this is your first time using GitHub Desktop, you will need to log in to your GitHub account. Open a browser window to GitHub, and make sure you’re logged in to your GitHub account. If you are on the NMFS GitHub Enterprise Cloud, you will also need to be logged in using SSO.\n\n\nStep 2: Open GitHub Desktop and clone a repository\nOn your local computer, open GitHub Desktop. Click “Clone a repository from the Internet…”\n\nClick “Sign in” and “Continue with browser” to open a browser window and sign into GitHub Desktop.\n\n\n\n\n\n\nImportantWhen logging into GitHub Desktop for the first time, you will be presented with a tabbed window as shown below. To access GitHub Enterprise, do not use the Enterprise tab on the login window! This is for a locally-hosted GitHub Enterprise server. The NMFS GitHub Enterprise is cloud-hosted, so to access enterprise repositories from GitHub Desktop, you will need to be logged into the enterprise (via SSO) through your browser.\n\n\n\n\n\n\nEnter the name of the GitHub Skills repository we just finished (skills-introduction-to-github) into the search box. Select the repository, choose where to clone the repository to on your local machine, and click “Clone”.\n\n\n\n\n\n\n\nTipWhere should you clone your repository to?\n\n\n\nFor transient repositories (i.e., repositories that you only plan to work on briefly or occasionally), I suggest creating a folder on your local file system just for these GitHub repositories. If you’re working on a project and already have a file folder structure for that project, you can clone and/or create your repository inside the existing folder structure.\n\n\n\n\nStep 3: Create a new repository\nClick the dropdown where it says “Current repository” in the upper left corner of GitHub Desktop. This will bring up a list of your repositories available on your local machine. For those who are new to GitHub Desktop, this should only include our GitHub Skills repository. Click the “Add” dropdown menu, and click “Create new repository…”\n\nThere are several aspects of a repository you will need to keep in mind when creating a new one from scratch:\n\nName: Make your name distinct and descriptive, but not too long. Don’t use spaces (remember, this will be included as part of the URL). Git and GitHub repositories often use kebab case.\nDescription:Add a brief description to your repository that describes its purpose\nLocal path: Similarly to when you clone a repository into a folder, you need to tell GitHub Desktop where to start a new repository. This will autofill to the directory you specified when installing GitHub Desktop for the first time, but you are welcome to change it to wherever you want your repository stored on your local computer. You can always move a repository after creation.\nREADME file: It is always a good idea to initialize the repository with a README file. This file will serve as the “front page” of your repository on GitHub. You can add a more detailed description of the repository, what it will be used for, instructions for how it should be used by others, etc. If your repository contains datasets, you can also use the README to add metadata. See this link for more information on README files.\nGit ignore: A .gitignore file tells Git what files and folders to not track. These files will still reside on your local repository, but will not be included in a Commit action or accessible on GitHub. Typically, these files are system files for the coding language or IDE you’re using, but can also include files that you don’t want to be shown on GitHub. This may include things like data files that are too big or too sensitive to be hosted on GitHub, code files that include sensitive material, and scratch or intermediate files. When creating a new repository, you can choose to pre-populate the .gitignore file based on the primary coding language you expect to use most in the repository.\nLicense: Any public-hosted GitHub repository should contain a license for open source use. The latest NOAA recommendation is to use Apache License 2.0\n\nGo ahead and fill in the fields and Create your repository.\n\n\n\nStep 4: Publish your repository to GitHub\nAfter creating your repository, GitHub Desktop will open it automatically. However, at this point your repository is only available on your local machine. Go ahead and click the button to publish your repository to GitHub.\n\nYou can choose whether to keep your repository private or let it be viewed by the public. You can also choose to publish the repo to your personal account, or to an organization (e.g., your center’s Enterprise account). In general, for the sake of open science we normally suggest keeping a repository public unless it contains sensitive or proprietary data. For now, we’ll keep this practice repo public.\n\n\n\nStep 5: Modify the README file in your repository\nYou can now open your repository in an editor or IDE (e.g., RStudio), show the files in a file explorer window, or view the repository on GitHub. We will take advantage of the ability to open the repo in the editor to make a change to our repository’s README file.\nOpen your repository in whatever editor you choose (I have mine configured to use RStudio) by clicking the button in GitHub Desktop.\n\nIn your editor, open the README.md file. You will notice that the README file is prepopulated with the title of your repository as a first-level header and your brief description. Make a change to your README file (maybe change the title and add a bit more context to the description), and save your changes. Close your editing program.\n\n\n\nStep 5: Commit your changes\nIn GitHub Desktop, you will notice that the README.md file has now been added to the “Changed files” list on the left-hand side, and the changes are shown in the main pane as a series of deletions and additions. The check-marks indicate that those changes are staged and should be included in the commit. If you change your mind and don’t want a change to be committed, you can click the check mark and it will change to an “unstaged” state. For now, leave all changes staged.\n\nIn the bottom left, you will see a box for your commit message and a description. These allow you to describe the changes made in a particular commit. A more descriptive message can help others (and future you) to understand why you made a particular change. GitHub Desktop will prepopulate the message field if you’re only modifying one file, but it’s often a good idea to change this to something more descriptive. You can go into more details in the description field if necessary, but this is optional.\nChange your commit file, and commit to the “main” branch.\n\n\n\nStep 6: Push your commit to GitHub\nAfter you commit your changes, GitHub Desktop will prompt you to “Push commits to the origin remote”. This is how we will get our local changes up on GitHub. Click the “Push origin” button.\n\nOpen the repository in GitHub in your browser to see what the changes we made to our README look like on GitHub.",
     "crumbs": [
       "JupyterHub",
       "Tutorials",
@@ -433,7 +916,7 @@
     "href": "content/advanced/advanced.html#aims-and-objectives",
     "title": "Advanced Git: Git on the command line",
     "section": "Aims and Objectives",
-    "text": "Aims and Objectives\nMany of the features that we have covered over the course of this clinic are easily implemented on the web through GitHub or locally through a Git interface like GitHub Desktop or RStudio. However, Git is a complex piece of software that relies on the command line for all of its functions. To fully unlock the power of Git, we need to dig into Git’s Command Line Interface (CLI). These skills sessions will use directed, interactive lessons to provide NOAA Fisheries staff with a foundation in using Git on the command line and the advanced features that can be done with the Git CLI.\n\n\n\n\n\n\nThis is a two-part lesson!\n\n\n\nThroughout this workshop, each lesson has been given in a standard 1-hour sessions, with material repeated on different days. For this session, we are splitting the content into two 1-hour sessions: the first session will introduce the different Git commands, and the second sessions will be a live follow-along coding session demonstrating these commands. Both sessions will be recorded, so if you miss one be sure to check out the recording to get the full experience.",
+    "text": "Aims and Objectives\nMany of the features that we have covered over the course of this clinic are easily implemented on the web through GitHub or locally through a Git interface like GitHub Desktop or RStudio. However, Git is a complex piece of software that relies on the command line for all of its functions. To fully unlock the power of Git, we need to dig into Git’s Command Line Interface (CLI). These skills sessions will use directed, interactive lessons to provide NOAA Fisheries staff with a foundation in using Git on the command line and the advanced features that can be done with the Git CLI.\n\n\n\n\n\n\nImportantThis is a two-part lesson!\n\n\n\nThroughout this workshop, each lesson has been given in a standard 1-hour sessions, with material repeated on different days. For this session, we are splitting the content into two 1-hour sessions: the first session will introduce the different Git commands, and the second sessions will be a live follow-along coding session demonstrating these commands. Both sessions will be recorded, so if you miss one be sure to check out the recording to get the full experience.",
     "crumbs": [
       "JupyterHub",
       "Tutorials",
@@ -517,7 +1000,7 @@
     "href": "content/actions/actions.html#tutorial-getting-familiar-with-github-actions",
     "title": "GitHub Actions",
     "section": "Tutorial: Getting familiar with GitHub Actions",
-    "text": "Tutorial: Getting familiar with GitHub Actions\nGitHub Skills - Hello GitHub Actions\nWe’ll be using the Hello GitHub Actions Skills tutorial to get familiar with GitHub Actions. Follow along with the tutorial using your personal GitHub account.\n\nStep 1: Start the course\nOpen the GitHub Skills link, and make sure you are logged into GitHub. Use the “Start course” button to make a new repository on your account:\n\nWhen you open up the “Start course” link, you will be presented with the “Create a new repository” interface. Keep all of the defaults, and click the green “Create repository” button:\n\n\n\n\n\n\n\n\n\n\n\n\nGitHub Skills tutorials use GitHub Actions in the background.\n\n\n\nThese actions use “minutes”, which are limited in a private repository, but unlimited in a public one. We suggest keeping your GitHub Skills tutorial repositories public to avoid any minutes limitations.\n\n\n\n\n\n\n\n\nYou’ll notice that most steps in a GitHub Skills tutorial feature a message to wait about 20 seconds for the exercise to update.\n\n\n\nGitHub Actions can take a little bit of time to run, so waiting this requisite time is important! Refresh the instructions after 20 seconds to make sure everything updates properly.\n\n\n\n\nStep 2: Start the exercise\nAfter waiting the suggested 20 seconds, refresh the repository, and click the “Go to Exercise” button in the README\n\n\n\n\n\n\nTip\n\n\n\nI suggest moving the instructions tab into another window so you can work side-by-side with the instructions to limit switching back and forth between tabs.\n\n\n\n\n\nStep 3: Follow the exercise\n\nCreate a workflow file\n\nWe’re going to make a new pull request where we will be making our change during the exercises. Navigate to the Pull Requests tab, click New pull request, and change the compare branch to welcome-workflow. Click the green Create pull request button, and confirm the pull request by clicking Create pull request again.\n\nNavigate to the Code tab, and switch to the welcome-workflow branch where it says main.\n\nIn the Code tab, select the .github folder, and navigate to the workflows subfolder. Use the Create new file button to add a new file to this folder.\n\nName your new file welcome.yml, and copy in the YAML code from the tutorial code block into the file contents. Commit your changes to the welcome-workflow branch to save your changes.\n\nWait about 20 seconds for the tutorial to update, then refresh the instructions page.\n\n\n\nAdd a job to your workflow file\nLet’s specify a job to run on our GitHub Action workflow file.\n\nOpen the welcome.yml file that we just created (note that this is different from the 0-welcome.yml file that was provided with the repository at the start of the exercise). Click the Edit button, and copy in the contents from the exercise instructions.\n\nCommit the changes directly to the welcome-workflow branch.\n\nWait about 20 seconds for the tutorial to update, then refresh the instructions page.\n\n\n\nAdd a step to the workflow file\nWe added a job to our workflow file, but at this point the job doesn’t really do anything. Let’s change that by adding a step to our job. This step will use the GitHub Command Line Interface (gh) to add a comment to a pull request when it is first opened. The step also sets some important environment variables that are required for our job to run.\n\nIn the same welcome.yml file (your browser should still be on the file after you committed the last edit), click the Edit button again. Paste in the updated YAML code from the exercise instructions.\n\nCommit your changes directly to the welcome-workflow branch.\n\nWait about 20 seconds for the tutorial to update, then refresh the instructions page.\n\n\n\nMerge your workflow file\nAll of the changes that we’ve made have been on a separate branch so we avoid editing the main branch before the Action is ready for primetime. Let’s merge our changes from the welcome-workflow branch into the main branch.\n\nNavigate to the Pull requests tab, and click on the “Welcome workflow” pull request we created previously.\n\nScroll to the bottom of the pull request (note the various commits that we have made and that the GitHub Skills actions have made) and click Merge pull request, then Confirm merge.\n\nDelete the welcome-workflow branch, wait about 20 seconds for the tutorial to update, then refresh the instructions page.\n\n\n\nTrigger the workflow\nNow that we’ve merged our workflow into our main branch, let’s test it out by opening a pull request.\n\nMake a new branch named test-workflow from the Code tab.\n\nMake a change to the README file by clicking the Edit file button on the README. It doesn’t matter what change you make. In this example, we added an exclamation point to the title header.\n\nCommit your changes directly to your new branch.\n\nIn the Pull requests tab, create a pull request merging test-workflow into main.\n\nWatch our Welcome Workflow running in the checks section of the pull request.\n\nNotice the comment that the workflow adds to the pull request.\n\nWait about 20 seconds, then refresh the instructions page to finish the tutorial.",
+    "text": "Tutorial: Getting familiar with GitHub Actions\nGitHub Skills - Hello GitHub Actions\nWe’ll be using the Hello GitHub Actions Skills tutorial to get familiar with GitHub Actions. Follow along with the tutorial using your personal GitHub account.\n\nStep 1: Start the course\nOpen the GitHub Skills link, and make sure you are logged into GitHub. Use the “Start course” button to make a new repository on your account:\n\nWhen you open up the “Start course” link, you will be presented with the “Create a new repository” interface. Keep all of the defaults, and click the green “Create repository” button:\n\n\n\n\n\n\n\n\n\n\n\n\nImportantGitHub Skills tutorials use GitHub Actions in the background.\n\n\n\nThese actions use “minutes”, which are limited in a private repository, but unlimited in a public one. We suggest keeping your GitHub Skills tutorial repositories public to avoid any minutes limitations.\n\n\n\n\n\n\n\n\nTipYou’ll notice that most steps in a GitHub Skills tutorial feature a message to wait about 20 seconds for the exercise to update.\n\n\n\nGitHub Actions can take a little bit of time to run, so waiting this requisite time is important! Refresh the instructions after 20 seconds to make sure everything updates properly.\n\n\n\n\nStep 2: Start the exercise\nAfter waiting the suggested 20 seconds, refresh the repository, and click the “Go to Exercise” button in the README\n\n\n\n\n\n\nTip\n\n\n\nI suggest moving the instructions tab into another window so you can work side-by-side with the instructions to limit switching back and forth between tabs.\n\n\n\n\n\nStep 3: Follow the exercise\n\nCreate a workflow file\n\nWe’re going to make a new pull request where we will be making our change during the exercises. Navigate to the Pull Requests tab, click New pull request, and change the compare branch to welcome-workflow. Click the green Create pull request button, and confirm the pull request by clicking Create pull request again.\n\nNavigate to the Code tab, and switch to the welcome-workflow branch where it says main.\n\nIn the Code tab, select the .github folder, and navigate to the workflows subfolder. Use the Create new file button to add a new file to this folder.\n\nName your new file welcome.yml, and copy in the YAML code from the tutorial code block into the file contents. Commit your changes to the welcome-workflow branch to save your changes.\n\nWait about 20 seconds for the tutorial to update, then refresh the instructions page.\n\n\n\nAdd a job to your workflow file\nLet’s specify a job to run on our GitHub Action workflow file.\n\nOpen the welcome.yml file that we just created (note that this is different from the 0-welcome.yml file that was provided with the repository at the start of the exercise). Click the Edit button, and copy in the contents from the exercise instructions.\n\nCommit the changes directly to the welcome-workflow branch.\n\nWait about 20 seconds for the tutorial to update, then refresh the instructions page.\n\n\n\nAdd a step to the workflow file\nWe added a job to our workflow file, but at this point the job doesn’t really do anything. Let’s change that by adding a step to our job. This step will use the GitHub Command Line Interface (gh) to add a comment to a pull request when it is first opened. The step also sets some important environment variables that are required for our job to run.\n\nIn the same welcome.yml file (your browser should still be on the file after you committed the last edit), click the Edit button again. Paste in the updated YAML code from the exercise instructions.\n\nCommit your changes directly to the welcome-workflow branch.\n\nWait about 20 seconds for the tutorial to update, then refresh the instructions page.\n\n\n\nMerge your workflow file\nAll of the changes that we’ve made have been on a separate branch so we avoid editing the main branch before the Action is ready for primetime. Let’s merge our changes from the welcome-workflow branch into the main branch.\n\nNavigate to the Pull requests tab, and click on the “Welcome workflow” pull request we created previously.\n\nScroll to the bottom of the pull request (note the various commits that we have made and that the GitHub Skills actions have made) and click Merge pull request, then Confirm merge.\n\nDelete the welcome-workflow branch, wait about 20 seconds for the tutorial to update, then refresh the instructions page.\n\n\n\nTrigger the workflow\nNow that we’ve merged our workflow into our main branch, let’s test it out by opening a pull request.\n\nMake a new branch named test-workflow from the Code tab.\n\nMake a change to the README file by clicking the Edit file button on the README. It doesn’t matter what change you make. In this example, we added an exclamation point to the title header.\n\nCommit your changes directly to your new branch.\n\nIn the Pull requests tab, create a pull request merging test-workflow into main.\n\nWatch our Welcome Workflow running in the checks section of the pull request.\n\nNotice the comment that the workflow adds to the pull request.\n\nWait about 20 seconds, then refresh the instructions page to finish the tutorial.",
     "crumbs": [
       "JupyterHub",
       "Tutorials",
@@ -687,7 +1170,7 @@
     "href": "content/issues/issues.html#tutorial-working-with-issues-and-discussions",
     "title": "Communicating in GitHub with Issues and Discussions",
     "section": "Tutorial: Working with issues and discussions",
-    "text": "Tutorial: Working with issues and discussions\nFor this tutorial, we’re going to be forking a demo repository (https://github.com/nmfs-opensci/GitHub-Clinic-demos), enabling Issues and Discussion on our repository, and adding an issue and a discussion to the repository. Follow along on your own account.\n\nStep 1: Fork the repository\n\n\n\n\n\n\nIf you have already forked this repository for a previous session, you can skip this step.\n\n\n\nWe have used this demo repository for previous GitHub Clinic demonstrations and tutorials, so you may already have a forked copy of this repository on your account. If you are unsure, you can search for [your-username]/GitHub-Clinic-demos in the GitHub search bar.\n\n\n\nOpen the demo repository in GitHub.\n\nAt the top of the repository, click the Fork button.\n\nKeep everything default (your account should be listed under Owner, and the Repository name should be pre-filled for you). Click the green Create Fork button.\n\n\n\n\nStep 2: Enable Issues and Discussions\nWhen you create your new fork, you may notice that the Issues and Discussions tabs that you normally see at the top of the repository are not there. We have to enable these in the repository settings.\n\nNavigate to the Settings tab in your forked repository.\n\nOn the main settings page, scroll down to the Features section, and select the checkboxes next to Issues and Discussions.\n\nNote that the top menu bar for your repository now has the Issues and Discussions tabs added.\n\n\n\n\nStep 3: Set up a template issue\n\nRefresh the settings page, and in the same Features section, click the green Set up templates button under Issues.\n\nUnder the dropdown menu for Add template, select Bug report to add a Bug report template to your available templates.\n\nClick the Preview and edit button to see what your issue template looks like in Markdown\n\nLet’s go ahead and edit the template to take out the part about smartphone specifications. Click the edit button at the top next to “Issue: Bug report” (it looks like a little pencil).\n\nIn the Template content section, scroll down to the “Smartphone” section, and delete everything from that section.\n\nClick the “x” at the top of the editing pane to save your changes, then click the Close preview button. Click the green Propose changes button to create a commit that will add your new template to your repository.\n\nNote that you now have a new subfolder in your repository under the .github folder called ISSUE_TEMPLATE. If you navigate to that folder in your repository, you can see our newly created bug_report.md template. If we ever want to make more edits to our template, we can either use the template editor interface in the Settings menu, or we can directly edit these files in our repository.\n\n\n\n\nStep 4: Create an issue\n\nNavigate to the Issues tab in your repository, and click the green New issue button.\n\nLet’s use the new template that we created. Click the Bug report option in the menu.\n\nGive your issue a title and fill in the template with a fake “bug”. Note that you can directly paste in an image from your clipboard (GitHub converts it to a permalink when you paste it into Markdown). Click the green Create button to submit your issue.\n\nLet’s add a label to our Issue to show that it’s a bug report. On the left-hand side of the issue, click the “Labels” section and select “bug”.\n\n\n\n\nStep 5: Start a discussion\nOur bug report has spawned some discussion among the developers! Let’s document this discussion in our repository.\n\nNavigate to the Discussions tab in your repository, and click New Discussion.\n\nLet’s make this a general discussion. Click the green Get started button in the area next to General.\n\nAdd a title and a body to your discussion thread. We can reference the issue that we created earlier using the # key.\n\nClick the green Start discussion button to save your discussion thread.\n\nCongratulations! You have now added both an Issue and a Discussion topic to your repository. Feel free to play around with other Issues templates and Discussion types on your own.",
+    "text": "Tutorial: Working with issues and discussions\nFor this tutorial, we’re going to be forking a demo repository (https://github.com/nmfs-opensci/GitHub-Clinic-demos), enabling Issues and Discussion on our repository, and adding an issue and a discussion to the repository. Follow along on your own account.\n\nStep 1: Fork the repository\n\n\n\n\n\n\nTipIf you have already forked this repository for a previous session, you can skip this step.\n\n\n\nWe have used this demo repository for previous GitHub Clinic demonstrations and tutorials, so you may already have a forked copy of this repository on your account. If you are unsure, you can search for [your-username]/GitHub-Clinic-demos in the GitHub search bar.\n\n\n\nOpen the demo repository in GitHub.\n\nAt the top of the repository, click the Fork button.\n\nKeep everything default (your account should be listed under Owner, and the Repository name should be pre-filled for you). Click the green Create Fork button.\n\n\n\n\nStep 2: Enable Issues and Discussions\nWhen you create your new fork, you may notice that the Issues and Discussions tabs that you normally see at the top of the repository are not there. We have to enable these in the repository settings.\n\nNavigate to the Settings tab in your forked repository.\n\nOn the main settings page, scroll down to the Features section, and select the checkboxes next to Issues and Discussions.\n\nNote that the top menu bar for your repository now has the Issues and Discussions tabs added.\n\n\n\n\nStep 3: Set up a template issue\n\nRefresh the settings page, and in the same Features section, click the green Set up templates button under Issues.\n\nUnder the dropdown menu for Add template, select Bug report to add a Bug report template to your available templates.\n\nClick the Preview and edit button to see what your issue template looks like in Markdown\n\nLet’s go ahead and edit the template to take out the part about smartphone specifications. Click the edit button at the top next to “Issue: Bug report” (it looks like a little pencil).\n\nIn the Template content section, scroll down to the “Smartphone” section, and delete everything from that section.\n\nClick the “x” at the top of the editing pane to save your changes, then click the Close preview button. Click the green Propose changes button to create a commit that will add your new template to your repository.\n\nNote that you now have a new subfolder in your repository under the .github folder called ISSUE_TEMPLATE. If you navigate to that folder in your repository, you can see our newly created bug_report.md template. If we ever want to make more edits to our template, we can either use the template editor interface in the Settings menu, or we can directly edit these files in our repository.\n\n\n\n\nStep 4: Create an issue\n\nNavigate to the Issues tab in your repository, and click the green New issue button.\n\nLet’s use the new template that we created. Click the Bug report option in the menu.\n\nGive your issue a title and fill in the template with a fake “bug”. Note that you can directly paste in an image from your clipboard (GitHub converts it to a permalink when you paste it into Markdown). Click the green Create button to submit your issue.\n\nLet’s add a label to our Issue to show that it’s a bug report. On the left-hand side of the issue, click the “Labels” section and select “bug”.\n\n\n\n\nStep 5: Start a discussion\nOur bug report has spawned some discussion among the developers! Let’s document this discussion in our repository.\n\nNavigate to the Discussions tab in your repository, and click New Discussion.\n\nLet’s make this a general discussion. Click the green Get started button in the area next to General.\n\nAdd a title and a body to your discussion thread. We can reference the issue that we created earlier using the # key.\n\nClick the green Start discussion button to save your discussion thread.\n\nCongratulations! You have now added both an Issue and a Discussion topic to your repository. Feel free to play around with other Issues templates and Discussion types on your own.",
     "crumbs": [
       "JupyterHub",
       "Tutorials",
@@ -735,7 +1218,7 @@
     "href": "content/markdown/markdown.html#using-markdown-in-github---tutorial",
     "title": "Introduction to Markdown and README files",
     "section": "Using Markdown in GitHub - Tutorial",
-    "text": "Using Markdown in GitHub - Tutorial\n\n\n\n\n\n\nImportant\n\n\n\nGitHub Skills are systematically being updated to an issue-based workflow from the legacy README-based workflow. The following tutorial follows the updated issue-based workflow. If you began this exercise before 5-30-2025, your skills repository will look different from the current skills repository template. If this is the case, click here for the legacy README-based tutorial.\n\n\nGitHub Skills: Communicate using markdown\nWe’ll be using the Communicate Using Markdown Skills Tutorial to get some practice with markdown in GitHub. Follow along with the tutorial using your own GitHub account.\n\nStep 1: Copy the exercise\nOpen the GitHub Skills link, and make sure you are logged into GitHub. Use the “Copy Exercise” button to make a new repository on your account:\nWhen you open up the “Copy Exercise” link, you will be presented with the “Create a new repository” interface. Keep all of the defaults, and click the green “Create repository” button:\n\n\n\n\n\n\n\nGitHub Skills tutorials use GitHub Actions in the background.\n\n\n\nThese actions use “minutes”, which are limited in a private repository, but unlimited in a public one. We suggest keeping your GitHub Skills tutorial repositories public to avoid any minutes limitations.\n\n\n\n\n\n\n\n\nYou’ll notice that most steps in a GitHub Skills tutorial feature a message to wait about 20 seconds for the exercise to update.\n\n\n\nGitHub Actions can take a little bit of time to run, so waiting this requisite time is important! Refresh the instructions after 20 seconds to make sure everything updates properly.\n\n\n\n\nStep 2: Start the exercise\nAfter waiting the suggested 20 seconds, refresh the repository, and click the “Go to Exercise” button in the README\n\n\n\n\n\n\n\nTip\n\n\n\nI suggest moving the instructions tab into another window so you can work side-by-side with the instructions to limit switching back and forth between tabs. \n\n\n\n\nStep 3: Follow the exercise\n\nCreate a markdown file in a new branch\nIn this exercise, we will be using markdown to create an example “blog” page. The content provided in the exercise is just an example; we can give a more personal touch to our own content.\n\n\n\n\n\n\nTip\n\n\n\nDuring this tutorial, GitHub Skills will provide code blocks that you can copy directly to your clipboard to paste into the body of your Markdown document. But this defeats the purpose of getting practice with Markdown and building that muscle memory! Go ahead and type in your own content (don’t worry, it doesn’t have to match the example content perfectly)\n\n\n\nOn the Code tab of your repository, click the dropdown menu where it says “main”\n\nIn the “Find or create a branch” box, type start-blog and select “Create branch start-blog from main”\n\nCreate a new file by clicking the “Add file” button in your new branch (note this may look like a + symbol if you’re working in a condensed side-by-side view) and click “Create new file”\n\nAlong the top of the dialogue box, name your file day-1.md\n\nIn your new file, create a level one heading to give the page a title\n\nAdd a couple level 2 headings for the names of each of the blog posts\n\nClick the Preview tab in the top left of the dialogue box to view your rendered content\n\nClick the “Commit changes” button in the top right and commit the changes directly to the start-blog branch\n\n\n\n\nMake a list\n\nRe-open the day-1.md file and click “Edit this file”\n\nIn the ## Morning Planning section, add a list of each type: unordered, ordered, and task\n\n\n\n\n\n\n\n\nNote\n\n\n\nGitHub skills only asks for a task list, but we want you to have practice with all list types; adding the other types will not mess up the GitHub Skills workflow, so go ahead and practice adding all three types!\n\n\n\nPreview your content in the preview tab\n\nCommit your changes directly to the start-blog branch\n\n\n\n\nAdd a code sample\n\nAfter this commit, the day-1.md file should still be open. Click the “Edit this content” button to go back into editing mode\n\nIn the “Review” section, add a code chunk using the three backtick notation (it’s okay to use a different example than the one provided by GitHub Skills)\n\nPreview your content\n\nCommit your changes to the start-blog branch\n\n\n\n\nAdd an image\n\nOpen our day-1.md file in edit mode\n\nInsert an image below the the “Morning Planning” level 2 heading. To make things a little more interesting, let’s use the Scubatocat image located at https://octodex.github.com/images/scubatocat.png\n\nPreview your Markdown file\n\nGo back to the Edit tab and replace the image with an HTML version that changes the size and position\n\nPreview your updated image, and Commit changes to start-blog\n\n\n\nAdd some formatted text (off-script)\nBefore we finish up our tutorial, let’s add some formatted text. The GitHub Skills lesson does not mention anything about this, but it’s an important part of markdown that you should get some practice with!\n\nEdit your day-1.md file one more time\n\nUnder the Daily Learning heading, add some bolded, italicized, and in-line code text\n\nPreview your file, then commit your changes\n\n\n\n\nFinish work: Merge your blog post\nThis step doesn’t have anything to do with markdown, but it’s good practice for working with Pull Requests from a branch!\n\nSelect the “Pull requests” tab in the top navigation bar\n\nClick the “Compare & pull request” button for start-blog\n\nClick the “Create pull request button”\n\nMerge your pull request and confirm the merge",
+    "text": "Using Markdown in GitHub - Tutorial\n\n\n\n\n\n\nImportant\n\n\n\nGitHub Skills are systematically being updated to an issue-based workflow from the legacy README-based workflow. The following tutorial follows the updated issue-based workflow. If you began this exercise before 5-30-2025, your skills repository will look different from the current skills repository template. If this is the case, click here for the legacy README-based tutorial.\n\n\nGitHub Skills: Communicate using markdown\nWe’ll be using the Communicate Using Markdown Skills Tutorial to get some practice with markdown in GitHub. Follow along with the tutorial using your own GitHub account.\n\nStep 1: Copy the exercise\nOpen the GitHub Skills link, and make sure you are logged into GitHub. Use the “Copy Exercise” button to make a new repository on your account:\nWhen you open up the “Copy Exercise” link, you will be presented with the “Create a new repository” interface. Keep all of the defaults, and click the green “Create repository” button:\n\n\n\n\n\n\n\nImportantGitHub Skills tutorials use GitHub Actions in the background.\n\n\n\nThese actions use “minutes”, which are limited in a private repository, but unlimited in a public one. We suggest keeping your GitHub Skills tutorial repositories public to avoid any minutes limitations.\n\n\n\n\n\n\n\n\nTipYou’ll notice that most steps in a GitHub Skills tutorial feature a message to wait about 20 seconds for the exercise to update.\n\n\n\nGitHub Actions can take a little bit of time to run, so waiting this requisite time is important! Refresh the instructions after 20 seconds to make sure everything updates properly.\n\n\n\n\nStep 2: Start the exercise\nAfter waiting the suggested 20 seconds, refresh the repository, and click the “Go to Exercise” button in the README\n\n\n\n\n\n\n\nTip\n\n\n\nI suggest moving the instructions tab into another window so you can work side-by-side with the instructions to limit switching back and forth between tabs. \n\n\n\n\nStep 3: Follow the exercise\n\nCreate a markdown file in a new branch\nIn this exercise, we will be using markdown to create an example “blog” page. The content provided in the exercise is just an example; we can give a more personal touch to our own content.\n\n\n\n\n\n\nTip\n\n\n\nDuring this tutorial, GitHub Skills will provide code blocks that you can copy directly to your clipboard to paste into the body of your Markdown document. But this defeats the purpose of getting practice with Markdown and building that muscle memory! Go ahead and type in your own content (don’t worry, it doesn’t have to match the example content perfectly)\n\n\n\nOn the Code tab of your repository, click the dropdown menu where it says “main”\n\nIn the “Find or create a branch” box, type start-blog and select “Create branch start-blog from main”\n\nCreate a new file by clicking the “Add file” button in your new branch (note this may look like a + symbol if you’re working in a condensed side-by-side view) and click “Create new file”\n\nAlong the top of the dialogue box, name your file day-1.md\n\nIn your new file, create a level one heading to give the page a title\n\nAdd a couple level 2 headings for the names of each of the blog posts\n\nClick the Preview tab in the top left of the dialogue box to view your rendered content\n\nClick the “Commit changes” button in the top right and commit the changes directly to the start-blog branch\n\n\n\n\nMake a list\n\nRe-open the day-1.md file and click “Edit this file”\n\nIn the ## Morning Planning section, add a list of each type: unordered, ordered, and task\n\n\n\n\n\n\n\n\nNote\n\n\n\nGitHub skills only asks for a task list, but we want you to have practice with all list types; adding the other types will not mess up the GitHub Skills workflow, so go ahead and practice adding all three types!\n\n\n\nPreview your content in the preview tab\n\nCommit your changes directly to the start-blog branch\n\n\n\n\nAdd a code sample\n\nAfter this commit, the day-1.md file should still be open. Click the “Edit this content” button to go back into editing mode\n\nIn the “Review” section, add a code chunk using the three backtick notation (it’s okay to use a different example than the one provided by GitHub Skills)\n\nPreview your content\n\nCommit your changes to the start-blog branch\n\n\n\n\nAdd an image\n\nOpen our day-1.md file in edit mode\n\nInsert an image below the the “Morning Planning” level 2 heading. To make things a little more interesting, let’s use the Scubatocat image located at https://octodex.github.com/images/scubatocat.png\n\nPreview your Markdown file\n\nGo back to the Edit tab and replace the image with an HTML version that changes the size and position\n\nPreview your updated image, and Commit changes to start-blog\n\n\n\nAdd some formatted text (off-script)\nBefore we finish up our tutorial, let’s add some formatted text. The GitHub Skills lesson does not mention anything about this, but it’s an important part of markdown that you should get some practice with!\n\nEdit your day-1.md file one more time\n\nUnder the Daily Learning heading, add some bolded, italicized, and in-line code text\n\nPreview your file, then commit your changes\n\n\n\n\nFinish work: Merge your blog post\nThis step doesn’t have anything to do with markdown, but it’s good practice for working with Pull Requests from a branch!\n\nSelect the “Pull requests” tab in the top navigation bar\n\nClick the “Compare & pull request” button for start-blog\n\nClick the “Create pull request button”\n\nMerge your pull request and confirm the merge",
     "crumbs": [
       "JupyterHub",
       "Tutorials",
@@ -795,7 +1278,7 @@
     "href": "content/projects/projects.html#tutorial-getting-familiar-with-github-projects",
     "title": "GitHub for Project Management",
     "section": "Tutorial: Getting familiar with GitHub Projects",
-    "text": "Tutorial: Getting familiar with GitHub Projects\nFor this tutorial, we’re going to be forking a demo repository (https://github.com/nmfs-opensci/GitHub-Clinic-demos), enabling Issues, and creating a Project. We will add some issues to our Project, and explore different project views and customization options to tailor our Projects to our specific needs. Follow along on your own account.\n\nStep 1: Fork the repository\n\n\n\n\n\n\nIf you have already forked this repository for a previous session, you can skip this step.\n\n\n\nWe have used this demo repository for previous GitHub Clinic demonstrations and tutorials, so you may already have a forked copy of this repository on your account. If you are unsure, you can search for [your-username]/GitHub-Clinic-demos in the GitHub search bar.\n\n\n\nOpen the demo repository in GitHub.\n\nAt the top of the repository, click the Fork button.\n\nKeep everything default (your account should be listed under Owner, and the Repository name should be pre-filled for you). Click the green Create Fork button.\n\nWhen you create your new fork, you may notice that the Issues tab that you normally see at the top of the repository is not there. We have to enable this in the repository settings. Navigate to the Settings tab in your forked repository. Scroll down to the Features section and check the box next to Issues. (Note that Projects is another option in the Features section; this should already be checked, but if it isn’t, go ahead and check that as well).\n\n\n\n\nStep 2: Create a new Project\nThere are multiple ways to create projects in GitHub. Rather than being attached to one specific repository, Projects can act across any and all repositories in an account. Because of this functionality, Projects reside in either a user’s account or an organization’s account, rather than within a repository. We’re going to be creating a Project using the Projects tab within a repository, but keep in mind that we can access all of our Projects from our account home page.\n\nNavigate to the Projects tab on the top ribbon bar of your repository. Click the green New project button to start a new project.\n\nYou will be presented with a number of pre-defined Project templates, each of which has a specific layout and customized configuration tailored to the type of planning or tracking your team may use. Feel free to explore these on your own; for now, let’s start a project from scratch. On the left-hand side of the pop-up, select the Table option under Start from scratch.\n\nGive your new Project a name. Let’s call ours “GitHub Clinic example project”. Click the green Create project button to finalize your new project.\n\nLet’s add a description and README to our project to describe our Project’s purpose. Click the ellipse button (View more options) at the top right of the project, and select Settings.\n\nAdd a short description and README to the Project to explain the purpose of the Project and how to use it. Note that the README supports markdown formatting. In future Projects, you may want to take advantage of this to flesh out the details of your Project and add more context.\n\n\n\n\n\n\n\n\nGitHub Projects default to Private visibility.\n\n\n\nYou may have noticed that there’s a padlock-style icon next to the title of our Project. This means that the Project is private, so only you and the people you specifically grant access can see the Project. We can change the visibility in this Settings menu as well. Sometimes it’s beneficial to make Projects publicly viewable for transparency purposes; otherwise, feel free to keep these Projects private. You can always add collaborators later.\n\n\n\n\nStep 3: Add items to your project\nLet’s populate our Project with some issues! We can add existing issues from any repository in the account (individual or organization) that the Project was created under. We can also create our own issues directly from the Project interface.\n\n\nLet’s create a few example issues for our Project. Click the + button on the first line of the Project board, and click “Create new issue”. This will pop up a dialogue box where we can add an issue to a repository. We’ll create our issues in the GitHub Clinic Demo repository, so make sure the Repository section has the appropriate repository selected (Hint: click the Repository dropdown menu and type “github-clinic-demos” in the search box).\n\nI’ve added some Issue templates for Bug report, Feature request, and Task to the demos repository that should transfer to your forked repository. Let’s add one of each type to our Project.\n\n\n\n\n\n\n\n\nYou may need to pull changes from the parent repository to get the appropriate templates.\n\n\n\nIf you are working from a previously forked copy of the GitHub-Clinic-Demos repository, you will need to update your version of the repository with the parent repository hosted on nmfs-opensci. On the Code tab of your forked copy of the repository, there will be a banner saying your branch is behind the branch hosted on nmfs-opensci. Next to this banner, there should be a button called Sync fork. Go ahead and click that button, and select Update branch.\n\n\n\n\nWe can also add “draft” issues to our Project. These can be used as placeholders for items that may need to be more fleshed out or items that we don’t necessarily need as true “issues” in a specific repository. Click in the Title spot below the last project item, and type in a draft issue.\n\n\n\n\nStep 4: Adding fields\nLet’s create some custom fields to better organize our project.\n\nIteration fields let us plan and track our work over repeating blocks of time. Iterations can be configured with customizable lengths and breaks to suit your team’s needs. Create an iteration field by clicking the + icon to the right of the Status column in our table view, and click “New field”. Give your field a name, and change the field type to Iteration. You can customize when the iteration should start and how long each iteration should last.\n\nAssign each of your Project items to an iteration. This will be useful when we explore the Roadmap layout later.\n\nLet’s create a Priority field. Click the + icon to the right of the Iteration column in our table view, and click “New field”. Name your field Priority, and select “Single select” from the field type menu. Add options for Low, Medium, and High priority. Save your new field.\n\nAssign each of your example issues to a priority level in your new field.\n\n\n\n\nStep 5: Configure the Table layout\nLet’s make this table a little more informative by adding some other fields.\n\nClick the dropdown where it says View 1, and select the Fields menu. Under “Hidden fields”, select Labels, Milestone, and Repository.\n\nIn the same dropdown, select the Group by option and select Priority to split the table by priority.\n\nWith the grouped view, we can now move items between priorities. Try this out by moving one of your items from medium to low priority. Do this by clicking and dragging from the number to the left of the issue title.\n\n\nChange the name of your view by clicking the drop-down menu again and selecting Rename view. Let’s rename it to “Planning”.\n\nSave your changes to the view by clicking the green Save option in the dropdown menu.\n\n\n\n\n\n\n\n\nBe sure to save your view if you want to come back to it!\n\n\n\nViews do not save to the project by default. If you make changes to a view that you want to be shown every time you open your project, be sure to save them. Otherwise, view changes will only be applied during the current session.\n\n\n\n\nStep 6: Experiment with other views\nLet’s create a couple new views to showcase the other view types. You’re welcome to play around with these views on your own, but for now we’ll just introduce the other view types.\n\nCreate a new view by clicking the + New view tab at the top of the project. Select the Board option.\n\nRename this view to “Progress Board”, and click the green Save button to save your view. Here we can move issues between different categories. The default is a traditional kanban-style board with statuses for level of completeness. However, we can also add different categories to assign and organize issues to whatever is needed. We can even add multiple versions of these boards to categorize items in different ways.\n\nNow let’s add a timeline view. Select + New view at the top of the project, and select the Roadmap option.\n\nGitHub will prompt us that we need a date field set for this view. Recall that we set up an Iteration field earlier in the exercise called Weekly deadline. Choose the Weekly deadline start option for the Start date and Weekly deadline end option for the Target date.\n\nRename this view to Timeline and save your view.\n\nFeel free to experiment with the different view types and features available with Projects. Check out GitHub’s documentation for Projects (be sure to look at the different sub-pages on the right-hand side of the page) for more information, tips, and tricks about GitHub Projects.",
+    "text": "Tutorial: Getting familiar with GitHub Projects\nFor this tutorial, we’re going to be forking a demo repository (https://github.com/nmfs-opensci/GitHub-Clinic-demos), enabling Issues, and creating a Project. We will add some issues to our Project, and explore different project views and customization options to tailor our Projects to our specific needs. Follow along on your own account.\n\nStep 1: Fork the repository\n\n\n\n\n\n\nTipIf you have already forked this repository for a previous session, you can skip this step.\n\n\n\nWe have used this demo repository for previous GitHub Clinic demonstrations and tutorials, so you may already have a forked copy of this repository on your account. If you are unsure, you can search for [your-username]/GitHub-Clinic-demos in the GitHub search bar.\n\n\n\nOpen the demo repository in GitHub.\n\nAt the top of the repository, click the Fork button.\n\nKeep everything default (your account should be listed under Owner, and the Repository name should be pre-filled for you). Click the green Create Fork button.\n\nWhen you create your new fork, you may notice that the Issues tab that you normally see at the top of the repository is not there. We have to enable this in the repository settings. Navigate to the Settings tab in your forked repository. Scroll down to the Features section and check the box next to Issues. (Note that Projects is another option in the Features section; this should already be checked, but if it isn’t, go ahead and check that as well).\n\n\n\n\nStep 2: Create a new Project\nThere are multiple ways to create projects in GitHub. Rather than being attached to one specific repository, Projects can act across any and all repositories in an account. Because of this functionality, Projects reside in either a user’s account or an organization’s account, rather than within a repository. We’re going to be creating a Project using the Projects tab within a repository, but keep in mind that we can access all of our Projects from our account home page.\n\nNavigate to the Projects tab on the top ribbon bar of your repository. Click the green New project button to start a new project.\n\nYou will be presented with a number of pre-defined Project templates, each of which has a specific layout and customized configuration tailored to the type of planning or tracking your team may use. Feel free to explore these on your own; for now, let’s start a project from scratch. On the left-hand side of the pop-up, select the Table option under Start from scratch.\n\nGive your new Project a name. Let’s call ours “GitHub Clinic example project”. Click the green Create project button to finalize your new project.\n\nLet’s add a description and README to our project to describe our Project’s purpose. Click the ellipse button (View more options) at the top right of the project, and select Settings.\n\nAdd a short description and README to the Project to explain the purpose of the Project and how to use it. Note that the README supports markdown formatting. In future Projects, you may want to take advantage of this to flesh out the details of your Project and add more context.\n\n\n\n\n\n\n\n\nNoteGitHub Projects default to Private visibility.\n\n\n\nYou may have noticed that there’s a padlock-style icon next to the title of our Project. This means that the Project is private, so only you and the people you specifically grant access can see the Project. We can change the visibility in this Settings menu as well. Sometimes it’s beneficial to make Projects publicly viewable for transparency purposes; otherwise, feel free to keep these Projects private. You can always add collaborators later.\n\n\n\n\nStep 3: Add items to your project\nLet’s populate our Project with some issues! We can add existing issues from any repository in the account (individual or organization) that the Project was created under. We can also create our own issues directly from the Project interface.\n\n\nLet’s create a few example issues for our Project. Click the + button on the first line of the Project board, and click “Create new issue”. This will pop up a dialogue box where we can add an issue to a repository. We’ll create our issues in the GitHub Clinic Demo repository, so make sure the Repository section has the appropriate repository selected (Hint: click the Repository dropdown menu and type “github-clinic-demos” in the search box).\n\nI’ve added some Issue templates for Bug report, Feature request, and Task to the demos repository that should transfer to your forked repository. Let’s add one of each type to our Project.\n\n\n\n\n\n\n\n\nTipYou may need to pull changes from the parent repository to get the appropriate templates.\n\n\n\nIf you are working from a previously forked copy of the GitHub-Clinic-Demos repository, you will need to update your version of the repository with the parent repository hosted on nmfs-opensci. On the Code tab of your forked copy of the repository, there will be a banner saying your branch is behind the branch hosted on nmfs-opensci. Next to this banner, there should be a button called Sync fork. Go ahead and click that button, and select Update branch.\n\n\n\n\nWe can also add “draft” issues to our Project. These can be used as placeholders for items that may need to be more fleshed out or items that we don’t necessarily need as true “issues” in a specific repository. Click in the Title spot below the last project item, and type in a draft issue.\n\n\n\n\nStep 4: Adding fields\nLet’s create some custom fields to better organize our project.\n\nIteration fields let us plan and track our work over repeating blocks of time. Iterations can be configured with customizable lengths and breaks to suit your team’s needs. Create an iteration field by clicking the + icon to the right of the Status column in our table view, and click “New field”. Give your field a name, and change the field type to Iteration. You can customize when the iteration should start and how long each iteration should last.\n\nAssign each of your Project items to an iteration. This will be useful when we explore the Roadmap layout later.\n\nLet’s create a Priority field. Click the + icon to the right of the Iteration column in our table view, and click “New field”. Name your field Priority, and select “Single select” from the field type menu. Add options for Low, Medium, and High priority. Save your new field.\n\nAssign each of your example issues to a priority level in your new field.\n\n\n\n\nStep 5: Configure the Table layout\nLet’s make this table a little more informative by adding some other fields.\n\nClick the dropdown where it says View 1, and select the Fields menu. Under “Hidden fields”, select Labels, Milestone, and Repository.\n\nIn the same dropdown, select the Group by option and select Priority to split the table by priority.\n\nWith the grouped view, we can now move items between priorities. Try this out by moving one of your items from medium to low priority. Do this by clicking and dragging from the number to the left of the issue title.\n\n\nChange the name of your view by clicking the drop-down menu again and selecting Rename view. Let’s rename it to “Planning”.\n\nSave your changes to the view by clicking the green Save option in the dropdown menu.\n\n\n\n\n\n\n\n\nCautionBe sure to save your view if you want to come back to it!\n\n\n\nViews do not save to the project by default. If you make changes to a view that you want to be shown every time you open your project, be sure to save them. Otherwise, view changes will only be applied during the current session.\n\n\n\n\nStep 6: Experiment with other views\nLet’s create a couple new views to showcase the other view types. You’re welcome to play around with these views on your own, but for now we’ll just introduce the other view types.\n\nCreate a new view by clicking the + New view tab at the top of the project. Select the Board option.\n\nRename this view to “Progress Board”, and click the green Save button to save your view. Here we can move issues between different categories. The default is a traditional kanban-style board with statuses for level of completeness. However, we can also add different categories to assign and organize issues to whatever is needed. We can even add multiple versions of these boards to categorize items in different ways.\n\nNow let’s add a timeline view. Select + New view at the top of the project, and select the Roadmap option.\n\nGitHub will prompt us that we need a date field set for this view. Recall that we set up an Iteration field earlier in the exercise called Weekly deadline. Choose the Weekly deadline start option for the Start date and Weekly deadline end option for the Target date.\n\nRename this view to Timeline and save your view.\n\nFeel free to experiment with the different view types and features available with Projects. Check out GitHub’s documentation for Projects (be sure to look at the different sub-pages on the right-hand side of the page) for more information, tips, and tricks about GitHub Projects.",
     "crumbs": [
       "JupyterHub",
       "Tutorials",
@@ -855,11 +1338,333 @@
     "href": "content/workflows/workflows.html#tutorial-practice-with-workflows",
     "title": "Workflows in Git and GitHub",
     "section": "Tutorial: Practice with Workflows",
-    "text": "Tutorial: Practice with Workflows\nGitHub Skills: Create a release-based workflow\nWe’ll be using the Create a Release-based Workflow Skills Tutorial to practice using a GitHub Flow-style workflow with releases. Follow along with the tutorial using your own GitHub account.\n\nStep 1: Start the course\nOpen the GitHub Skills link, and make sure you are logged into GitHub. Use the “Start course” button to make a new repository on your account:\n\nWhen you open up the “Star” link, you will be presented with the “Create a new repository” interface. Keep all of the defaults, and click the green “Create repository” button:\n\n\n\n\n\n\n\nGitHub Skills tutorials use GitHub Actions in the background.\n\n\n\nThese actions use “minutes”, which are limited in a private repository, but unlimited in a public one. We suggest keeping your GitHub Skills tutorial repositories public to avoid any minutes limitations.\n\n\n\n\n\n\n\n\nYou’ll notice that most steps in a GitHub Skills tutorial feature a message to wait about 20 seconds for the exercise to update.\n\n\n\nGitHub Actions can take a little bit of time to run, so waiting this requisite time is important! Refresh the instructions after 20 seconds to make sure everything updates properly.\n\n\n\n\nStep 2: Start the exercise\nAfter waiting the suggested 20 seconds, refresh the repository, and click the “Go to Exercise” button in the README\n\n\n\n\n\n\nTip\n\n\n\nI suggest moving the instructions tab into another window so you can work side-by-side with the instructions to limit switching back and forth between tabs.\n\n\n\n\n\nStep 3: Follow the exercise\n\nCreate a beta release\nIn this exercise, we will be creating a release-based workflow that is built on the foundations of GitHub flow.\n\nGo to the Releases page for the repository. If you are in a condensed view mode, this link will be at the bottom of the Code page. If you’re viewing in a full-sized window, this page will be in the sidebar on the right-hand side of the repository window on the Code page.\n\nClick the green Create a new release button to start a new new release\n\nClick the Tag: Select tag dropdown, and specify a release number. Use v0.9 for this example. Click Create new tag: v0.9 on publish.\n\nGive the release a title, and an optional short description. Check the box next to Set as a pre-release.\n\nClick the green Publish release button to finalize your pre-release.\n\n\n\n\nIntroduce a bug to be fixed later\nNext, we’ll add a bug to our code that will be fixed later in this tutorial.\n\nAt the top of the repository, click on the Pull requests tab and click the green New button (if you’re in the full window view, this will say New pull request).\n\nSet the base: dropdown menu to release-v1.0 and the compare: dropdown menu to update-text-colors, and click the green Create pull request button.\nUpdate the pull request title to “Updated game text style”. Optionally add a more detailed description to your pull request. Click the green Create pull request button.\n\nMerge the pull request, wait about 20 seconds for the instructions to refresh, and refresh the instructions README page.\n\n\n\n\n\nAdd a new feature to the release branch\nWe’ll be using the release-v1.0 branch to add features to our repository. We can treat this branch as a long-lived but ephemeral branch in the spirit of GitHub Flow.\n\nIn the Code tab, create a new branch off of the main branch. This will be our “feature” branch. Name your branch feature-background.\n\nOpen the base.css file, and click the “edit this file” button (it should look like a pen in the upper right hand corner of the code chunk. Scroll down to line 109. In the body declaration, add a line that changes the background color to black using the background-color: black; line as shown in the tutorial.\n\nCommit your changes, updating the commit message to be more descriptive.\n\nNavigate to the Pull requests tab, and create a new pull request. Set the base branch to release-v1.0 and the compare branch to feature-background. Click the green Create pull request button, and fill in the pull request template. Click the Create pull request button to finalize the pull request.\n\nMerge the pull request and delete your feature branch.\n\nWait about 20 seconds for GitHub Actions to update, then refresh the instructions README page.\n\n\n\nOpen a release pull request\nOpening a pull request early in the release can help facilitate discussion about the release. Any commits added to the compare branch after opening the pull request will be associated with that pull request until it’s closed.\n\nIn the Pull requests tab, open a new pull request with base: main and compare: release-v1.0. You can do this from the “release-v1.0 had recent pushes” banner to save time.\n\nAdd some detail to your pull request body description, and click the green Create pull request button. Don’t merge your pull request yet!\n\nWait 20 seconds for GitHub Actions to update, then refresh the instructions README page.\n\n\n\nGenerate release notes and merge\nYou can generate release notes automatically based on the content of your pull request. Let’s practice this with our “Release v1.0” pull request.\n\nNavigate to the Releases page from the Code tab of your repository (see above if you need a reminder of how to get there).\nClick the Draft a new release button in the top right corner.\n\nIn the Tag: dropdown menu, type v1.0.0, and create a tag with that name. Change the Target: dropdown to select the release-v1.0 branch.\n\nClick the Generate release notes button at the top of the description box.\n\nReview your release notes and make any changes if necessary.\n\nSet the Target: branch back to main (we only needed the release branch to generate our release notes).\n\nClick the Save draft button (not the Publish release button; we’ll publish in the next step).\n\nOpen your Release v1.0 pull request on the Pull requests tab.\n\nMerge your pull request.\n\nWait 20 seconds for the GitHub Actions to update, then refresh the instructions page.\n\n\n\nAn aside on semantic versioning\nThis release workflow uses a system called semantic versioning, which is a convention for specifying compatibility. It uses a three-part version number: major version, minor version, and patch.\n\n\n\nFinalize the release\n\nFrom the Code page, navigate to the Releases page. Click the edit button next to your v1.0.0 release.\n\nEnsure the Target branch is set to main\n\nScroll to the bottom of the page, and click Publish release.\n\nWait 20 seconds for the GitHub actions to update, then refresh the instructions README page.\n\n\n\nCommit a hotfix to the release\nWe can make a short-lived, ephemeral branch to fix a bug. The tutorial has already introduced a bug (we did this in the first part of the tutorial), and created a feature branch (fix-game-background) and a hotfix release branch (hotfix-v1.0.1) for us that fixes the bug. Let’s make a pull request to introduce this bug fix into our repo.\n\nIn the Pull requests tab, open a pull request setting hotfix-v1.0.1 as the base branch and fix-game-background as the compare branch.\n\nAdd a description to the pull request body, and change the title of the pull request to “Hotfix for broken game style”. Create your pull request and merge it into our hotfix-v1.0.1 release branch.\n\nOpen a new pull request with main as the base branch and hotfix-v1.0.1 as the compare branch.\n\nAdd a detailed description to the pull request body.\n\nCreate and merge your pull request into the main branch.\n\nWait 20 seconds for GitHub Actions to update, then refresh the README.\n\n\n\nCreate release v1.0.1\nThe final step is incorporating our hotfix changes into a new release to distribute to the necessary channels.\n\nNavigate to the Releases page from the Code tab, and click the Draft a new release button.\n\nSet the Target branch to main and add a v1.0.1 tag to follow semantic versioning. Click Generate release notes to auto-populate the release title and notes. Review the release notes, and customize if desired.\n\nClick Publish release at the bottom of the page. Wait 20 more seconds for the tutorial README to update, then refresh the instructions.\n\nYou’re finished with the tutorial! Now that you have practiced with a release-based workflow, feel free to experiment with other workflows and select the one that works best for your project and team.",
+    "text": "Tutorial: Practice with Workflows\nGitHub Skills: Create a release-based workflow\nWe’ll be using the Create a Release-based Workflow Skills Tutorial to practice using a GitHub Flow-style workflow with releases. Follow along with the tutorial using your own GitHub account.\n\nStep 1: Start the course\nOpen the GitHub Skills link, and make sure you are logged into GitHub. Use the “Start course” button to make a new repository on your account:\n\nWhen you open up the “Star” link, you will be presented with the “Create a new repository” interface. Keep all of the defaults, and click the green “Create repository” button:\n\n\n\n\n\n\n\nImportantGitHub Skills tutorials use GitHub Actions in the background.\n\n\n\nThese actions use “minutes”, which are limited in a private repository, but unlimited in a public one. We suggest keeping your GitHub Skills tutorial repositories public to avoid any minutes limitations.\n\n\n\n\n\n\n\n\nTipYou’ll notice that most steps in a GitHub Skills tutorial feature a message to wait about 20 seconds for the exercise to update.\n\n\n\nGitHub Actions can take a little bit of time to run, so waiting this requisite time is important! Refresh the instructions after 20 seconds to make sure everything updates properly.\n\n\n\n\nStep 2: Start the exercise\nAfter waiting the suggested 20 seconds, refresh the repository, and click the “Go to Exercise” button in the README\n\n\n\n\n\n\nTip\n\n\n\nI suggest moving the instructions tab into another window so you can work side-by-side with the instructions to limit switching back and forth between tabs.\n\n\n\n\n\nStep 3: Follow the exercise\n\nCreate a beta release\nIn this exercise, we will be creating a release-based workflow that is built on the foundations of GitHub flow.\n\nGo to the Releases page for the repository. If you are in a condensed view mode, this link will be at the bottom of the Code page. If you’re viewing in a full-sized window, this page will be in the sidebar on the right-hand side of the repository window on the Code page.\n\nClick the green Create a new release button to start a new new release\n\nClick the Tag: Select tag dropdown, and specify a release number. Use v0.9 for this example. Click Create new tag: v0.9 on publish.\n\nGive the release a title, and an optional short description. Check the box next to Set as a pre-release.\n\nClick the green Publish release button to finalize your pre-release.\n\n\n\n\nIntroduce a bug to be fixed later\nNext, we’ll add a bug to our code that will be fixed later in this tutorial.\n\nAt the top of the repository, click on the Pull requests tab and click the green New button (if you’re in the full window view, this will say New pull request).\n\nSet the base: dropdown menu to release-v1.0 and the compare: dropdown menu to update-text-colors, and click the green Create pull request button.\nUpdate the pull request title to “Updated game text style”. Optionally add a more detailed description to your pull request. Click the green Create pull request button.\n\nMerge the pull request, wait about 20 seconds for the instructions to refresh, and refresh the instructions README page.\n\n\n\n\n\nAdd a new feature to the release branch\nWe’ll be using the release-v1.0 branch to add features to our repository. We can treat this branch as a long-lived but ephemeral branch in the spirit of GitHub Flow.\n\nIn the Code tab, create a new branch off of the main branch. This will be our “feature” branch. Name your branch feature-background.\n\nOpen the base.css file, and click the “edit this file” button (it should look like a pen in the upper right hand corner of the code chunk. Scroll down to line 109. In the body declaration, add a line that changes the background color to black using the background-color: black; line as shown in the tutorial.\n\nCommit your changes, updating the commit message to be more descriptive.\n\nNavigate to the Pull requests tab, and create a new pull request. Set the base branch to release-v1.0 and the compare branch to feature-background. Click the green Create pull request button, and fill in the pull request template. Click the Create pull request button to finalize the pull request.\n\nMerge the pull request and delete your feature branch.\n\nWait about 20 seconds for GitHub Actions to update, then refresh the instructions README page.\n\n\n\nOpen a release pull request\nOpening a pull request early in the release can help facilitate discussion about the release. Any commits added to the compare branch after opening the pull request will be associated with that pull request until it’s closed.\n\nIn the Pull requests tab, open a new pull request with base: main and compare: release-v1.0. You can do this from the “release-v1.0 had recent pushes” banner to save time.\n\nAdd some detail to your pull request body description, and click the green Create pull request button. Don’t merge your pull request yet!\n\nWait 20 seconds for GitHub Actions to update, then refresh the instructions README page.\n\n\n\nGenerate release notes and merge\nYou can generate release notes automatically based on the content of your pull request. Let’s practice this with our “Release v1.0” pull request.\n\nNavigate to the Releases page from the Code tab of your repository (see above if you need a reminder of how to get there).\nClick the Draft a new release button in the top right corner.\n\nIn the Tag: dropdown menu, type v1.0.0, and create a tag with that name. Change the Target: dropdown to select the release-v1.0 branch.\n\nClick the Generate release notes button at the top of the description box.\n\nReview your release notes and make any changes if necessary.\n\nSet the Target: branch back to main (we only needed the release branch to generate our release notes).\n\nClick the Save draft button (not the Publish release button; we’ll publish in the next step).\n\nOpen your Release v1.0 pull request on the Pull requests tab.\n\nMerge your pull request.\n\nWait 20 seconds for the GitHub Actions to update, then refresh the instructions page.\n\n\n\nAn aside on semantic versioning\nThis release workflow uses a system called semantic versioning, which is a convention for specifying compatibility. It uses a three-part version number: major version, minor version, and patch.\n\n\n\nFinalize the release\n\nFrom the Code page, navigate to the Releases page. Click the edit button next to your v1.0.0 release.\n\nEnsure the Target branch is set to main\n\nScroll to the bottom of the page, and click Publish release.\n\nWait 20 seconds for the GitHub actions to update, then refresh the instructions README page.\n\n\n\nCommit a hotfix to the release\nWe can make a short-lived, ephemeral branch to fix a bug. The tutorial has already introduced a bug (we did this in the first part of the tutorial), and created a feature branch (fix-game-background) and a hotfix release branch (hotfix-v1.0.1) for us that fixes the bug. Let’s make a pull request to introduce this bug fix into our repo.\n\nIn the Pull requests tab, open a pull request setting hotfix-v1.0.1 as the base branch and fix-game-background as the compare branch.\n\nAdd a description to the pull request body, and change the title of the pull request to “Hotfix for broken game style”. Create your pull request and merge it into our hotfix-v1.0.1 release branch.\n\nOpen a new pull request with main as the base branch and hotfix-v1.0.1 as the compare branch.\n\nAdd a detailed description to the pull request body.\n\nCreate and merge your pull request into the main branch.\n\nWait 20 seconds for GitHub Actions to update, then refresh the README.\n\n\n\nCreate release v1.0.1\nThe final step is incorporating our hotfix changes into a new release to distribute to the necessary channels.\n\nNavigate to the Releases page from the Code tab, and click the Draft a new release button.\n\nSet the Target branch to main and add a v1.0.1 tag to follow semantic versioning. Click Generate release notes to auto-populate the release title and notes. Review the release notes, and customize if desired.\n\nClick Publish release at the bottom of the page. Wait 20 more seconds for the tutorial README to update, then refresh the instructions.\n\nYou’re finished with the tutorial! Now that you have practiced with a release-based workflow, feel free to experiment with other workflows and select the one that works best for your project and team.",
     "crumbs": [
       "JupyterHub",
       "Tutorials",
       "Workflows in Git and GitHub"
     ]
+  },
+  {
+    "objectID": "slides/actions.html#what-are-github-actions",
+    "href": "slides/actions.html#what-are-github-actions",
+    "title": "Automating Workflows with GitHub Actions",
+    "section": "What are GitHub Actions?",
+    "text": "What are GitHub Actions?\n\nAutomate, customize, and execute software, package, and report development workflows in your repository\nWorkflows are made up of individual tasks called actions\nSupports CI/CD, automation, and more"
+  },
+  {
+    "objectID": "slides/actions.html#core-concepts",
+    "href": "slides/actions.html#core-concepts",
+    "title": "Automating Workflows with GitHub Actions",
+    "section": "Core Concepts",
+    "text": "Core Concepts\nGitHub Actions is built around a few key concepts:\n\nWorkflows: Automated processes that you can set up in your repository.\nEvents: Specific activities that trigger a workflow (e.g., a push or a pull request).\nJobs: A set of steps that execute on the same runner.\nSteps: An individual task that can run commands or an action.\nActions: A standalone command that’s combined into steps to create a job. Actions are the smallest portable building block of a workflow.\nRunners: A server that runs your workflows when they’re triggered."
+  },
+  {
+    "objectID": "slides/actions.html#anatomy-of-a-workflow-file",
+    "href": "slides/actions.html#anatomy-of-a-workflow-file",
+    "title": "Automating Workflows with GitHub Actions",
+    "section": "Anatomy of a Workflow File",
+    "text": "Anatomy of a Workflow File\nWorkflows are defined in YAML files located in the .github/workflows/ directory of your repository.\nname: Simple Workflow\n\non: [push]\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - name: Check out repository code\n        uses: actions/checkout@v4\n\n      - name: Greet the world\n        run: echo \"Hello, world!\""
+  },
+  {
+    "objectID": "slides/actions.html#events-on",
+    "href": "slides/actions.html#events-on",
+    "title": "Automating Workflows with GitHub Actions",
+    "section": "Events (on)",
+    "text": "Events (on)\nAn event is a specific activity in a repository that triggers a workflow run.\n\npush: When code is pushed to a branch.\npull_request: When a pull request is opened, updated, or closed.\nschedule: Run at a scheduled time (using cron syntax).\nworkflow_dispatch: Manual trigger from the GitHub UI.\n\n…and many more!\n# Run on pushes to the main branch\non:\n  push:\n    branches:\n      - main"
+  },
+  {
+    "objectID": "slides/actions.html#jobs-runners",
+    "href": "slides/actions.html#jobs-runners",
+    "title": "Automating Workflows with GitHub Actions",
+    "section": "Jobs & Runners",
+    "text": "Jobs & Runners\nA workflow run is made up of one or more jobs.\n\nJobs run in parallel by default.\nYou can configure jobs to run sequentially using needs.\nEach job runs in a fresh virtual environment on a runner.\n\nYou specify the runner type with runs-on:\njobs:\n  my_first_job:\n    runs-on: ubuntu-latest\n  my_second_job:\n    runs-on: windows-latest"
+  },
+  {
+    "objectID": "slides/actions.html#steps-actions-and-commands",
+    "href": "slides/actions.html#steps-actions-and-commands",
+    "title": "Automating Workflows with GitHub Actions",
+    "section": "Steps, Actions, and Commands",
+    "text": "Steps, Actions, and Commands\nA job contains a sequence of steps.\n\nuses: Specifies an action to run. Actions are reusable units of code. You can find thousands on the GitHub Marketplace.\nrun: Executes command-line programs using the runner’s shell.\n\nsteps:\n  # Use a pre-built action from the marketplace\n  - uses: actions/checkout@v4\n\n  # Run a command\n  - name: Install dependencies\n    run: npm install\n\n  # Run another command\n  - name: Run tests\n    run: npm test"
+  },
+  {
+    "objectID": "slides/actions.html#use-cases",
+    "href": "slides/actions.html#use-cases",
+    "title": "Automating Workflows with GitHub Actions",
+    "section": "Use Cases",
+    "text": "Use Cases\nWhat can you automate with GitHub Actions?\n\nContinuous Integration (CI): Automatically build and test your code on every push.\nContinuous Deployment (CD): Automatically deploy your application to the cloud.\nIssue Triage: Label and comment on new issues automatically.\nNotifications: Send a message to Slack or Discord when a build fails.\nScheduled Tasks: Run a script to check for broken links on your site every night."
+  },
+  {
+    "objectID": "slides/actions.html#pre-built-actions",
+    "href": "slides/actions.html#pre-built-actions",
+    "title": "Automating Workflows with GitHub Actions",
+    "section": "Pre-built Actions",
+    "text": "Pre-built Actions\n\nGitHub Marketplace provides a collection of pre-built actions for many tasks\nMany software packages offer their own pre-built actions (e.g., Quarto actions, GitHub Actions for R)\nContribute your own actions for others to use"
+  },
+  {
+    "objectID": "slides/actions.html#security-best-practices",
+    "href": "slides/actions.html#security-best-practices",
+    "title": "Automating Workflows with GitHub Actions",
+    "section": "Security Best Practices",
+    "text": "Security Best Practices\n\nUse least privilege for tokens and secrets.\nAvoid hardcoding sensitive data.\nUse GITHUB_TOKEN for authentication.\nReview third-party actions for security."
+  },
+  {
+    "objectID": "slides/branches.html#what-is-a-branch",
+    "href": "slides/branches.html#what-is-a-branch",
+    "title": "Branches and Pull Requests in Git and GitHub",
+    "section": "What is a Branch?",
+    "text": "What is a Branch?\n\nSeparate workspace where you can make changes and try new ideas without affecting main project\nIsolated, contained development area\nAdd content to a repository without affecting other code\nCan be created from any other branch"
+  },
+  {
+    "objectID": "slides/branches.html#what-is-a-branch-1",
+    "href": "slides/branches.html#what-is-a-branch-1",
+    "title": "Branches and Pull Requests in Git and GitHub",
+    "section": "What is a Branch?",
+    "text": "What is a Branch?"
+  },
+  {
+    "objectID": "slides/branches.html#why-use-branches",
+    "href": "slides/branches.html#why-use-branches",
+    "title": "Branches and Pull Requests in Git and GitHub",
+    "section": "Why use branches?",
+    "text": "Why use branches?\n\nAllows multiple users to contribute to project without interfering with each other\nFix a bug or add a feature without breaking the main project\nExperiment with new ideas without affecting the main project"
+  },
+  {
+    "objectID": "slides/branches.html#how-are-branches-different-from-forks",
+    "href": "slides/branches.html#how-are-branches-different-from-forks",
+    "title": "Branches and Pull Requests in Git and GitHub",
+    "section": "How are branches different from forks?",
+    "text": "How are branches different from forks?\n\nHoused within the repository, rather than across copies of the repository\nCollaborating and project management within a team, rather than outside the team\nSwitching between branches changes the repository structure, rather than switching to a different repository"
+  },
+  {
+    "objectID": "slides/branches.html#the-process-of-branching",
+    "href": "slides/branches.html#the-process-of-branching",
+    "title": "Branches and Pull Requests in Git and GitHub",
+    "section": "The process of branching",
+    "text": "The process of branching\n\nCreate a branch on a repository you have write access to\nMake and commit your changes, making commits along the way if necessary\nIf necessary/desired, sync any changes made from the main branch to your branch\nCreate a pull request to contribute your changes back to the parent repository\nResolve merge conflicts, if necessary"
+  },
+  {
+    "objectID": "slides/branches.html#things-to-keep-in-mind-when-branching",
+    "href": "slides/branches.html#things-to-keep-in-mind-when-branching",
+    "title": "Branches and Pull Requests in Git and GitHub",
+    "section": "Things to keep in mind when branching",
+    "text": "Things to keep in mind when branching\n\nBranches can be ephemeral or permanent\nBranches can have separate read/write access from each other"
+  },
+  {
+    "objectID": "slides/branches.html#pull-requests",
+    "href": "slides/branches.html#pull-requests",
+    "title": "Branches and Pull Requests in Git and GitHub",
+    "section": "Pull requests",
+    "text": "Pull requests\n\nProposal to merge changes from a branch (or fork) into another\nSlight misnomer; “pull” is more like “push” or “merge” in this respect\nInitiates a conversation between the requester and collaborators\nReview and discuss changes prior to merging"
+  },
+  {
+    "objectID": "slides/ghec.html#what-is-github-enterprise",
+    "href": "slides/ghec.html#what-is-github-enterprise",
+    "title": "Intro to GitHub Enterprise",
+    "section": "What is GitHub Enterprise?",
+    "text": "What is GitHub Enterprise?\n\nAn account with GitHub organizations (orgs) that has more controls than GitHub Free.\nYour personal GitHub account can have repos in GitHub Free orgs or GitHub Enterprise orgs.\nYour identity (username) does not change – as long as your user account uses your noaa.gov email."
+  },
+  {
+    "objectID": "slides/ghec.html#how-is-github-enterprise-different",
+    "href": "slides/ghec.html#how-is-github-enterprise-different",
+    "title": "Intro to GitHub Enterprise",
+    "section": "How is GitHub Enterprise different?",
+    "text": "How is GitHub Enterprise different?\n\nIt is controlled by work and has more rules\nIt requires CAC sign-in - more secure\nIt requires a license.\nOutside (non NOAA) collaborators have to be added by an admin to repos. They use a license if the repo is private or internal"
+  },
+  {
+    "objectID": "slides/ghec.html#how-is-github-enterprise-different-1",
+    "href": "slides/ghec.html#how-is-github-enterprise-different-1",
+    "title": "Intro to GitHub Enterprise",
+    "section": "How is GitHub Enterprise different?",
+    "text": "How is GitHub Enterprise different?\n\nGitHub 3rd party applications require approval\nMore features: private and internal GitHub Pages, more GitHub Action minutes, bigger files allowed.\nAllows internal repositories only visible to NMFS GitHub users across GHEC. See code from other science centers (if they made it internal)\nCollaborate on repos with any other NMFS GHEC org. You can be on orgs at other centers"
+  },
+  {
+    "objectID": "slides/ghec.html#how-is-github-enterprise-different-2",
+    "href": "slides/ghec.html#how-is-github-enterprise-different-2",
+    "title": "Intro to GitHub Enterprise",
+    "section": "How is GitHub Enterprise different?",
+    "text": "How is GitHub Enterprise different?\n\nHas IT managed automatic backups.\nNMFS doesn’t lose code due to repo owner leaving NOAA\nFedRAMP approved unlike GitHub free"
+  },
+  {
+    "objectID": "slides/ghec.html#how-is-github-enterprise-not-different",
+    "href": "slides/ghec.html#how-is-github-enterprise-not-different",
+    "title": "Intro to GitHub Enterprise",
+    "section": "How is GitHub Enterprise not different?",
+    "text": "How is GitHub Enterprise not different?\n\nYou can create repos just like in GitHub Free\nYou have access to the usual collaboration tools: projects, GitHub Actions, GitHub Pages\nYou are admin on your own repos and can admin them as usual…except re outside collaborators."
+  },
+  {
+    "objectID": "slides/github-pages.html#what-is-github-pages",
+    "href": "slides/github-pages.html#what-is-github-pages",
+    "title": "GitHub Pages",
+    "section": "What is GitHub Pages?",
+    "text": "What is GitHub Pages?\n\nTurn your repository into a website\nShare your project, resume, portfolio, documentation, or even a blog with the world\nTakes content from main branch and publishes to a website"
+  },
+  {
+    "objectID": "slides/github-pages.html#why-use-github-pages",
+    "href": "slides/github-pages.html#why-use-github-pages",
+    "title": "GitHub Pages",
+    "section": "Why use GitHub Pages?",
+    "text": "Why use GitHub Pages?\n\nEasy and free way to publish content\nCan make internal, private web-pages with GHEC\nIn NMFS:\n\nMake a sleek web-hosted lab manual\nShare reports in HTML\nMake a landing page for a lab or program"
+  },
+  {
+    "objectID": "slides/github-pages.html#how-to-turn-on-github-pages",
+    "href": "slides/github-pages.html#how-to-turn-on-github-pages",
+    "title": "GitHub Pages",
+    "section": "How to turn on GitHub Pages",
+    "text": "How to turn on GitHub Pages\nAccess GitHub Pages in the Settings menu under Code and automation"
+  },
+  {
+    "objectID": "slides/github-pages.html#how-to-turn-on-github-pages-1",
+    "href": "slides/github-pages.html#how-to-turn-on-github-pages-1",
+    "title": "GitHub Pages",
+    "section": "How to turn on GitHub Pages",
+    "text": "How to turn on GitHub Pages\nMake sure Source is set to “Deploy from a branch”\nSelect the branch to deploy from (usually this is main)"
+  },
+  {
+    "objectID": "slides/github-pages.html#how-to-turn-on-github-pages-2",
+    "href": "slides/github-pages.html#how-to-turn-on-github-pages-2",
+    "title": "GitHub Pages",
+    "section": "How to turn on GitHub Pages",
+    "text": "How to turn on GitHub Pages\nSelect the folder to deploy from (/(root) is the main directory of the repository)\nSave your changes"
+  },
+  {
+    "objectID": "slides/github-pages.html#how-github-pages-recognizes-content",
+    "href": "slides/github-pages.html#how-github-pages-recognizes-content",
+    "title": "GitHub Pages",
+    "section": "How GitHub Pages recognizes content",
+    "text": "How GitHub Pages recognizes content\n\nA GitHub Pages “action” runs after every commit\nAny HTML file in the source directory is indexed and can be linked to\nAny Markdown file will be rendered and indexed\nBut not Quarto…\n\nNeed to render to HTML first\nGitHub Actions can help us with this"
+  },
+  {
+    "objectID": "slides/github-pages.html#theming-a-basic-page",
+    "href": "slides/github-pages.html#theming-a-basic-page",
+    "title": "GitHub Pages",
+    "section": "Theming a basic page",
+    "text": "Theming a basic page\nAdd a file called _config.yml to your repository\nAdd the line theme: jekyll-theme-slate to your file"
+  },
+  {
+    "objectID": "slides/github-pages.html#theming-a-basic-page-1",
+    "href": "slides/github-pages.html#theming-a-basic-page-1",
+    "title": "GitHub Pages",
+    "section": "Theming a basic page",
+    "text": "Theming a basic page\nAdd a file called _config.yml to your repository\nAdd the line theme: jekyll-theme-slate to your file"
+  },
+  {
+    "objectID": "slides/markdown.html#what-is-markdown",
+    "href": "slides/markdown.html#what-is-markdown",
+    "title": "Intro to Markdown",
+    "section": "What is Markdown?",
+    "text": "What is Markdown?\n\nLightweight markup language for formatting elements to plain-text text documents\nUsed by GitHub in a variety of places\n\nREADME files\nIssues and comments\nDiscussions\nCommit messages"
+  },
+  {
+    "objectID": "slides/markdown.html#why-use-markdown",
+    "href": "slides/markdown.html#why-use-markdown",
+    "title": "Intro to Markdown",
+    "section": "Why use Markdown?",
+    "text": "Why use Markdown?\n\nLightweight - doesn’t balloon file sizes\nPortable - makes it easy to share formatted documents across platforms\nAdaptable - Quarto, Jupyter Notebooks, RMarkdown\nUbiquitous - Used across a number of websites and applications"
+  },
+  {
+    "objectID": "slides/markdown.html#headings",
+    "href": "slides/markdown.html#headings",
+    "title": "Intro to Markdown",
+    "section": "Headings",
+    "text": "Headings\n\nCreated using the # symbol\nNumber of # corresponds to the level of header"
+  },
+  {
+    "objectID": "slides/markdown.html#text-styling",
+    "href": "slides/markdown.html#text-styling",
+    "title": "Intro to Markdown",
+    "section": "Text styling",
+    "text": "Text styling\n\nBold - **bold text**\nItalics - *italicized text*\nBold italics - ***bold and italicized text***\nSuperscript - superscript^2^\nSubscript - superscript~2~\nStrikethrough - ~~strikethrough~~\nCode (monospace) - `code`"
+  },
+  {
+    "objectID": "slides/markdown.html#code-blocks",
+    "href": "slides/markdown.html#code-blocks",
+    "title": "Intro to Markdown",
+    "section": "Code blocks",
+    "text": "Code blocks\nCode blocks are denoted by a series of three back-ticks:\n```\nx = 1 + 1\nprint('Hello, world!')\n```\nx = 1 + 1\nprint('Hello, world!')\nYou can style code chunks based on the language\n``` r\nx = 1 + 1\nprint('Hello, world!')\n```\nx = 1 + 1\nprint('Hello, world!')"
+  },
+  {
+    "objectID": "slides/markdown.html#lists",
+    "href": "slides/markdown.html#lists",
+    "title": "Intro to Markdown",
+    "section": "Lists",
+    "text": "Lists\n\nOrdered lists\nNumber or letter followed by period and two spaces\n\nfirst\nsecond\n\n\nUnordered lists\nDash or asterisk followed by a space\n\nUnordered list item\nUnordered list item"
+  },
+  {
+    "objectID": "slides/markdown.html#checklists",
+    "href": "slides/markdown.html#checklists",
+    "title": "Intro to Markdown",
+    "section": "Checklists",
+    "text": "Checklists\nSpecial markdown for GitHub\nDash followed by a space, closed brackets ([]), and another space\n- [] Checklist 1\n- [] Checklist 2"
+  },
+  {
+    "objectID": "slides/markdown.html#links-and-images",
+    "href": "slides/markdown.html#links-and-images",
+    "title": "Intro to Markdown",
+    "section": "Links and Images",
+    "text": "Links and Images\n\nLinks\nFollow the notation\n[text to show](link to content)\nThis is a link to the schedule\n\nImages\nFollow the notation\n![Caption](path to image \"alt text\")\n\n\n\nLook at this scubatocat!"
+  },
+  {
+    "objectID": "slides/project_management.html#what-are-github-projects",
+    "href": "slides/project_management.html#what-are-github-projects",
+    "title": "GitHub for Project Management",
+    "section": "What are GitHub Projects?",
+    "text": "What are GitHub Projects?\n\nAdaptable, flexible tool for planning and tracking work on GitHub\nSpreadsheet, task-board, and roadmap integrated with issues and pull requests\nProvide multiple views by filtering, sorting, grouping issues/PRs\nVisualize work with configurable charts\nAdd custom fields to track team-specific metadata"
+  },
+  {
+    "objectID": "slides/project_management.html#why-use-github-for-project-management",
+    "href": "slides/project_management.html#why-use-github-for-project-management",
+    "title": "GitHub for Project Management",
+    "section": "Why use GitHub for project management?",
+    "text": "Why use GitHub for project management?\n\nIssues and projects stoke collaboration\nIssues act as short-term to-do lists\nProjects capture longer-term goals and organize short-term issues"
+  },
+  {
+    "objectID": "slides/project_management.html#project-views",
+    "href": "slides/project_management.html#project-views",
+    "title": "GitHub for Project Management",
+    "section": "Project views",
+    "text": "Project views\nTable layout - Excel-style spreadsheet of project issues and metadata"
+  },
+  {
+    "objectID": "slides/project_management.html#project-views-1",
+    "href": "slides/project_management.html#project-views-1",
+    "title": "GitHub for Project Management",
+    "section": "Project views",
+    "text": "Project views\nBoard layout - Kanban-style board for organizing issues by status or label"
+  },
+  {
+    "objectID": "slides/project_management.html#project-views-2",
+    "href": "slides/project_management.html#project-views-2",
+    "title": "GitHub for Project Management",
+    "section": "Project views",
+    "text": "Project views\nRoadmap layout- High-level visualization of project over time"
+  },
+  {
+    "objectID": "slides/project_management.html#adding-views",
+    "href": "slides/project_management.html#adding-views",
+    "title": "GitHub for Project Management",
+    "section": "Adding views",
+    "text": "Adding views\n\nYou can have multiple views in one project\nViews can be tailored to many different needs through layouts, fields, and filters\nViews can be temporary for a single session or saved to the project"
+  },
+  {
+    "objectID": "slides/why_git.html#what-is-git",
+    "href": "slides/why_git.html#what-is-git",
+    "title": "What are Git and GitHub?",
+    "section": "What is Git?",
+    "text": "What is Git?\n\n\n\nProgram to track file changes and create a history of those changes\nCreates a ‘container’ for a set of files called a repository"
+  },
+  {
+    "objectID": "slides/why_git.html#what-is-github",
+    "href": "slides/why_git.html#what-is-github",
+    "title": "What are Git and GitHub?",
+    "section": "What is GitHub?",
+    "text": "What is GitHub?\n\n\n\nCollaborative software designed to organize files and track changes by different people through time\nBuilt on top of Git\nAllows to sync (clone) Git repositories locally and over the web"
+  },
+  {
+    "objectID": "slides/why_git.html#why-use-git-and-github",
+    "href": "slides/why_git.html#why-use-git-and-github",
+    "title": "What are Git and GitHub?",
+    "section": "Why use Git and GitHub?",
+    "text": "Why use Git and GitHub?\n\nVersion control - for you and others\nCollaboration - within your team and among colleagues and peers outside of your team\nProject management - collaborative “to-do” lists\nPublishing platform - README files and GitHub Pages"
   }
 ]
