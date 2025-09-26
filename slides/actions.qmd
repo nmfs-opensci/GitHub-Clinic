@@ -1,0 +1,152 @@
+---
+title: "Automating Workflows with GitHub Actions"
+author: "Jonathan Peake"
+brand: slides-light-brand.yml
+output-dir: ../docs/slides/
+format: 
+    nmfs-slides-revealjs: 
+        title-slide-attributes:
+          data-background-image: "styles/horiz-swoop-1.png"
+          data-background-color: '{{< brand color dark-blue >}}'
+        footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
+        controls: true
+        navigation-mode: linear
+        transition: slide
+        transition-speed: default
+        background-transition: none
+        scrollable: true
+---
+
+## What are GitHub Actions?
+
+-   Automate, customize, and execute software, package, and report development workflows in your repository
+-   Workflows are made up of individual tasks called *actions*
+-   Supports CI/CD, automation, and more
+
+------------------------------------------------------------------------
+
+## Core Concepts
+
+GitHub Actions is built around a few key concepts:
+
+-   **Workflows**: Automated processes that you can set up in your repository.
+-   **Events**: Specific activities that trigger a workflow (e.g., a push or a pull request).
+-   **Jobs**: A set of steps that execute on the same runner.
+-   **Steps**: An individual task that can run commands or an action.
+-   **Actions**: A standalone command that's combined into steps to create a job. Actions are the smallest portable building block of a workflow.
+-   **Runners**: A server that runs your workflows when they're triggered.
+
+------------------------------------------------------------------------
+
+## Anatomy of a Workflow File
+
+Workflows are defined in YAML files located in the `.github/workflows/` directory of your repository.
+
+``` yaml
+name: Simple Workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Greet the world
+        run: echo "Hello, world!"
+```
+
+------------------------------------------------------------------------
+
+## Events (`on`)
+
+An **event** is a specific activity in a repository that triggers a workflow run.
+
+-   `push`: When code is pushed to a branch.
+-   `pull_request`: When a pull request is opened, updated, or closed.
+-   `schedule`: Run at a scheduled time (using cron syntax).
+-   `workflow_dispatch`: Manual trigger from the GitHub UI.
+
+...and many more!
+
+``` yaml
+# Run on pushes to the main branch
+on:
+  push:
+    branches:
+      - main
+```
+
+------------------------------------------------------------------------
+
+## Jobs & Runners
+
+A workflow run is made up of one or more **jobs**.
+
+-   Jobs run in parallel by default.
+-   You can configure jobs to run sequentially using `needs`.
+-   Each job runs in a fresh virtual environment on a **runner**.
+
+You specify the runner type with `runs-on`:
+
+``` yaml
+jobs:
+  my_first_job:
+    runs-on: ubuntu-latest
+  my_second_job:
+    runs-on: windows-latest
+```
+
+------------------------------------------------------------------------
+
+## Steps, Actions, and Commands
+
+A **job** contains a sequence of **steps**.
+
+-   **`uses`**: Specifies an **action** to run. Actions are reusable units of code. You can find thousands on the GitHub Marketplace.
+-   **`run`**: Executes command-line programs using the runner's shell.
+
+``` yaml
+steps:
+  # Use a pre-built action from the marketplace
+  - uses: actions/checkout@v4
+
+  # Run a command
+  - name: Install dependencies
+    run: npm install
+
+  # Run another command
+  - name: Run tests
+    run: npm test
+```
+
+------------------------------------------------------------------------
+
+## Use Cases
+
+What can you automate with GitHub Actions?
+
+-   **Continuous Integration (CI)**: Automatically build and test your code on every push.
+-   **Continuous Deployment (CD)**: Automatically deploy your application to the cloud.
+-   **Issue Triage**: Label and comment on new issues automatically.
+-   **Notifications**: Send a message to Slack or Discord when a build fails.
+-   **Scheduled Tasks**: Run a script to check for broken links on your site every night.
+
+------------------------------------------------------------------------
+
+## Pre-built Actions
+
+-   [GitHub Marketplace](https://github.com/marketplace?type=actions) provides a collection of pre-built actions for many tasks
+-   Many software packages offer their own pre-built actions (e.g., [Quarto actions](https://github.com/quarto-dev/quarto-actions), [GitHub Actions for R](https://github.com/r-lib/actions#readme))
+-   Contribute your own actions for others to use
+
+------------------------------------------------------------------------
+
+## Security Best Practices
+
+-   Use least privilege for tokens and secrets.
+-   Avoid hardcoding sensitive data.
+-   Use `GITHUB_TOKEN` for authentication.
+-   Review third-party actions for security.
