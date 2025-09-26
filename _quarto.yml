@@ -61,6 +61,7 @@ website:
           - content/issues/issues.qmd
           - content/projects/projects.qmd
           - content/advanced/advanced.qmd
+          - content/actions/actions.qmd
       - href: content/resources.qmd
         text: "Resources"
       - section: "In-Person Workshops"
