@@ -64,8 +64,6 @@ See the [Open Science Calendar](https://calendar.google.com/calendar/u/0?cid=Y18
 |                                                     |                                                                                                                 |                                             | Tues 10/7s     |                                                                                                                             |
 +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------------------------------------------+----------------+-----------------------------------------------------------------------------------------------------------------------------+
 
-: {tbl-colwidths="\[15,35,10,15,25\]"}
-
 \*Note: the Tuesday 9/9 session on Project Management has been moved to 9am PT/12pm ET
 
 \*\*Note: the Advanced Git sessions are not duplicate sessions; the first session will be mostly lecture and demonstration, while the second session will be an interactive tutorial.

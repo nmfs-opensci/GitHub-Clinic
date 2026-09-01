@@ -35,8 +35,8 @@ We have used this demo repository for previous GitHub Clinic demonstrations and 
     ![](images/paste-2.png)
 3.  Keep everything default (your account should be listed under **Owner**, and the **Repository name** should be pre-filled for you). Click the green **Create Fork** button.\
     ![](images/paste-3.png)
-4.  When you create your new fork, you may notice that the **Issues** tab that you normally see at the top of the repository is not there. We have to enable this in the repository settings. Navigate to the **Settings** tab in your forked repository. Scroll down to the **Features** section and check the box next to **Issues.** (Note that Projects is another option in the **Features** section; this should already be checked, but if it isn't, go ahead and check that as well).**\
-    **![](images/paste-4.png)
+4.  When you create your new fork, you may notice that the **Issues** tab that you normally see at the top of the repository is not there. We have to enable this in the repository settings. Navigate to the **Settings** tab in your forked repository. Scroll down to the **Features** section and check the box next to **Issues.** (Note that Projects is another option in the **Features** section; this should already be checked, but if it isn't, go ahead and check that as well).**\**
+    ![](images/paste-4.png)
 
 ### Step 2: Create a new Project
 
@@ -48,8 +48,8 @@ There are multiple ways to create projects in GitHub. Rather than being attached
     ![](images/paste-7.png)
 3.  Give your new Project a name. Let's call ours "GitHub Clinic example project". Click the green **Create project** button to finalize your new project.\
     ![](images/paste-8.png)
-4.  Let's add a description and README to our project to describe our Project's purpose. Click the ellipse button (View more options) at the top right of the project, and select **Settings.\
-    **![](images/paste-9.png)
+4.  Let's add a description and README to our project to describe our Project's purpose. Click the ellipse button (View more options) at the top right of the project, and select **Settings.\**
+    ![](images/paste-9.png)
 5.  Add a short description and README to the Project to explain the purpose of the Project and how to use it. Note that the README supports markdown formatting. In future Projects, you may want to take advantage of this to flesh out the details of your Project and add more context.\
     ![](images/paste-10.png)
 
@@ -96,8 +96,8 @@ Let's create some custom fields to better organize our project.
 
 Let's make this table a little more informative by adding some other fields.
 
-1.  Click the dropdown where it says **View 1**, and select the **Fields** menu. Under "Hidden fields", select **Labels, Milestone,** and **Repository.\
-    **![](images/paste-21.png)
+1.  Click the dropdown where it says **View 1**, and select the **Fields** menu. Under "Hidden fields", select **Labels, Milestone,** and **Repository.\**
+    ![](images/paste-21.png)
 2.  In the same dropdown, select the **Group by** option and select **Priority** to split the table by priority.\
     ![](images/paste-22.png)
 3.  With the grouped view, we can now move items between priorities. Try this out by moving one of your items from medium to low priority. Do this by clicking and dragging from the number to the left of the issue title.\

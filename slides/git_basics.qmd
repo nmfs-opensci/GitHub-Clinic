@@ -23,11 +23,11 @@ format:
 ::: {.column width="60%" layout="[[-1], [1], [-1]]"}
 ### Users
 
--   Your account
+- Your account
 
--   Connected to your NOAA email
+- Connected to your NOAA email
 
--   Can add secondary email
+- Can add secondary email
 
 ### 
 :::
@@ -43,11 +43,11 @@ format:
 ::: {.column width="50%" layout="[[-1], [1], [-1]]"}
 ### Organizations
 
--   Shared account with large number of people
+- Shared account with large number of people
 
--   Can be housed under Enterprise
+- Can be housed under Enterprise
 
--   Collaboration and controlled access
+- Collaboration and controlled access
 :::
 
 ::: {.column width="50%"}
@@ -61,11 +61,11 @@ format:
 ::: {.column width="50%" layout="[[-1], [1], [-1]]"}
 ### Teams
 
--   Nested within organization
+- Nested within organization
 
--   Sub-groups for collaboration and access
+- Sub-groups for collaboration and access
 
--   Can have teams within teams for more fine-scale structure
+- Can have teams within teams for more fine-scale structure
 :::
 
 ::: {.column width="50%"}
@@ -77,13 +77,13 @@ format:
 
 ::::: columns
 ::: column
--   Sets the folder and file structure
+- Sets the folder and file structure
 
--   Contained and permissioned
+- Contained and permissioned
 
--   Public, private, or internal (Enterprise)
+- Public, private, or internal (Enterprise)
 
--   Commits and issues - Contributing through GitHub
+- Commits and issues - Contributing through GitHub
 :::
 
 ::: column
@@ -95,13 +95,13 @@ format:
 
 ::::: columns
 ::: column
--   A specific "thing" that you want to save and keep a record for
+- A specific "thing" that you want to save and keep a record for
 
--   Snapshot of all the files in the entire project
+- Snapshot of all the files in the entire project
 
--   Commit messages provide info about the "thing" you've done
+- Commit messages provide info about the "thing" you've done
 
--   Commits give a history of the project
+- Commits give a history of the project
 :::
 
 ::: column
@@ -115,11 +115,11 @@ format:
 
 ::::: columns
 ::: column
--   Making a local copy from GitHub
+- Making a local copy from GitHub
 
--   Allows local sync within and across devices
+- Allows local sync within and across devices
 
--   Push local changes, fetch remote changes
+- Push local changes, fetch remote changes
 :::
 
 ::: column
@@ -131,11 +131,11 @@ format:
 
 ::::: columns
 ::: column
--   Adding to or modifying repository hosted on someone else's account
+- Adding to or modifying repository hosted on someone else's account
 
--   "Sees" changes from parent repo - allows syncing with parent
+- "Sees" changes from parent repo - allows syncing with parent
 
--   Can be for personal purposes - doesn't have to be pushed to original repo!
+- Can be for personal purposes - doesn't have to be pushed to original repo!
 :::
 
 ::: column
@@ -147,13 +147,13 @@ format:
 
 ::::: columns
 ::: column
--   Use another repo as starting point for your own
+- Use another repo as starting point for your own
 
--   Copy not connected to original
+- Copy not connected to original
 
--   Usually meant for importing from a different version control system (e.g., GitLab)
+- Usually meant for importing from a different version control system (e.g., GitLab)
 
-    -   Can be employed to use another GitHub repo as a "pseudo-template"
+  - Can be employed to use another GitHub repo as a "pseudo-template"
 :::
 
 ::: column
@@ -163,10 +163,10 @@ format:
 
 ## Branching
 
--   Copies of repos housed within the repo structure
+- Copies of repos housed within the repo structure
 
--   Allow for working on repo without changing main branch
+- Allow for working on repo without changing main branch
 
--   Can help for more complex collaboration
+- Can help for more complex collaboration
 
 ![](images/paste-37.png)

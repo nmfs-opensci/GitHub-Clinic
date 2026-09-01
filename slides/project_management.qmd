@@ -19,23 +19,23 @@ format:
 
 ## What are GitHub Projects?
 
--   Adaptable, flexible tool for planning and tracking work on GitHub
+- Adaptable, flexible tool for planning and tracking work on GitHub
 
--   Spreadsheet, task-board, and roadmap integrated with issues and pull requests
+- Spreadsheet, task-board, and roadmap integrated with issues and pull requests
 
--   Provide multiple views by filtering, sorting, grouping issues/PRs
+- Provide multiple views by filtering, sorting, grouping issues/PRs
 
--   Visualize work with configurable charts
+- Visualize work with configurable charts
 
--   Add custom fields to track team-specific metadata
+- Add custom fields to track team-specific metadata
 
 ## Why use GitHub for project management?
 
--   Issues and projects stoke collaboration
+- Issues and projects stoke collaboration
 
--   Issues act as short-term to-do lists
+- Issues act as short-term to-do lists
 
--   Projects capture longer-term goals and organize short-term issues
+- Projects capture longer-term goals and organize short-term issues
 
 ## Project views {auto-animate="'true'"}
 
@@ -57,8 +57,8 @@ format:
 
 ## Adding views
 
--   You can have multiple views in one project
+- You can have multiple views in one project
 
--   Views can be tailored to many different needs through layouts, fields, and filters
+- Views can be tailored to many different needs through layouts, fields, and filters
 
--   Views can be temporary for a single session or saved to the project
+- Views can be temporary for a single session or saved to the project

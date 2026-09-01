@@ -19,23 +19,23 @@ format:
 
 ## What are GitHub Projects?
 
--   Adaptable, flexible tool for planning and tracking work on GitHub
+- Adaptable, flexible tool for planning and tracking work on GitHub
 
--   Spreadsheet, task-board, and roadmap integrated with issues and pull requests
+- Spreadsheet, task-board, and roadmap integrated with issues and pull requests
 
--   Provide multiple views by filtering, sorting, grouping issues/PRs
+- Provide multiple views by filtering, sorting, grouping issues/PRs
 
--   Visualize work with configurable charts
+- Visualize work with configurable charts
 
--   Add custom fields to track team-specific metadata
+- Add custom fields to track team-specific metadata
 
 ## Why use GitHub for project management?
 
--   Issues and projects stoke collaboration
+- Issues and projects stoke collaboration
 
--   Issues act as short-term to-do lists
+- Issues act as short-term to-do lists
 
--   Projects capture longer-term goals and organize short-term issues
+- Projects capture longer-term goals and organize short-term issues
 
 ## Project views {auto-animate="'true'"}
 
@@ -59,72 +59,72 @@ format:
 
 ## Fields (Table and Board layouts)
 
--   Based on issue metadata
+- Based on issue metadata
 
--   In Table view, these add columns to the table to let you view, sort, and filter
+- In Table view, these add columns to the table to let you view, sort, and filter
 
--   In Board view, these are shown on each board item
+- In Board view, these are shown on each board item
 
--   Fully customizable
+- Fully customizable
 
 ## Grouping (All layouts)
 
--   Horizontally split issues by certain aspects of an issue (metadata)
+- Horizontally split issues by certain aspects of an issue (metadata)
 
 ![](images/paste-95.png)
 
 ## Sorting (All layouts)
 
--   Sort project issues by issue metadata
+- Sort project issues by issue metadata
 
--   Multi-field sorting available
+- Multi-field sorting available
 
--   Can sort ascending or descending
+- Can sort ascending or descending
 
--   Can manually sort by dragging and dropping issues
+- Can manually sort by dragging and dropping issues
 
 ## Slicing (All layouts)
 
--   Split issues by metadata fields into subsets of issues
+- Split issues by metadata fields into subsets of issues
 
--   More akin to filtering than grouping
+- More akin to filtering than grouping
 
 ![](images/paste-96.png)
 
 ## Field sum (Board layout only)
 
--   Add a count of the number of issues in each section of the board
+- Add a count of the number of issues in each section of the board
 
 ![](images/paste-97.png)
 
 ## Roadmap features
 
--   Date fields
+- Date fields
 
-    -   Used to set start and end dates
+  - Used to set start and end dates
 
-    -   Iterations: special date fields for repeating blocks of time
+  - Iterations: special date fields for repeating blocks of time
 
--   Vertical markers
+- Vertical markers
 
-    -   Adds a vertical marker to show iterations, dates, and milestones
+  - Adds a vertical marker to show iterations, dates, and milestones
 
--   Zoom level
+- Zoom level
 
-    -   Change density and zoom level of roadmap: month, quarter, and year
+  - Change density and zoom level of roadmap: month, quarter, and year
 
 ## Filters
 
--   Add field-based filters to further customize views
+- Add field-based filters to further customize views
 
--   Can be used for very specific purposes and are saved with each view
+- Can be used for very specific purposes and are saved with each view
 
--   Combine filters across fields for hyper-specific filtering
+- Combine filters across fields for hyper-specific filtering
 
 ## Adding views
 
--   You can have multiple views in one project
+- You can have multiple views in one project
 
--   Views can be tailored to many different needs through layouts, fields, and filters
+- Views can be tailored to many different needs through layouts, fields, and filters
 
--   Views can be temporary for a single session or saved to the project
+- Views can be temporary for a single session or saved to the project

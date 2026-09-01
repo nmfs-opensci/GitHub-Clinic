@@ -6,12 +6,12 @@ GitHub is an important platform for many NOAA Fisheries staff and teams to share
 
 The GGT has outlined several use cases for why you may want to incorporate Git and GitHub into your workflows:
 
--   Development and distribution of scientific products and fundamental research communications.
--   Development of software and statistical packages for data analysis, e.g. stock assessment models.
--   Project/team management using GitHub project boards, issue tracking, task tracking.
--   Collaborative development of reports that combine data, resource intensive analysis, and text.
--   Automated report generation (using connection to online database and continuous integration).
--   Educational resources and learning activities.
+- Development and distribution of scientific products and fundamental research communications.
+- Development of software and statistical packages for data analysis, e.g. stock assessment models.
+- Project/team management using GitHub project boards, issue tracking, task tracking.
+- Collaborative development of reports that combine data, resource intensive analysis, and text.
+- Automated report generation (using connection to online database and continuous integration).
+- Educational resources and learning activities.
 
 ## Aims and Objectives
 
@@ -178,17 +178,17 @@ Click the dropdown where it says "Current repository" in the upper left corner o
 
 There are several aspects of a repository you will need to keep in mind when creating a new one from scratch:
 
--   **Name**: Make your name distinct and descriptive, but not too long. Don't use spaces (remember, this will be included as part of the URL). Git and GitHub repositories often use [kebab case](https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case).
+- **Name**: Make your name distinct and descriptive, but not too long. Don't use spaces (remember, this will be included as part of the URL). Git and GitHub repositories often use [kebab case](https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case).
 
--   **Description**:Add a brief description to your repository that describes its purpose
+- **Description**:Add a brief description to your repository that describes its purpose
 
--   **Local path**: Similarly to when you clone a repository into a folder, you need to tell GitHub Desktop where to start a new repository. This will autofill to the directory you specified when installing GitHub Desktop for the first time, but you are welcome to change it to wherever you want your repository stored on your local computer. You can always move a repository after creation.
+- **Local path**: Similarly to when you clone a repository into a folder, you need to tell GitHub Desktop where to start a new repository. This will autofill to the directory you specified when installing GitHub Desktop for the first time, but you are welcome to change it to wherever you want your repository stored on your local computer. You can always move a repository after creation.
 
--   **README file**: It is always a good idea to initialize the repository with a README file. This file will serve as the "front page" of your repository on GitHub. You can add a more detailed description of the repository, what it will be used for, instructions for how it should be used by others, etc. If your repository contains datasets, you can also use the README to add metadata. [See this link for more information on README files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes).
+- **README file**: It is always a good idea to initialize the repository with a README file. This file will serve as the "front page" of your repository on GitHub. You can add a more detailed description of the repository, what it will be used for, instructions for how it should be used by others, etc. If your repository contains datasets, you can also use the README to add metadata. [See this link for more information on README files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes).
 
--   **Git ignore**: A .gitignore file tells Git what files and folders to *not* track. These files will still reside on your local repository, but will not be included in a Commit action or accessible on GitHub. Typically, these files are system files for the coding language or IDE you're using, but can also include files that you don't want to be shown on GitHub. This may include things like data files that are too big or too sensitive to be hosted on GitHub, code files that include sensitive material, and scratch or intermediate files. When creating a new repository, you can choose to pre-populate the .gitignore file based on the primary coding language you expect to use most in the repository.
+- **Git ignore**: A .gitignore file tells Git what files and folders to *not* track. These files will still reside on your local repository, but will not be included in a Commit action or accessible on GitHub. Typically, these files are system files for the coding language or IDE you're using, but can also include files that you don't want to be shown on GitHub. This may include things like data files that are too big or too sensitive to be hosted on GitHub, code files that include sensitive material, and scratch or intermediate files. When creating a new repository, you can choose to pre-populate the .gitignore file based on the primary coding language you expect to use most in the repository.
 
--   **License**: Any public-hosted GitHub repository should contain a license for open source use. The latest NOAA recommendation is to use **Apache License 2.0**
+- **License**: Any public-hosted GitHub repository should contain a license for open source use. The latest NOAA recommendation is to use **Apache License 2.0**
 
 Go ahead and fill in the fields and Create your repository.
 
