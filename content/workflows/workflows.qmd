@@ -144,8 +144,8 @@ This release workflow uses a system called semantic versioning, which is a conve
 
 1.  From the **Code** page, navigate to the **Releases** page. Click the edit button next to your **v1.0.0** release.\
     ![](images/paste-34.png)
-2.  Ensure the **Target** branch is set to **main\
-    **![](images/paste-36.png)
+2.  Ensure the **Target** branch is set to **main\**
+    ![](images/paste-36.png)
 3.  Scroll to the bottom of the page, and click **Publish release**.\
     ![](images/paste-37.png)
 4.  Wait 20 seconds for the GitHub actions to update, then refresh the instructions README page.

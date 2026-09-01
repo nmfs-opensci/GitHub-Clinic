@@ -48,8 +48,8 @@ We're going to add a recipe to our forked repository. You can add whatever recip
 
 1.  Open the **Contribute** drop-down on the repository, and click the green **Open pull request** button to contribute this recipe back to the parent repository.\
     ![](images/paste-9.png)
-2.  Your Pull Request (PR) will auto-populate the title with your commit message. You can edit this if you want, or add an extended description. Generally the more descriptive the better, especially if you're fixing a bug or adding a feature to another repository. For now, we can be brief. Add a description, and click **Create pull request\
-    **![](images/paste-10.png)
+2.  Your Pull Request (PR) will auto-populate the title with your commit message. You can edit this if you want, or add an extended description. Generally the more descriptive the better, especially if you're fixing a bug or adding a feature to another repository. For now, we can be brief. Add a description, and click **Create pull request\**
+    ![](images/paste-10.png)
 3.  Once you create the PR, you'll be brought to the PR on the parent repository. Note that if you do not have write permission on the parent repository, you will not have the option to merge the pull request. But if you do, you can review the pull request and merge it in if everything looks good!\
     ![](images/paste-11.png)
 
@@ -60,8 +60,8 @@ If a change was made to the parent repository, you can sync that change to your 
 
 1.  Navigate to your forked repository.\
     ![](images/paste-13.png)
-2.  Notice that the repository notifies you of the number of commits ahead of the parent and behind the parent your fork is. In that same message box, click the **Sync fork** dropdown, and click **Update branch**. Note that if you have commits that have not been merged into the parent, you can either discard your commit before the merge (so your fork matches the parent) or keep it and merge the changes from the parent into your fork.**\
-    **![](images/paste-14.png)
+2.  Notice that the repository notifies you of the number of commits ahead of the parent and behind the parent your fork is. In that same message box, click the **Sync fork** dropdown, and click **Update branch**. Note that if you have commits that have not been merged into the parent, you can either discard your commit before the merge (so your fork matches the parent) or keep it and merge the changes from the parent into your fork.**\**
+    ![](images/paste-14.png)
 3.  To verify that your merge worked, click the **Sync fork** dropdown again. If everything worked, you should have a message that your branch is not behind the upstream (parent) repository\
     ![](images/paste-15.png)
 

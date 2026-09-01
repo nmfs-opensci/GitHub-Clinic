@@ -6,34 +6,34 @@ GitHub is an important platform for many NOAA Fisheries staff and teams to share
 
 The GGT has outlined several use cases for why you may want to incorporate Git and GitHub into your workflows:
 
--   Development and distribution of scientific products and fundamental research communications.
+- Development and distribution of scientific products and fundamental research communications.
 
--   Development of software and statistical packages for data analysis, e.g. stock assessment models.
+- Development of software and statistical packages for data analysis, e.g. stock assessment models.
 
--   Project/team management using GitHub project boards, issue tracking, task tracking.
+- Project/team management using GitHub project boards, issue tracking, task tracking.
 
--   Collaborative development of reports that combine data, resource intensive analysis, and text.
+- Collaborative development of reports that combine data, resource intensive analysis, and text.
 
--   Automated report generation (using connection to online database and continuous integration).
+- Automated report generation (using connection to online database and continuous integration).
 
--   Educational resources and learning activities.
+- Educational resources and learning activities.
 
 ## Aims and Objectives of the GitHub Clinic
 
 The GitHub Clinic will consist of several components:
 
--   An introductory 2-hour introduction to Git and GitHub virtual workshop, repeated twice weekly for three weeks. These sessions will use a mixture of directed, interactive lessons and GitHub Skills to provide NOAA Fisheries staff with the knowledge required for basic repository management using Git commands, collaboration, and project management
+- An introductory 2-hour introduction to Git and GitHub virtual workshop, repeated twice weekly for three weeks. These sessions will use a mixture of directed, interactive lessons and GitHub Skills to provide NOAA Fisheries staff with the knowledge required for basic repository management using Git commands, collaboration, and project management
 
--   A series of 1-hour standalone skills workshops for deeper dives into several GitHub features including advanced branch management, Git workflows, GitHub pages, and forking
+- A series of 1-hour standalone skills workshops for deeper dives into several GitHub features including advanced branch management, Git workflows, GitHub pages, and forking
 
--   Open Science Office Hours for individual help and coaching
+- Open Science Office Hours for individual help and coaching
 
 ### Schedule
 
 See the [schedule page](content/schedule.qmd).
 
--   Intro workshops will be given Mondays at 10am PT/1pm ET and Tuesdays at 1pm PT/4pm ET for 3 weeks starting April 7th
-    -   These are 2 hour introductory sessions to get you started with Git and GitHub
-    -   Intro sessions are identical; attend any that works for your schedule, or repeat sessions if you want to see the material twice
--   Single-topic skills sessions will be given Thursdays at 12:30pm PT/3:30pm ET and Tuesdays at 11:00am PT/2:00pm ET, with topics switching every two weeks.
--   See the [NMFS Open Science Training Page](https://sites.google.com/noaa.gov/nmfs-hq-st-open-science/trainings) for the training calendar or add the [NMFS Open Science calendar](#0) to your calendar to see all events.
+- Intro workshops will be given Mondays at 10am PT/1pm ET and Tuesdays at 1pm PT/4pm ET for 3 weeks starting April 7th
+  - These are 2 hour introductory sessions to get you started with Git and GitHub
+  - Intro sessions are identical; attend any that works for your schedule, or repeat sessions if you want to see the material twice
+- Single-topic skills sessions will be given Thursdays at 12:30pm PT/3:30pm ET and Tuesdays at 11:00am PT/2:00pm ET, with topics switching every two weeks.
+- See the [NMFS Open Science Training Page](https://sites.google.com/noaa.gov/nmfs-hq-st-open-science/trainings) for the training calendar or add the [NMFS Open Science calendar](#0) to your calendar to see all events.

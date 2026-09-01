@@ -1,0 +1,48 @@
+---
+title: GitHub Workshop for Northeast Fisheries Science Center Population Dynamics Branch
+date: '2026-09-28'
+---
+
+GitHub is an important platform for many NOAA Fisheries staff and teams to share and collaborate. In 2023, an Authorization To Use for GitHub Enterprise Cloud was signed, which provides a secure, private, access-controlled and managed platform for staff. In 2024, the GitHub Governance Team (GGT) provided a series of workshops to onboard NOAA Fisheries scientists to GitHub Enterprise and provide training in the use of Git and GitHub for NOAA Fisheries. In 2025, NMFS Open Science led a second iteration of these workshops to provide NOAA Fisheries staff with the necessary skills to effectively incorporate Git and GitHub into existing workflows.
+
+The GGT has outlined several use cases for why you may want to incorporate Git and GitHub into your workflows:
+
+- Development and distribution of scientific products and fundamental research communications.
+- Development of software and statistical packages for data analysis, e.g. stock assessment models.
+- Project/team management using GitHub project boards, issue tracking, task tracking.
+- Collaborative development of reports that combine data, resource intensive analysis, and text.
+- Automated report generation (using connection to online database and continuous integration).
+- Educational resources and learning activities.
+
+## Aims and Objectives
+
+This workshop will use a mixture of directed, interactive lessons and GitHub Skills to provide NOAA Fisheries staff within the Northeast FIsheries Science Center's Population Dynamics Branch with the knowledge required for basic repository management using Git commands, collaboration, and project management, as well as dedicated time to put these skills to use in setting up an existing project or workflow with Git and GitHub.
+
+## Agenda
+
+### Day 1: Working with Repositories
+
+- 8:30-9:00 Introduction to Git and GitHub: Why we use it, basics and terminology, and an intro to GitHub Enterprise
+- 9:00-10:00 Introduction to GitHub - Tutorial
+- 10:00-10:15 Break
+- 10:15-10:45 Cloning and local repositories: Making changes to GitHub repositories on your local machine
+- 10:45-11:45 Cloning and local repositories - Tutorial and practice
+- 11:45-12:30 Lunch
+- 12:30-13:00 Forking, Branches, and Pull Requests: Contributing to repositories
+- 13:00-14:00 Forking, Branches, and Pull Requests - Tutorial
+- 14:00-14:15 Break
+- 14:15-14:45 Merge Conflicts: Why they happen, how to prevent them, and how to resolve them
+- 14:45-15:30 Merge Conflicts - Tutorial
+- 15:30-15:45 Break
+- 15:45-16:15 Workflows in Git and GitHub
+- 16:15-17:00 Workflows - Tutorial
+
+### Day 2: Leveraging GitHub for Collaborative Work
+
+- 8:30-9:00 GitHub for Project Management
+- 9:00-9:45 GitHub for Project Management - Tutorial
+- 9:45-10:00 Break
+- 10:00-10:30 GitHub Actions
+- 10:30-11:45 GitHub Actions Tutorial
+- 11:45-12:30 Lunch
+- 12:30-14:30 Putting it together: practice, hands-on work, Q&A
