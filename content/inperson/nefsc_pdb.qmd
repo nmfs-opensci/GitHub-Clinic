@@ -31,11 +31,11 @@ This workshop will use a mixture of directed, interactive lessons and GitHub Ski
 - 12:30-13:00 Forking, Branches, and Pull Requests: Contributing to repositories
 - 13:00-14:00 Forking, Branches, and Pull Requests - Tutorial
 - 14:00-14:15 Break
-- 14:15-14:45 Merge Conflicts: Why they happen, how to prevent them, and how to resolve them
-- 14:45-15:30 Merge Conflicts - Tutorial
-- 15:30-15:45 Break
-- 15:45-16:15 Workflows in Git and GitHub
-- 16:15-17:00 Workflows - Tutorial
+- 14:15-14:30 Merge Conflicts: Why they happen, how to prevent them, and how to resolve them
+- 14:30-15:15 Merge Conflicts - Tutorial
+- 15:15-15:30 Workflows in Git and GitHub
+- 15:30-16:15 Workflows - Tutorial
+- 16:15-17:00 Community Forum: What I wish I knew when I started using Git/GitHub
 
 ### Day 2: Leveraging GitHub for Collaborative Work
 
