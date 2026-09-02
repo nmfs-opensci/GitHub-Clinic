@@ -67,6 +67,7 @@ website:
       - section: "In-Person Workshops"
         contents:
           - content/inperson/cb_genetics.qmd
+          - content/inperson/nefsc_pdb.qmd
       - text: <img width=100px>
       - text: <img width=100px>
       - text: <img src="/images/noaa_emblem_logo-2022.png" width=100px>
