@@ -25,20 +25,36 @@
     <lastmod>2025-06-16T16:56:28.498Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/advanced.html</loc>
-    <lastmod>2025-09-18T15:51:23.573Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/branches.html</loc>
+    <lastmod>2025-07-28T17:14:53.041Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/index.html</loc>
-    <lastmod>2026-09-02T18:27:00.450Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/actions.html</loc>
+    <lastmod>2026-05-21T14:47:15.632Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/setup/setup.html</loc>
-    <lastmod>2025-08-11T20:35:30.924Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/workflows/workflows.html</loc>
+    <lastmod>2026-09-01T19:16:50.019Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/resources.html</loc>
-    <lastmod>2025-07-18T14:57:51.223Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/schedule.html</loc>
+    <lastmod>2026-09-01T19:16:50.017Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/projects/projects.html</loc>
+    <lastmod>2026-09-01T19:16:50.020Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/nefsc-pdb/merge-conflicts.html</loc>
+    <lastmod>2026-09-24T19:12:57.465Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/nefsc-pdb/introduction.html</loc>
+    <lastmod>2026-09-24T16:27:48.943Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/nefsc-pdb/cloning.html</loc>
+    <lastmod>2026-09-24T18:41:03.847Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/merge-conflicts/merge-conflicts.html</loc>
@@ -50,7 +66,7 @@
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/intro/intro.html</loc>
-    <lastmod>2026-09-01T19:16:50.022Z</lastmod>
+    <lastmod>2026-09-24T14:38:29.464Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/inperson/guided_exercise.html</loc>
@@ -74,7 +90,7 @@
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/forking/forking.html</loc>
-    <lastmod>2026-09-01T19:16:50.016Z</lastmod>
+    <lastmod>2026-09-24T16:27:54.116Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/inperson/cb_genetics.html</loc>
@@ -82,7 +98,7 @@
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/inperson/nefsc_pdb.html</loc>
-    <lastmod>2026-09-02T18:29:52.246Z</lastmod>
+    <lastmod>2026-09-24T19:13:02.710Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/issues/issues.html</loc>
@@ -93,24 +109,40 @@
     <lastmod>2025-07-23T23:01:01.343Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/projects/projects.html</loc>
-    <lastmod>2026-09-01T19:16:50.020Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/nefsc-pdb/actions.html</loc>
+    <lastmod>2026-09-24T19:24:09.364Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/schedule.html</loc>
-    <lastmod>2026-09-01T19:16:50.017Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/nefsc-pdb/forking-branches-prs.html</loc>
+    <lastmod>2026-09-24T19:07:16.872Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/workflows/workflows.html</loc>
-    <lastmod>2026-09-01T19:16:50.019Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/nefsc-pdb/issues-projects.html</loc>
+    <lastmod>2026-09-24T19:22:27.382Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/actions.html</loc>
-    <lastmod>2026-05-21T14:47:15.632Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/nefsc-pdb/workflows.html</loc>
+    <lastmod>2026-09-24T19:16:35.864Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/branches.html</loc>
-    <lastmod>2025-07-28T17:14:53.041Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/resources.html</loc>
+    <lastmod>2025-07-18T14:57:51.223Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/content/setup/setup.html</loc>
+    <lastmod>2025-08-11T20:35:30.924Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/index.html</loc>
+    <lastmod>2026-09-21T22:29:32.824Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/advanced.html</loc>
+    <lastmod>2025-09-18T15:51:23.573Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/cloning.html</loc>
+    <lastmod>2026-09-24T18:50:02.313Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/GitHub-Clinic/slides/ghec.html</loc>

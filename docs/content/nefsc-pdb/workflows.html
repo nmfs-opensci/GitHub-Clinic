@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>NOAA Fisheries GitHub Clinic</title>
+<title>Workflows in Git and GitHub – NOAA Fisheries GitHub Clinic</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,28 +26,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./content/schedule.html" rel="next">
-<link href="./images/favicon-16x16.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-abc221fc48ed4c18702b5fda642c3695.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-d1eed930a3d9568fc4771a3219362500.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-abc221fc48ed4c18702b5fda642c3695.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../content/nefsc-pdb/issues-projects.html" rel="next">
+<link href="../../content/nefsc-pdb/merge-conflicts.html" rel="prev">
+<link href="../../images/favicon-16x16.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-abc221fc48ed4c18702b5fda642c3695.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d1eed930a3d9568fc4771a3219362500.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-abc221fc48ed4c18702b5fda642c3695.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -249,11 +250,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images\noaa-logo-rgb-2022.png" alt="NOAA logo" class="navbar-logo light-content">
-    <img src="./images\noaa-logo-rgb-2022.png" alt="NOAA logo" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images\noaa-logo-rgb-2022.png" alt="NOAA logo" class="navbar-logo light-content">
+    <img src="../../images\noaa-logo-rgb-2022.png" alt="NOAA logo" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">NOAA Fisheries GitHub Clinic</span>
     </a>
   </div>
@@ -295,7 +296,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Welcome</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/introduction.html">Day 1: Working with Repositories</a></li><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/workflows.html">Workflows</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -306,17 +307,23 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
+      <a href="../../index.html" class="sidebar-logo-link">
       <img src="https://github.com/nmfs-opensci/assets/blob/main/logo/nmfs-opensci-logo2.png?raw=true" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
       <img src="https://github.com/nmfs-opensci/assets/blob/main/logo/nmfs-opensci-logo2.png?raw=true" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/inperson/nefsc_pdb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Welcome</span></a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Day 1: Working with Repositories</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -324,14 +331,32 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./content/schedule.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
+  <a href="../../content/nefsc-pdb/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./content/setup/setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Setup</span></a>
+  <a href="../../content/nefsc-pdb/cloning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cloning and local repositories</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/nefsc-pdb/forking-branches-prs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Forking, Branches, and Pull Requests</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/nefsc-pdb/merge-conflicts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Merge Conflicts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/nefsc-pdb/workflows.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Workflows</span></a>
   </div>
 </li>
       </ul>
@@ -339,7 +364,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Tutorials</span></a>
+ <span class="menu-text">Day 2: Leveraging GitHub for Collaborative Work</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -347,113 +372,18 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./content/intro/intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Git and GitHub</span></a>
+  <a href="../../content/nefsc-pdb/issues-projects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project management</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./content/markdown/markdown.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Markdown and README files</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/github-pages/github-pages.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Hosting a repository as a website with GitHub Pages</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/forking/forking.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Forking Repositories in GitHub (and beyond)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/branches/branches.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Branches and Pull Requests</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/workflows/workflows.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Workflows in Git and GitHub</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/merge-conflicts/merge-conflicts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Merge Conflits in Git and GitHub</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/issues/issues.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Communicating in GitHub with Issues and Discussions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/projects/projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GitHub for Project Management</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/advanced/advanced.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Advanced Git: Git on the command line</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/actions/actions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../content/nefsc-pdb/actions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub Actions</span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Resources</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
- <span class="menu-text">In-Person Workshops</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/inperson/cb_genetics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GitHub Workshop for CB Genetics and Evolution Program</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/inperson/nefsc_pdb.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GitHub Workshop for Northeast Fisheries Science Center Population Dynamics Branch</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text"><img width="100px"></span>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text"><img width="100px"></span>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="https://fisheries.noaa.gov" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><img src="./images/noaa_emblem_logo-2022.png" width="100px"></span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -464,9 +394,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#aims-and-objectives-of-the-github-clinic" id="toc-aims-and-objectives-of-the-github-clinic" class="nav-link active" data-scroll-target="#aims-and-objectives-of-the-github-clinic">Aims and Objectives of the GitHub Clinic</a></li>
+  <li><a href="#git-workflows-for-development-and-collaboration" id="toc-git-workflows-for-development-and-collaboration" class="nav-link active" data-scroll-target="#git-workflows-for-development-and-collaboration">Git Workflows for Development and Collaboration</a></li>
+  <li><a href="#tutorial-practice-with-workflows" id="toc-tutorial-practice-with-workflows" class="nav-link" data-scroll-target="#tutorial-practice-with-workflows">Tutorial: Practice with Workflows</a></li>
   </ul>
-<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/edit/main/content/nefsc-pdb/workflows.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/blob/main/content/nefsc-pdb/workflows.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -490,9 +421,9 @@ function googleTranslateElementInit() {
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/introduction.html">Day 1: Working with Repositories</a></li><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/workflows.html">Workflows</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">NOAA Fisheries GitHub Clinic</h1>
+<h1 class="title">Workflows in Git and GitHub</h1>
 </div>
 
 
@@ -509,38 +440,198 @@ function googleTranslateElementInit() {
 </header>
 
 
-<p>GitHub is an important platform for many NOAA Fisheries staff and teams to share and collaborate. In 2023, an Authorization To Use for GitHub Enterprise Cloud was signed, which provides a secure, private, access-controlled and managed platform for staff. In 2024, the GitHub Governance Team (GGT) provided a series of workshops to onboard NOAA Fisheries scientists to GitHub Enterprise and provide training in the use of Git and GitHub for NOAA Fisheries. In 2025, NMFS Open Science will be leading a second iteration of these workshops to provide NOAA Fisheries staff with the necessary skills to effectively incorporate Git and GitHub into existing workflows.</p>
-<p>The GGT has outlined several use cases for why you may want to incorporate Git and GitHub into your workflows:</p>
-<ul>
-<li><p>Development and distribution of scientific products and fundamental research communications.</p></li>
-<li><p>Development of software and statistical packages for data analysis, e.g.&nbsp;stock assessment models.</p></li>
-<li><p>Project/team management using GitHub project boards, issue tracking, task tracking.</p></li>
-<li><p>Collaborative development of reports that combine data, resource intensive analysis, and text.</p></li>
-<li><p>Automated report generation (using connection to online database and continuous integration).</p></li>
-<li><p>Educational resources and learning activities.</p></li>
-</ul>
-<section id="aims-and-objectives-of-the-github-clinic" class="level2">
-<h2 class="anchored" data-anchor-id="aims-and-objectives-of-the-github-clinic">Aims and Objectives of the GitHub Clinic</h2>
-<p>The GitHub Clinic will consist of several components:</p>
-<ul>
-<li><p>An introductory 2-hour introduction to Git and GitHub virtual workshop, repeated twice weekly for three weeks. These sessions will use a mixture of directed, interactive lessons and GitHub Skills to provide NOAA Fisheries staff with the knowledge required for basic repository management using Git commands, collaboration, and project management</p></li>
-<li><p>A series of 1-hour standalone skills workshops for deeper dives into several GitHub features including advanced branch management, Git workflows, GitHub pages, and forking</p></li>
-<li><p>Open Science Office Hours for individual help and coaching</p></li>
-</ul>
-<section id="schedule" class="level3">
-<h3 class="anchored" data-anchor-id="schedule">Schedule</h3>
-<p>See the <a href="./content/schedule.html">schedule page</a>.</p>
-<ul>
-<li>Intro workshops will be given Mondays at 10am PT/1pm ET and Tuesdays at 1pm PT/4pm ET for 3 weeks starting April 7th
-<ul>
-<li>These are 2 hour introductory sessions to get you started with Git and GitHub</li>
-<li>Intro sessions are identical; attend any that works for your schedule, or repeat sessions if you want to see the material twice</li>
-</ul></li>
-<li>Single-topic skills sessions will be given Thursdays at 12:30pm PT/3:30pm ET and Tuesdays at 11:00am PT/2:00pm ET, with topics switching every two weeks.</li>
-<li>See the <a href="https://sites.google.com/noaa.gov/nmfs-hq-st-open-science/trainings">NMFS Open Science Training Page</a> for the training calendar or add the <a href="#0">NMFS Open Science calendar</a> to your calendar to see all events.</li>
-</ul>
+<p>Developing a project in Git and GitHub can be messy, especially when collaborating within a team. Overlapping commits can lead to merge conflicts and a convoluted commit history. Establishing a consistent branch-based workflow can help alleviate these concerns. This skills session will use directed, interactive lessons to provide NOAA Fisheries staff with a foundation in using branching strategies to streamline project development and tailor it to your team’s size and needs.</p>
+<section id="git-workflows-for-development-and-collaboration" class="level2">
+<h2 class="anchored" data-anchor-id="git-workflows-for-development-and-collaboration">Git Workflows for Development and Collaboration</h2>
+<iframe class="slide-deck" src="../../slides/workflows.html" width="900" height="600">
+</iframe>
+</section>
+<section id="tutorial-practice-with-workflows" class="level2">
+<h2 class="anchored" data-anchor-id="tutorial-practice-with-workflows">Tutorial: Practice with Workflows</h2>
+<p><a href="https://github.com/skills/release-based-workflow">GitHub Skills: Create a release-based workflow</a></p>
+<p>We’ll be using the Create a Release-based Workflow Skills Tutorial to practice using a GitHub Flow-style workflow with releases. Follow along with the tutorial using your own GitHub account.</p>
+<section id="step-1-start-the-course" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-start-the-course">Step 1: Start the course</h3>
+<p>Open the GitHub Skills link, and make sure you are logged into GitHub. Use the “Start course” button to make a new repository on your account:</p>
+<p><img src="../workflows/images/paste-1.png" class="img-fluid"></p>
+<p>When you open up the “Star” link, you will be presented with the “Create a new repository” interface. Keep all of the defaults, and click the green “Create repository” button:</p>
+<p><img src="../workflows/images/paste-2.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>GitHub Skills tutorials use GitHub Actions in the background.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>These actions use “minutes”, which are limited in a private repository, but unlimited in a public one. We suggest keeping your GitHub Skills tutorial repositories public to avoid any minutes limitations.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>You’ll notice that most steps in a GitHub Skills tutorial feature a message to wait about 20 seconds for the exercise to update.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>GitHub Actions can take a little bit of time to run, so waiting this requisite time is important! Refresh the instructions after 20 seconds to make sure everything updates properly.</p>
+</div>
+</div>
+</section>
+<section id="step-2-start-the-exercise" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-start-the-exercise">Step 2: Start the exercise</h3>
+<p>After waiting the suggested 20 seconds, refresh the repository, and click the “Go to Exercise” button in the README</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I suggest moving the instructions tab into another window so you can work side-by-side with the instructions to limit switching back and forth between tabs.</p>
+<p><img src="../workflows/images/paste-3.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="step-3-follow-the-exercise" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-follow-the-exercise">Step 3: Follow the exercise</h3>
+<section id="create-a-beta-release" class="level4">
+<h4 class="anchored" data-anchor-id="create-a-beta-release">Create a beta release</h4>
+<p>In this exercise, we will be creating a release-based workflow that is built on the foundations of GitHub flow.</p>
+<ol type="1">
+<li>Go to the <strong>Releases</strong> page for the repository. If you are in a condensed view mode, this link will be at the bottom of the Code page. If you’re viewing in a full-sized window, this page will be in the sidebar on the right-hand side of the repository window on the Code page.<br>
+<img src="../workflows/images/paste-4.png" class="img-fluid"></li>
+<li>Click the green <strong>Create a new release</strong> button to start a new new release<br>
+<img src="../workflows/images/paste-5.png" class="img-fluid"></li>
+<li>Click the <strong>Tag: Select tag</strong> dropdown, and specify a release number. Use <strong>v0.9</strong> for this example. Click <strong>Create new tag: v0.9 on publish</strong>.<br>
+<img src="../workflows/images/paste-6.png" class="img-fluid"></li>
+<li>Give the release a title, and an optional short description. Check the box next to <strong>Set as a pre-release</strong>.<br>
+<img src="../workflows/images/paste-7.png" class="img-fluid"></li>
+<li>Click the green <strong>Publish release</strong> button to finalize your pre-release.<br>
+<img src="../workflows/images/paste-8.png" class="img-fluid"></li>
+</ol>
+</section>
+<section id="introduce-a-bug-to-be-fixed-later" class="level4">
+<h4 class="anchored" data-anchor-id="introduce-a-bug-to-be-fixed-later">Introduce a bug to be fixed later</h4>
+<p>Next, we’ll add a bug to our code that will be fixed later in this tutorial.</p>
+<ol type="1">
+<li>At the top of the repository, click on the <strong>Pull requests</strong> tab and click the green <strong>New</strong> button (if you’re in the full window view, this will say <strong>New pull request</strong>).<br>
+<img src="../workflows/images/paste-9.png" class="img-fluid"></li>
+<li>Set the <strong>base:</strong> dropdown menu to <code>release-v1.0</code> and the <strong>compare:</strong> dropdown menu to <code>update-text-colors</code>, and click the green <strong>Create pull request</strong> button.<img src="../workflows/images/paste-11.png" class="img-fluid"></li>
+<li>Update the pull request title to “Updated game text style”. Optionally add a more detailed description to your pull request. Click the green <strong>Create pull request</strong> button.<br>
+<img src="../workflows/images/paste-12.png" class="img-fluid"></li>
+<li>Merge the pull request, wait about 20 seconds for the instructions to refresh, and refresh the instructions README page.<br>
+<img src="../workflows/images/paste-13.png" class="img-fluid"><br>
+<img src="../workflows/images/paste-14.png" class="img-fluid"></li>
+</ol>
+</section>
+<section id="add-a-new-feature-to-the-release-branch" class="level4">
+<h4 class="anchored" data-anchor-id="add-a-new-feature-to-the-release-branch">Add a new feature to the release branch</h4>
+<p>We’ll be using the <code>release-v1.0</code> branch to add features to our repository. We can treat this branch as a long-lived but ephemeral branch in the spirit of GitHub Flow.</p>
+<ol type="1">
+<li>In the <strong>Code</strong> tab, create a new branch off of the <code>main</code> branch. This will be our “feature” branch. Name your branch <code>feature-background</code>.<br>
+<img src="../workflows/images/paste-15.png" class="img-fluid"></li>
+<li>Open the <code>base.css</code> file, and click the “edit this file” button (it should look like a pen in the upper right hand corner of the code chunk. Scroll down to line 109. In the <code>body</code> declaration, add a line that changes the background color to black using the <code>background-color: black;</code> line as shown in the tutorial.<br>
+<img src="../workflows/images/paste-17.png" class="img-fluid"></li>
+<li>Commit your changes, updating the commit message to be more descriptive.<br>
+<img src="../workflows/images/paste-18.png" class="img-fluid"></li>
+<li>Navigate to the <strong>Pull requests</strong> tab, and create a new pull request. Set the base branch to <code>release-v1.0</code> and the compare branch to <code>feature-background</code>. Click the green <strong>Create pull request</strong> button, and fill in the pull request template. Click the <strong>Create pull request</strong> button to finalize the pull request.<br>
+<img src="../workflows/images/paste-19.png" class="img-fluid"></li>
+<li>Merge the pull request and delete your feature branch.<br>
+<img src="../workflows/images/paste-20.png" class="img-fluid"></li>
+<li>Wait about 20 seconds for GitHub Actions to update, then refresh the instructions README page.</li>
+</ol>
+</section>
+<section id="open-a-release-pull-request" class="level4">
+<h4 class="anchored" data-anchor-id="open-a-release-pull-request">Open a release pull request</h4>
+<p>Opening a pull request early in the release can help facilitate discussion about the release. Any commits added to the <code>compare</code> branch after opening the pull request will be associated with that pull request until it’s closed.</p>
+<ol type="1">
+<li>In the <strong>Pull requests</strong> tab, open a new pull request with <code>base: main</code> and <code>compare: release-v1.0</code>. You can do this from the “release-v1.0 had recent pushes” banner to save time.<br>
+<img src="../workflows/images/paste-21.png" class="img-fluid"></li>
+<li>Add some detail to your pull request body description, and click the green <strong>Create pull request</strong> button. <strong>Don’t merge your pull request yet!</strong><br>
+<img src="../workflows/images/paste-22.png" class="img-fluid"></li>
+<li>Wait 20 seconds for GitHub Actions to update, then refresh the instructions README page.</li>
+</ol>
+</section>
+<section id="generate-release-notes-and-merge" class="level4">
+<h4 class="anchored" data-anchor-id="generate-release-notes-and-merge">Generate release notes and merge</h4>
+<p>You can generate release notes automatically based on the content of your pull request. Let’s practice this with our “Release v1.0” pull request.</p>
+<ol type="1">
+<li>Navigate to the <strong>Releases</strong> page from the <strong>Code</strong> tab of your repository (see above if you need a reminder of how to get there).</li>
+<li>Click the <strong>Draft a new release</strong> button in the top right corner.<br>
+<img src="../workflows/images/paste-24.png" class="img-fluid"></li>
+<li>In the <strong>Tag:</strong> dropdown menu, type v1.0.0, and create a tag with that name. Change the <strong>Target:</strong> dropdown to select the <code>release-v1.0</code> branch.<br>
+<img src="../workflows/images/paste-26.png" class="img-fluid"></li>
+<li>Click the <strong>Generate release notes</strong> button at the top of the description box.<br>
+<img src="../workflows/images/paste-27.png" class="img-fluid"></li>
+<li>Review your release notes and make any changes if necessary.<br>
+<img src="../workflows/images/paste-29.png" class="img-fluid"></li>
+<li>Set the <strong>Target:</strong> branch back to <code>main</code> (we only needed the release branch to generate our release notes).<br>
+<img src="../workflows/images/paste-28.png" class="img-fluid"></li>
+<li>Click the <strong>Save draft</strong> button (not the <strong>Publish release</strong> button; we’ll publish in the next step).<br>
+<img src="../workflows/images/paste-30.png" class="img-fluid"></li>
+<li>Open your <strong>Release v1.0</strong> pull request on the <strong>Pull requests</strong> tab.<br>
+<img src="../workflows/images/paste-31.png" class="img-fluid"></li>
+<li>Merge your pull request.<br>
+<img src="../workflows/images/paste-32.png" class="img-fluid"></li>
+<li>Wait 20 seconds for the GitHub Actions to update, then refresh the instructions page.</li>
+</ol>
+</section>
+<section id="an-aside-on-semantic-versioning" class="level4">
+<h4 class="anchored" data-anchor-id="an-aside-on-semantic-versioning">An aside on semantic versioning</h4>
+<p>This release workflow uses a system called semantic versioning, which is a convention for specifying compatibility. It uses a three-part version number: <strong>major version, minor version, and patch</strong>.</p>
+<p><img src="../workflows/images/paste-33.png" class="img-fluid"></p>
+</section>
+<section id="finalize-the-release" class="level4">
+<h4 class="anchored" data-anchor-id="finalize-the-release">Finalize the release</h4>
+<ol type="1">
+<li>From the <strong>Code</strong> page, navigate to the <strong>Releases</strong> page. Click the edit button next to your <strong>v1.0.0</strong> release.<br>
+<img src="../workflows/images/paste-34.png" class="img-fluid"> Ensure the <strong>Target</strong> branch is set to **main** <img src="../workflows/images/paste-36.png" class="img-fluid"></li>
+<li>Scroll to the bottom of the page, and click <strong>Publish release</strong>.<br>
+<img src="../workflows/images/paste-37.png" class="img-fluid"></li>
+<li>Wait 20 seconds for the GitHub actions to update, then refresh the instructions README page.</li>
+</ol>
+</section>
+<section id="commit-a-hotfix-to-the-release" class="level4">
+<h4 class="anchored" data-anchor-id="commit-a-hotfix-to-the-release">Commit a hotfix to the release</h4>
+<p>We can make a short-lived, ephemeral branch to fix a bug. The tutorial has already introduced a bug (we did this in the first part of the tutorial), and created a feature branch (<code>fix-game-background</code>) and a hotfix release branch (<code>hotfix-v1.0.1</code>) for us that fixes the bug. Let’s make a pull request to introduce this bug fix into our repo.</p>
+<ol type="1">
+<li>In the <strong>Pull requests</strong> tab, open a pull request setting <code>hotfix-v1.0.1</code> as the <code>base</code> branch and <code>fix-game-background</code> as the <code>compare</code> branch.<br>
+<img src="../workflows/images/paste-38.png" class="img-fluid"></li>
+<li>Add a description to the pull request body, and change the title of the pull request to “Hotfix for broken game style”. Create your pull request and merge it into our <code>hotfix-v1.0.1</code> release branch.<br>
+<img src="../workflows/images/paste-39.png" class="img-fluid"></li>
+<li>Open a new pull request with <code>main</code> as the <code>base</code> branch and <code>hotfix-v1.0.1</code> as the <code>compare</code> branch.<br>
+<img src="../workflows/images/paste-40.png" class="img-fluid"></li>
+<li>Add a detailed description to the pull request body.<br>
+<img src="../workflows/images/paste-41.png" class="img-fluid"></li>
+<li>Create and merge your pull request into the <code>main</code> branch.<br>
+<img src="../workflows/images/paste-42.png" class="img-fluid"></li>
+<li>Wait 20 seconds for GitHub Actions to update, then refresh the README.</li>
+</ol>
+</section>
+<section id="create-release-v1.0.1" class="level4">
+<h4 class="anchored" data-anchor-id="create-release-v1.0.1">Create release v1.0.1</h4>
+<p>The final step is incorporating our hotfix changes into a new release to distribute to the necessary channels.</p>
+<ol type="1">
+<li>Navigate to the <strong>Releases</strong> page from the <strong>Code</strong> tab, and click the <strong>Draft a new release</strong> button.<br>
+<img src="../workflows/images/paste-43.png" class="img-fluid"></li>
+<li>Set the <strong>Target</strong> branch to <code>main</code> and add a <code>v1.0.1</code> tag to follow semantic versioning. Click <strong>Generate release notes</strong> to auto-populate the release title and notes. Review the release notes, and customize if desired.<br>
+<img src="../workflows/images/paste-44.png" class="img-fluid"></li>
+<li>Click <strong>Publish release</strong> at the bottom of the page. Wait 20 more seconds for the tutorial README to update, then refresh the instructions.<br>
+<img src="../workflows/images/paste-45.png" class="img-fluid"></li>
+<li>You’re finished with the tutorial! Now that you have practiced with a release-based workflow, feel free to experiment with other workflows and select the one that works best for your project and team.</li>
+</ol>
 
 
+</section>
 </section>
 </section>
 
@@ -960,10 +1051,13 @@ function googleTranslateElementInit() {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../content/nefsc-pdb/merge-conflicts.html" class="pagination-link" aria-label="Merge Conflicts">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Merge Conflicts</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./content/schedule.html" class="pagination-link" aria-label="Schedule">
-        <span class="nav-page-text">Schedule</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../content/nefsc-pdb/issues-projects.html" class="pagination-link" aria-label="Project management">
+        <span class="nav-page-text">Project management</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -975,7 +1069,7 @@ function googleTranslateElementInit() {
     </div>   
     <div class="nav-footer-center">
 <p><img src="https://github.com/nmfs-opensci/assets/blob/main/logo/nmfs-opensci-logo2.png?raw=true" alt="NMFS Open Science logo" style="width:150px"><br>NMFS Open Science (2023)</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/edit/main/content/nefsc-pdb/workflows.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/blob/main/content/nefsc-pdb/workflows.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

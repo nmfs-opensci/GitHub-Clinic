@@ -35,43 +35,72 @@ website:
         href: https://github.com/nmfs-opensci
         text: "GH org"
   sidebar:
-    logo: https://github.com/nmfs-opensci/assets/blob/main/logo/nmfs-opensci-logo2.png?raw=true
-    pinned: true
-    align: center
+    - title: "NOAA Fisheries GitHub Clinic"
+      logo: https://github.com/nmfs-opensci/assets/blob/main/logo/nmfs-opensci-logo2.png?raw=true
+      pinned: true
+      align: center
+      
+      style: "docked"
+      collapse-level: 1
+      toc-expand: false
+      contents:
+        - section: "Welcome"
+          href: index.qmd
+          contents:
+            - content/schedule.qmd
+            - content/setup/setup.qmd
+            - content/coc.md
+        - section: "Tutorials"
+          contents:
+            - content/intro/intro.qmd
+            - content/markdown/markdown.qmd
+            - content/github-pages/github-pages.qmd
+            - content/forking/forking.qmd
+            - content/branches/branches.qmd
+            - content/workflows/workflows.qmd
+            - content/merge-conflicts/merge-conflicts.qmd
+            - content/issues/issues.qmd
+            - content/projects/projects.qmd
+            - content/advanced/advanced.qmd
+            - content/actions/actions.qmd
+        - href: content/resources.qmd
+          text: "Resources"
+        - section: "In-Person Workshops"
+          contents:
+            - content/inperson/cb_genetics.qmd
+            - content/inperson/nefsc_pdb.qmd
+        - text: <img width=100px>
+        - text: <img width=100px>
+        - text: <img src="/images/noaa_emblem_logo-2022.png" width=100px>
+          href: https://fisheries.noaa.gov
     
-    style: "docked"
-    collapse-level: 1
-    toc-expand: false
-    contents:
-      - section: "Welcome"
-        href: index.qmd
-        contents:
-          - content/schedule.qmd
-          - content/setup/setup.qmd
-          - content/coc.md
-      - section: "Tutorials"
-        contents:
-          - content/intro/intro.qmd
-          - content/markdown/markdown.qmd
-          - content/github-pages/github-pages.qmd
-          - content/forking/forking.qmd
-          - content/branches/branches.qmd
-          - content/workflows/workflows.qmd
-          - content/merge-conflicts/merge-conflicts.qmd
-          - content/issues/issues.qmd
-          - content/projects/projects.qmd
-          - content/advanced/advanced.qmd
-          - content/actions/actions.qmd
-      - href: content/resources.qmd
-        text: "Resources"
-      - section: "In-Person Workshops"
-        contents:
-          - content/inperson/cb_genetics.qmd
-          - content/inperson/nefsc_pdb.qmd
-      - text: <img width=100px>
-      - text: <img width=100px>
-      - text: <img src="/images/noaa_emblem_logo-2022.png" width=100px>
-        href: https://fisheries.noaa.gov
+    - id: "PDB"
+      title: "NEFSC Population Dynamics Branch GitHub Training"
+      style: "docked"
+      collapse-level: 1
+      toc-expand: false
+      contents: 
+        - text: "Welcome"
+          href: content/inperson/nefsc_pdb.qmd
+        - section: "Day 1: Working with Repositories"
+          contents:
+          - text: "Introduction"
+            href: content/nefsc-pdb/introduction.qmd
+          - text: Cloning and local repositories
+            href: content/nefsc-pdb/cloning.qmd
+          - text: Forking, Branches, and Pull Requests
+            href: content/nefsc-pdb/forking-branches-prs.qmd
+          - text: Merge Conflicts
+            href: content/nefsc-pdb/merge-conflicts.qmd
+          - text: Workflows
+            href: content/nefsc-pdb/workflows.qmd
+        - section: "Day 2: Leveraging GitHub for Collaborative Work"
+          contents:
+          - text: Project management
+            href: content/nefsc-pdb/issues-projects.qmd
+          - text: GitHub Actions
+            href: content/nefsc-pdb/actions.qmd
+
 format:
   html:
     theme:

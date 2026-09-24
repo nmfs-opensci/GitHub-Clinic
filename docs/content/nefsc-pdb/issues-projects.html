@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>GitHub Actions – NOAA Fisheries GitHub Clinic</title>
+<title>Managing Projects in GitHub: Issues, Discussions, and Project Boards – NOAA Fisheries GitHub Clinic</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,8 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../content/resources.html" rel="next">
-<link href="../../content/advanced/advanced.html" rel="prev">
+<link href="../../content/nefsc-pdb/actions.html" rel="next">
+<link href="../../content/nefsc-pdb/workflows.html" rel="prev">
 <link href="../../images/favicon-16x16.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -296,7 +296,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/intro/intro.html">Tutorials</a></li><li class="breadcrumb-item"><a href="../../content/actions/actions.html">GitHub Actions</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/issues-projects.html">Day 2: Leveraging GitHub for Collaborative Work</a></li><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/issues-projects.html">Project management</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -314,10 +314,16 @@ ul.task-list li input[type="checkbox"] {
       </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/inperson/nefsc_pdb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Welcome</span></a>
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Day 1: Working with Repositories</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -325,14 +331,32 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/schedule.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
+  <a href="../../content/nefsc-pdb/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/setup/setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Setup</span></a>
+  <a href="../../content/nefsc-pdb/cloning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cloning and local repositories</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/nefsc-pdb/forking-branches-prs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Forking, Branches, and Pull Requests</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/nefsc-pdb/merge-conflicts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Merge Conflicts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/nefsc-pdb/workflows.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Workflows</span></a>
   </div>
 </li>
       </ul>
@@ -340,7 +364,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Tutorials</span></a>
+ <span class="menu-text">Day 2: Leveraging GitHub for Collaborative Work</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -348,113 +372,18 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/intro/intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Git and GitHub</span></a>
+  <a href="../../content/nefsc-pdb/issues-projects.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Project management</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/markdown/markdown.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Markdown and README files</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/github-pages/github-pages.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Hosting a repository as a website with GitHub Pages</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/forking/forking.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Forking Repositories in GitHub (and beyond)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/branches/branches.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Branches and Pull Requests</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/workflows/workflows.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Workflows in Git and GitHub</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/merge-conflicts/merge-conflicts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Merge Conflits in Git and GitHub</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/issues/issues.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Communicating in GitHub with Issues and Discussions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/projects/projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GitHub for Project Management</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/advanced/advanced.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Advanced Git: Git on the command line</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/actions/actions.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../content/nefsc-pdb/actions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub Actions</span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Resources</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
- <span class="menu-text">In-Person Workshops</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/inperson/cb_genetics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GitHub Workshop for CB Genetics and Evolution Program</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/inperson/nefsc_pdb.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GitHub Workshop for Northeast Fisheries Science Center Population Dynamics Branch</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text"><img width="100px"></span>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text"><img width="100px"></span>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="https://fisheries.noaa.gov" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><img src="../../images/noaa_emblem_logo-2022.png" width="100px"></span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -465,12 +394,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#aims-and-objectives" id="toc-aims-and-objectives" class="nav-link active" data-scroll-target="#aims-and-objectives">Aims and Objectives</a></li>
-  <li><a href="#prerequisites-what-do-i-need-before-this-workshop-to-follow-along-on-my-own" id="toc-prerequisites-what-do-i-need-before-this-workshop-to-follow-along-on-my-own" class="nav-link" data-scroll-target="#prerequisites-what-do-i-need-before-this-workshop-to-follow-along-on-my-own">Prerequisites: What do I need before this workshop to follow along on my own?</a></li>
-  <li><a href="#what-are-github-actions" id="toc-what-are-github-actions" class="nav-link" data-scroll-target="#what-are-github-actions">What are GitHub Actions?</a></li>
-  <li><a href="#tutorial-getting-familiar-with-github-actions" id="toc-tutorial-getting-familiar-with-github-actions" class="nav-link" data-scroll-target="#tutorial-getting-familiar-with-github-actions">Tutorial: Getting familiar with GitHub Actions</a></li>
+  <li><a href="#github-issues-and-discussions-for-project-development" id="toc-github-issues-and-discussions-for-project-development" class="nav-link active" data-scroll-target="#github-issues-and-discussions-for-project-development">GitHub Issues and Discussions for Project Development</a></li>
+  <li><a href="#project-management-in-github" id="toc-project-management-in-github" class="nav-link" data-scroll-target="#project-management-in-github">Project Management in GitHub</a></li>
+  <li><a href="#tutorial-working-with-issues-and-discussions" id="toc-tutorial-working-with-issues-and-discussions" class="nav-link" data-scroll-target="#tutorial-working-with-issues-and-discussions">Tutorial: Working with issues and discussions</a></li>
+  <li><a href="#tutorial-getting-familiar-with-github-projects" id="toc-tutorial-getting-familiar-with-github-projects" class="nav-link" data-scroll-target="#tutorial-getting-familiar-with-github-projects">Tutorial: Getting familiar with GitHub Projects</a></li>
   </ul>
-<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/edit/main/content/actions/actions.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/blob/main/content/actions/actions.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/edit/main/content/nefsc-pdb/issues-projects.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/blob/main/content/nefsc-pdb/issues-projects.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -494,9 +423,9 @@ function googleTranslateElementInit() {
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/intro/intro.html">Tutorials</a></li><li class="breadcrumb-item"><a href="../../content/actions/actions.html">GitHub Actions</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/issues-projects.html">Day 2: Leveraging GitHub for Collaborative Work</a></li><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/issues-projects.html">Project management</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">GitHub Actions</h1>
+<h1 class="title">Managing Projects in GitHub: Issues, Discussions, and Project Boards</h1>
 </div>
 
 
@@ -513,149 +442,251 @@ function googleTranslateElementInit() {
 </header>
 
 
-<section id="aims-and-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="aims-and-objectives">Aims and Objectives</h2>
-<p>GitHub Actions is a continuous integration and continuous delivery platform that allows you to automate your build, test, and deployment pipeline directly from your GitHub repositories. You can create workflows that run your code, build and test your packages, reports, and websites, or deploy your built products. This skills session will use directed, interactive lessons to provide NOAA Fisheries staff with a foundation in using GitHub Actions for automated workflows on GitHub.</p>
-</section>
-<section id="prerequisites-what-do-i-need-before-this-workshop-to-follow-along-on-my-own" class="level2">
-<h2 class="anchored" data-anchor-id="prerequisites-what-do-i-need-before-this-workshop-to-follow-along-on-my-own">Prerequisites: What do I need before this workshop to follow along on my own?</h2>
-<p>This stand-alone skills session is meant for those with an intermediate understanding of Git and GitHub. Check out our <a href="../../content/intro/intro.html">Introduction to Git and GitHub</a>, <a href="../../content/branches/branches.html">Branches and Pull Requests</a>, and <a href="../../content/workflows/workflows.html">Workflows in Git and GitHub</a> lessons if you need a refresher.</p>
-</section>
-<section id="what-are-github-actions" class="level2">
-<h2 class="anchored" data-anchor-id="what-are-github-actions">What are GitHub Actions?</h2>
-<iframe class="slide-deck" src="../../slides/actions.html" width="900" height="600">
+<p>Communication among developers and between developers and end users is a key aspect of GitHub that promotes collaboration and open source development. GitHub provides a number of tools and features to facilitate communication. Two of these features, GitHub Issues and GitHub Discussions, allow collaborators to create, discuss, and track work in a repository. GitHub Projects allow teams to plan and track work in a repository and across repositories. This skills session will use directed, interactive lessons to provide NOAA Fisheries staff with a foundation in using Issues, Discussions, and Project Boards to promote open source development in GitHub.</p>
+<section id="github-issues-and-discussions-for-project-development" class="level2">
+<h2 class="anchored" data-anchor-id="github-issues-and-discussions-for-project-development">GitHub Issues and Discussions for Project Development</h2>
+<iframe class="slide-deck" src="../../slides/issues.html" width="900" height="600">
 </iframe>
 </section>
-<section id="tutorial-getting-familiar-with-github-actions" class="level2">
-<h2 class="anchored" data-anchor-id="tutorial-getting-familiar-with-github-actions">Tutorial: Getting familiar with GitHub Actions</h2>
-<p><a href="https://github.com/skills/hello-github-actions">GitHub Skills - Hello GitHub Actions</a></p>
-<p>We’ll be using the Hello GitHub Actions Skills tutorial to get familiar with GitHub Actions. Follow along with the tutorial using your personal GitHub account.</p>
-<section id="step-1-start-the-course" class="level3">
-<h3 class="anchored" data-anchor-id="step-1-start-the-course">Step 1: Start the course</h3>
-<p>Open the GitHub Skills link, and make sure you are logged into GitHub. Use the “Start course” button to make a new repository on your account:</p>
-<p><img src="images/paste-1.png" class="img-fluid"></p>
-<p>When you open up the “Start course” link, you will be presented with the “Create a new repository” interface. Keep all of the defaults, and click the green “Create repository” button:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/paste-2.png" class="img-fluid figure-img"></p>
-<figcaption><img src="images/paste-3.png" class="img-fluid figure-img"></figcaption>
-</figure>
-</div>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>GitHub Skills tutorials use GitHub Actions in the background.
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>These actions use “minutes”, which are limited in a private repository, but unlimited in a public one. We suggest keeping your GitHub Skills tutorial repositories public to avoid any minutes limitations.</p>
-</div>
-</div>
+<section id="project-management-in-github" class="level2">
+<h2 class="anchored" data-anchor-id="project-management-in-github">Project Management in GitHub</h2>
+<iframe class="slide-deck" src="../../slides/projects.html" width="900" height="600">
+</iframe>
+</section>
+<section id="tutorial-working-with-issues-and-discussions" class="level2">
+<h2 class="anchored" data-anchor-id="tutorial-working-with-issues-and-discussions">Tutorial: Working with issues and discussions</h2>
+<p>For this tutorial, we’re going to be forking a demo repository (<a href="https://github.com/nmfs-opensci/GitHub-Clinic-demos" class="uri">https://github.com/nmfs-opensci/GitHub-Clinic-demos</a>), enabling Issues and Discussion on our repository, and adding an issue and a discussion to the repository. Follow along on your own account.</p>
+<section id="step-1-fork-the-repository" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-fork-the-repository">Step 1: Fork the repository</h3>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>You’ll notice that most steps in a GitHub Skills tutorial feature a message to wait about 20 seconds for the exercise to update.
+<span class="screen-reader-only">Tip</span>If you have already forked this repository for a previous session, you can skip this step.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>GitHub Actions can take a little bit of time to run, so waiting this requisite time is important! Refresh the instructions after 20 seconds to make sure everything updates properly.</p>
+<p>We have used this demo repository for previous GitHub Clinic demonstrations and tutorials, so you may already have a forked copy of this repository on your account. If you are unsure, you can search for <strong><code>[your-username]/GitHub-Clinic-demos</code></strong> in the GitHub search bar.</p>
 </div>
 </div>
+<ol type="1">
+<li>Open <a href="https://github.com/nmfs-opensci/GitHub-Clinic-demos">the demo repository</a> in GitHub.<br>
+<img src="../issues/images/paste-1.png" class="img-fluid"></li>
+<li>At the top of the repository, click the <strong>Fork</strong> button.<br>
+<img src="../issues/images/paste-2.png" class="img-fluid"></li>
+<li>Keep everything default (your account should be listed under <strong>Owner</strong>, and the <strong>Repository name</strong> should be pre-filled for you). Click the green <strong>Create Fork</strong> button.<br>
+<img src="../issues/images/paste-3.png" class="img-fluid"></li>
+</ol>
 </section>
-<section id="step-2-start-the-exercise" class="level3">
-<h3 class="anchored" data-anchor-id="step-2-start-the-exercise">Step 2: Start the exercise</h3>
-<p>After waiting the suggested 20 seconds, refresh the repository, and click the “Go to Exercise” button in the README</p>
+<section id="step-2-enable-issues-and-discussions" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-enable-issues-and-discussions">Step 2: Enable Issues and Discussions</h3>
+<p>When you create your new fork, you may notice that the <strong>Issues</strong> and <strong>Discussions</strong> tabs that you normally see at the top of the repository are not there. We have to enable these in the repository settings.</p>
+<ol type="1">
+<li>Navigate to the <strong>Settings</strong> tab in your forked repository.<br>
+<img src="../issues/images/paste-4.png" class="img-fluid"></li>
+<li>On the main settings page, scroll down to the <strong>Features</strong> section, and select the checkboxes next to <strong>Issues</strong> and <strong>Discussions</strong>.<br>
+<img src="../issues/images/paste-5.png" class="img-fluid"></li>
+<li>Note that the top menu bar for your repository now has the <strong>Issues</strong> and <strong>Discussions</strong> tabs added.<br>
+<img src="../issues/images/paste-6.png" class="img-fluid"></li>
+</ol>
+</section>
+<section id="step-3-set-up-a-template-issue" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-set-up-a-template-issue">Step 3: Set up a template issue</h3>
+<ol type="1">
+<li>Refresh the settings page, and in the same <strong>Features</strong> section, click the green <strong>Set up templates</strong> button under <strong>Issues.</strong><br>
+<img src="../issues/images/paste-7.png" class="img-fluid"></li>
+<li>Under the dropdown menu for <strong>Add template</strong>, select <strong>Bug report</strong> to add a Bug report template to your available templates.<br>
+<img src="../issues/images/paste-9.png" class="img-fluid"></li>
+<li>Click the <strong>Preview and edit</strong> button to see what your issue template looks like in Markdown<br>
+<img src="../issues/images/paste-10.png" class="img-fluid"></li>
+<li>Let’s go ahead and edit the template to take out the part about smartphone specifications. Click the edit button at the top next to <strong>“Issue: Bug report”</strong> (it looks like a little pencil).<br>
+<img src="../issues/images/paste-11.png" class="img-fluid"></li>
+<li>In the <strong>Template content</strong> section, scroll down to the “Smartphone” section, and delete everything from that section.<br>
+<img src="../issues/images/paste-12.png" class="img-fluid"></li>
+<li>Click the “x” at the top of the editing pane to save your changes, then click the <strong>Close preview</strong> button. Click the green <strong>Propose changes</strong> button to create a commit that will add your new template to your repository.<br>
+<img src="../issues/images/paste-13.png" class="img-fluid"></li>
+<li>Note that you now have a new subfolder in your repository under the <code>.github</code> folder called <code>ISSUE_TEMPLATE</code>. If you navigate to that folder in your repository, you can see our newly created <code>bug_report.md</code> template. If we ever want to make more edits to our template, we can either use the template editor interface in the <strong>Settings</strong> menu, or we can directly edit these files in our repository.<br>
+<img src="../issues/images/paste-14.png" class="img-fluid"></li>
+</ol>
+</section>
+<section id="step-4-create-an-issue" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-create-an-issue">Step 4: Create an issue</h3>
+<ol type="1">
+<li>Navigate to the <strong>Issues</strong> tab in your repository, and click the green <strong>New issue</strong> button.<br>
+<img src="../issues/images/paste-15.png" class="img-fluid"></li>
+<li>Let’s use the new template that we created. Click the <strong>Bug report</strong> option in the menu.<br>
+<img src="../issues/images/paste-16.png" class="img-fluid"></li>
+<li>Give your issue a title and fill in the template with a fake “bug”. Note that you can directly paste in an image from your clipboard (GitHub converts it to a permalink when you paste it into Markdown). Click the green <strong>Create</strong> button to submit your issue.<br>
+<img src="../issues/images/paste-17.png" class="img-fluid"></li>
+<li>Let’s add a label to our Issue to show that it’s a bug report. On the left-hand side of the issue, click the “Labels” section and select “bug”.<br>
+<img src="../issues/images/paste-18.png" class="img-fluid"></li>
+</ol>
+</section>
+<section id="step-5-start-a-discussion" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-start-a-discussion">Step 5: Start a discussion</h3>
+<p>Our bug report has spawned some discussion among the developers! Let’s document this discussion in our repository.</p>
+<ol type="1">
+<li>Navigate to the <strong>Discussions</strong> tab in your repository, and click <strong>New Discussion</strong>.<br>
+<img src="../issues/images/paste-19.png" class="img-fluid"></li>
+<li>Let’s make this a general discussion. Click the green <strong>Get started</strong> button in the area next to <strong>General</strong>.<br>
+<img src="../issues/images/paste-20.png" class="img-fluid"></li>
+<li>Add a title and a body to your discussion thread. We can reference the issue that we created earlier using the <code>#</code> key.<br>
+<img src="../issues/images/paste-21.png" class="img-fluid"></li>
+<li>Click the green <strong>Start discussion</strong> button to save your discussion thread.<br>
+<img src="../issues/images/paste-22.png" class="img-fluid"></li>
+<li>Congratulations! You have now added both an Issue and a Discussion topic to your repository. Feel free to play around with other Issues templates and Discussion types on your own.</li>
+</ol>
+</section>
+</section>
+<section id="tutorial-getting-familiar-with-github-projects" class="level2">
+<h2 class="anchored" data-anchor-id="tutorial-getting-familiar-with-github-projects">Tutorial: Getting familiar with GitHub Projects</h2>
+<p>For this tutorial, we’re going to be forking a demo repository (<a href="https://github.com/nmfs-opensci/GitHub-Clinic-demos" class="uri">https://github.com/nmfs-opensci/GitHub-Clinic-demos</a>), enabling Issues, and creating a Project. We will add some issues to our Project, and explore different project views and customization options to tailor our Projects to our specific needs. Follow along on your own account.</p>
+<section id="step-1-fork-the-repository-1" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-fork-the-repository-1">Step 1: Fork the repository</h3>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+<span class="screen-reader-only">Tip</span>If you have already forked this repository for a previous session, you can skip this step.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>I suggest moving the instructions tab into another window so you can work side-by-side with the instructions to limit switching back and forth between tabs.</p>
-<p><img src="images/paste-5.png" class="img-fluid"></p>
+<p>We have used this demo repository for previous GitHub Clinic demonstrations and tutorials, so you may already have a forked copy of this repository on your account. If you are unsure, you can search for <strong><code>[your-username]/GitHub-Clinic-demos</code></strong> in the GitHub search bar.</p>
+</div>
+</div>
+<ol type="1">
+<li>Open <a href="https://github.com/nmfs-opensci/GitHub-Clinic-demos">the demo repository</a> in GitHub.<br>
+<img src="../projects/images/paste-1.png" class="img-fluid"></li>
+<li>At the top of the repository, click the <strong>Fork</strong> button.<br>
+<img src="../projects/images/paste-2.png" class="img-fluid"></li>
+<li>Keep everything default (your account should be listed under <strong>Owner</strong>, and the <strong>Repository name</strong> should be pre-filled for you). Click the green <strong>Create Fork</strong> button.<br>
+<img src="../projects/images/paste-3.png" class="img-fluid"></li>
+<li>When you create your new fork, you may notice that the <strong>Issues</strong> tab that you normally see at the top of the repository is not there. We have to enable this in the repository settings. Navigate to the <strong>Settings</strong> tab in your forked repository. Scroll down to the <strong>Features</strong> section and check the box next to <strong>Issues.</strong> (Note that Projects is another option in the <strong>Features</strong> section; this should already be checked, but if it isn’t, go ahead and check that as well).**** <img src="../projects/images/paste-4.png" class="img-fluid"></li>
+</ol>
+</section>
+<section id="step-2-create-a-new-project" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-create-a-new-project">Step 2: Create a new Project</h3>
+<p>There are multiple ways to create projects in GitHub. Rather than being attached to one specific repository, Projects can act across any and all repositories in an account. Because of this functionality, Projects reside in either a user’s account or an organization’s account, rather than within a repository. We’re going to be creating a Project using the <strong>Projects</strong> tab within a repository, but keep in mind that we can access all of our Projects from our account home page.</p>
+<ol type="1">
+<li>Navigate to the <strong>Projects</strong> tab on the top ribbon bar of your repository. Click the green <strong>New project</strong> button to start a new project.<br>
+<img src="../projects/images/paste-5.png" class="img-fluid"></li>
+<li>You will be presented with a number of pre-defined Project templates, each of which has a specific layout and customized configuration tailored to the type of planning or tracking your team may use. Feel free to explore these on your own; for now, let’s start a project from scratch. On the left-hand side of the pop-up, select the <strong>Table</strong> option under <strong>Start from scratch</strong>.<br>
+<img src="../projects/images/paste-7.png" class="img-fluid"></li>
+<li>Give your new Project a name. Let’s call ours “GitHub Clinic example project”. Click the green <strong>Create project</strong> button to finalize your new project.<br>
+<img src="../projects/images/paste-8.png" class="img-fluid"></li>
+<li>Let’s add a description and README to our project to describe our Project’s purpose. Click the ellipse button (View more options) at the top right of the project, and select **Settings.** <img src="../projects/images/paste-9.png" class="img-fluid"></li>
+<li>Add a short description and README to the Project to explain the purpose of the Project and how to use it. Note that the README supports markdown formatting. In future Projects, you may want to take advantage of this to flesh out the details of your Project and add more context.<br>
+<img src="../projects/images/paste-10.png" class="img-fluid"></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>GitHub Projects default to Private visibility.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You may have noticed that there’s a padlock-style icon next to the title of our Project. This means that the Project is private, so only you and the people you specifically grant access can see the Project. We can change the visibility in this Settings menu as well. Sometimes it’s beneficial to make Projects publicly viewable for transparency purposes; otherwise, feel free to keep these Projects private. You can always add collaborators later.</p>
 </div>
 </div>
 </section>
-<section id="step-3-follow-the-exercise" class="level3">
-<h3 class="anchored" data-anchor-id="step-3-follow-the-exercise">Step 3: Follow the exercise</h3>
-<section id="create-a-workflow-file" class="level4">
-<h4 class="anchored" data-anchor-id="create-a-workflow-file">Create a workflow file</h4>
+<section id="step-3-add-items-to-your-project" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-add-items-to-your-project">Step 3: Add items to your project</h3>
+<p>Let’s populate our Project with some issues! We can add existing issues from any repository in the account (individual or organization) that the Project was created under. We can also create our own issues directly from the Project interface.<br>
+<img src="../projects/images/paste-12.png" class="img-fluid"></p>
 <ol type="1">
-<li>We’re going to make a new pull request where we will be making our change during the exercises. Navigate to the Pull Requests tab, click <strong>New pull request</strong>, and change the <code>compare</code> branch to <code>welcome-workflow</code>. Click the green <strong>Create pull request</strong> button, and confirm the pull request by clicking <strong>Create pull request</strong> again.<br>
-<img src="images/paste-6.png" class="img-fluid"></li>
-<li>Navigate to the <strong>Code</strong> tab, and switch to the <code>welcome-workflow</code> branch where it says <code>main</code>.<br>
-<img src="images/paste-8.png" class="img-fluid"></li>
-<li>In the <strong>Code</strong> tab, select the <code>.github</code> folder, and navigate to the <code>workflows</code> subfolder. Use the <strong>Create new file</strong> button to add a new file to this folder.<br>
-<img src="images/paste-9.png" class="img-fluid"></li>
-<li>Name your new file <code>welcome.yml</code>, and copy in the YAML code from the tutorial code block into the file contents. Commit your changes to the <code>welcome-workflow</code> branch to save your changes.<br>
-<img src="images/paste-10.png" class="img-fluid"></li>
-<li>Wait about 20 seconds for the tutorial to update, then refresh the instructions page.</li>
+<li>Let’s create a few example issues for our Project. Click the <code>+</code> button on the first line of the Project board, and click “Create new issue”. This will pop up a dialogue box where we can add an issue to a repository. We’ll create our issues in the GitHub Clinic Demo repository, so make sure the <strong>Repository</strong> section has the appropriate repository selected (Hint: click the Repository dropdown menu and type “github-clinic-demos” in the search box).<br>
+<img src="../projects/images/paste-13.png" class="img-fluid"></li>
+<li>I’ve added some Issue templates for <strong>Bug report, Feature request,</strong> and <strong>Task</strong> to the demos repository that should transfer to your forked repository. Let’s add one of each type to our Project.<br>
+<img src="../projects/images/paste-14.png" class="img-fluid"></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>You may need to pull changes from the parent repository to get the appropriate templates.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you are working from a previously forked copy of the <code>GitHub-Clinic-Demos</code> repository, you will need to update your version of the repository with the parent repository hosted on <code>nmfs-opensci</code>. On the <strong>Code</strong> tab of your forked copy of the repository, there will be a banner saying your branch is behind the branch hosted on nmfs-opensci. Next to this banner, there should be a button called <strong>Sync fork</strong>. Go ahead and click that button, and select <strong>Update branch</strong>.<br>
+<img src="../projects/images/paste-15.png" class="img-fluid"></p>
+</div>
+</div>
+<ol start="3" type="1">
+<li>We can also add “draft” issues to our Project. These can be used as placeholders for items that may need to be more fleshed out or items that we don’t necessarily need as true “issues” in a specific repository. Click in the Title spot below the last project item, and type in a draft issue.<br>
+<img src="../projects/images/paste-16.png" class="img-fluid"></li>
 </ol>
 </section>
-<section id="add-a-job-to-your-workflow-file" class="level4">
-<h4 class="anchored" data-anchor-id="add-a-job-to-your-workflow-file">Add a job to your workflow file</h4>
-<p>Let’s specify a job to run on our GitHub Action workflow file.</p>
+<section id="step-4-adding-fields" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-adding-fields">Step 4: Adding fields</h3>
+<p>Let’s create some custom fields to better organize our project.</p>
 <ol type="1">
-<li>Open the <code>welcome.yml</code> file that we just created (note that this is different from the <code>0-welcome.yml</code> file that was provided with the repository at the start of the exercise). Click the <strong>Edit</strong> button, and copy in the contents from the exercise instructions.<br>
-<img src="images/paste-11.png" class="img-fluid"></li>
-<li>Commit the changes directly to the <code>welcome-workflow</code> branch.<br>
-<img src="images/paste-12.png" class="img-fluid"></li>
-<li>Wait about 20 seconds for the tutorial to update, then refresh the instructions page.</li>
+<li>Iteration fields let us plan and track our work over repeating blocks of time. Iterations can be configured with customizable lengths and breaks to suit your team’s needs. Create an iteration field by clicking the <code>+</code> icon to the right of the Status column in our table view, and click “New field”. Give your field a name, and change the field type to Iteration. You can customize when the iteration should start and how long each iteration should last.<br>
+<img src="../projects/images/paste-17.png" class="img-fluid"></li>
+<li>Assign each of your Project items to an iteration. This will be useful when we explore the Roadmap layout later.<br>
+<img src="../projects/images/paste-18.png" class="img-fluid"></li>
+<li>Let’s create a Priority field. Click the <code>+</code> icon to the right of the Iteration column in our table view, and click “New field”. Name your field Priority, and select “Single select” from the field type menu. Add options for Low, Medium, and High priority. Save your new field.<br>
+<img src="../projects/images/paste-19.png" class="img-fluid"></li>
+<li>Assign each of your example issues to a priority level in your new field.<br>
+<img src="../projects/images/paste-20.png" class="img-fluid"></li>
 </ol>
 </section>
-<section id="add-a-step-to-the-workflow-file" class="level4">
-<h4 class="anchored" data-anchor-id="add-a-step-to-the-workflow-file">Add a step to the workflow file</h4>
-<p>We added a job to our workflow file, but at this point the job doesn’t really do anything. Let’s change that by adding a step to our job. This step will use the GitHub Command Line Interface (<code>gh</code>) to add a comment to a pull request when it is first opened. The step also sets some important environment variables that are required for our job to run.</p>
+<section id="step-5-configure-the-table-layout" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-configure-the-table-layout">Step 5: Configure the Table layout</h3>
+<p>Let’s make this table a little more informative by adding some other fields.</p>
 <ol type="1">
-<li>In the same <code>welcome.yml</code> file (your browser should still be on the file after you committed the last edit), click the <strong>Edit</strong> button again. Paste in the updated YAML code from the exercise instructions.<br>
-<img src="images/paste-13.png" class="img-fluid"></li>
-<li>Commit your changes directly to the <code>welcome-workflow</code> branch.<br>
-<img src="images/paste-15.png" class="img-fluid"></li>
-<li>Wait about 20 seconds for the tutorial to update, then refresh the instructions page.</li>
+<li>Click the dropdown where it says <strong>View 1</strong>, and select the <strong>Fields</strong> menu. Under “Hidden fields”, select <strong>Labels, Milestone,</strong> and **Repository.** <img src="../projects/images/paste-21.png" class="img-fluid"></li>
+<li>In the same dropdown, select the <strong>Group by</strong> option and select <strong>Priority</strong> to split the table by priority.<br>
+<img src="../projects/images/paste-22.png" class="img-fluid"></li>
+<li>With the grouped view, we can now move items between priorities. Try this out by moving one of your items from medium to low priority. Do this by clicking and dragging from the number to the left of the issue title.<br>
+<img src="../projects/images/paste-23.png" class="img-fluid"><br>
+<img src="../projects/images/paste-24.png" class="img-fluid"></li>
+<li>Change the name of your view by clicking the drop-down menu again and selecting <strong>Rename view.</strong> Let’s rename it to “Planning”.<br>
+<img src="../projects/images/paste-26.png" class="img-fluid"></li>
+<li>Save your changes to the view by clicking the green <strong>Save</strong> option in the dropdown menu.<br>
+<img src="../projects/images/paste-28.png" class="img-fluid"></li>
 </ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Be sure to save your view if you want to come back to it!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Views do not save to the project by default. If you make changes to a view that you want to be shown every time you open your project, be sure to save them. Otherwise, view changes will only be applied during the current session.</p>
+</div>
+</div>
 </section>
-<section id="merge-your-workflow-file" class="level4">
-<h4 class="anchored" data-anchor-id="merge-your-workflow-file">Merge your workflow file</h4>
-<p>All of the changes that we’ve made have been on a separate branch so we avoid editing the <code>main</code> branch before the Action is ready for primetime. Let’s merge our changes from the <code>welcome-workflow</code> branch into the <code>main</code> branch.</p>
+<section id="step-6-experiment-with-other-views" class="level3">
+<h3 class="anchored" data-anchor-id="step-6-experiment-with-other-views">Step 6: Experiment with other views</h3>
+<p>Let’s create a couple new views to showcase the other view types. You’re welcome to play around with these views on your own, but for now we’ll just introduce the other view types.</p>
 <ol type="1">
-<li>Navigate to the <strong>Pull requests</strong> tab, and click on the “Welcome workflow” pull request we created previously.<br>
-<img src="images/paste-16.png" class="img-fluid"></li>
-<li>Scroll to the bottom of the pull request (note the various commits that we have made and that the GitHub Skills actions have made) and click <strong>Merge pull request</strong>, then <strong>Confirm merge</strong>.<br>
-<img src="images/paste-17.png" class="img-fluid"></li>
-<li>Delete the <code>welcome-workflow</code> branch, wait about 20 seconds for the tutorial to update, then refresh the instructions page.</li>
-</ol>
-</section>
-<section id="trigger-the-workflow" class="level4">
-<h4 class="anchored" data-anchor-id="trigger-the-workflow">Trigger the workflow</h4>
-<p>Now that we’ve merged our workflow into our main branch, let’s test it out by opening a pull request.</p>
-<ol type="1">
-<li>Make a new branch named <code>test-workflow</code> from the <strong>Code</strong> tab.<br>
-<img src="images/paste-18.png" class="img-fluid"></li>
-<li>Make a change to the README file by clicking the <strong>Edit file</strong> button on the README. It doesn’t matter what change you make. In this example, we added an exclamation point to the title header.<br>
-<img src="images/paste-19.png" class="img-fluid"></li>
-<li>Commit your changes directly to your new branch.<br>
-<img src="images/paste-20.png" class="img-fluid"></li>
-<li>In the <strong>Pull requests</strong> tab, create a pull request merging <code>test-workflow</code> into <code>main</code>.<br>
-<img src="images/paste-22.png" class="img-fluid"></li>
-<li>Watch our Welcome Workflow running in the checks section of the pull request.<br>
-<img src="images/paste-23.png" class="img-fluid"></li>
-<li>Notice the comment that the workflow adds to the pull request.<br>
-<img src="images/paste-24.png" class="img-fluid"></li>
-<li>Wait about 20 seconds, then refresh the instructions page to finish the tutorial.</li>
+<li>Create a new view by clicking the <strong>+ New view</strong> tab at the top of the project. Select the <strong>Board</strong> option.<br>
+<img src="../projects/images/paste-29.png" class="img-fluid"></li>
+<li>Rename this view to “Progress Board”, and click the green <strong>Save</strong> button to save your view. Here we can move issues between different categories. The default is a traditional kanban-style board with statuses for level of completeness. However, we can also add different categories to assign and organize issues to whatever is needed. We can even add multiple versions of these boards to categorize items in different ways.<br>
+<img src="../projects/images/paste-30.png" class="img-fluid"></li>
+<li>Now let’s add a timeline view. Select <strong>+ New view</strong> at the top of the project, and select the <strong>Roadmap</strong> option.<br>
+<img src="../projects/images/paste-31.png" class="img-fluid"></li>
+<li>GitHub will prompt us that we need a date field set for this view. Recall that we set up an Iteration field earlier in the exercise called <strong>Weekly deadline.</strong> Choose the <strong>Weekly deadline start</strong> option for the <strong>Start date</strong> and <strong>Weekly deadline end</strong> option for the <strong>Target</strong> date.<br>
+<img src="../projects/images/paste-32.png" class="img-fluid"></li>
+<li>Rename this view to <strong>Timeline</strong> and save your view.<br>
+<img src="../projects/images/paste-33.png" class="img-fluid"></li>
+<li>Feel free to experiment with the different view types and features available with Projects. Check out <a href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects">GitHub’s documentation for Projects</a> (be sure to look at the different sub-pages on the right-hand side of the page) for more information, tips, and tricks about GitHub Projects.<br>
+<img src="../projects/images/paste-34.png" class="img-fluid"></li>
 </ol>
 
 
-</section>
 </section>
 </section>
 
@@ -1075,13 +1106,13 @@ Tip
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../content/advanced/advanced.html" class="pagination-link" aria-label="Advanced Git: Git on the command line">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Advanced Git: Git on the command line</span>
+      <a href="../../content/nefsc-pdb/workflows.html" class="pagination-link" aria-label="Workflows">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Workflows</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../content/resources.html" class="pagination-link" aria-label="Resources">
-        <span class="nav-page-text">Resources</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../content/nefsc-pdb/actions.html" class="pagination-link" aria-label="GitHub Actions">
+        <span class="nav-page-text">GitHub Actions</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1093,7 +1124,7 @@ Tip
     </div>   
     <div class="nav-footer-center">
 <p><img src="https://github.com/nmfs-opensci/assets/blob/main/logo/nmfs-opensci-logo2.png?raw=true" alt="NMFS Open Science logo" style="width:150px"><br>NMFS Open Science (2023)</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/edit/main/content/actions/actions.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/blob/main/content/actions/actions.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/edit/main/content/nefsc-pdb/issues-projects.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/blob/main/content/nefsc-pdb/issues-projects.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

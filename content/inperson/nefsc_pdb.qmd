@@ -1,7 +1,7 @@
 ---
 title: GitHub Workshop for Northeast Fisheries Science Center Population Dynamics Branch
 date: '2026-09-28'
-sidebar: false
+sidebar: "PDB"
 ---
 
 GitHub is an important platform for many NOAA Fisheries staff and teams to share and collaborate. In 2023, an Authorization To Use for GitHub Enterprise Cloud was signed, which provides a secure, private, access-controlled and managed platform for staff. In 2024, the GitHub Governance Team (GGT) provided a series of workshops to onboard NOAA Fisheries scientists to GitHub Enterprise and provide training in the use of Git and GitHub for NOAA Fisheries. In 2025, NMFS Open Science led a second iteration of these workshops to provide NOAA Fisheries staff with the necessary skills to effectively incorporate Git and GitHub into existing workflows.
@@ -26,8 +26,8 @@ This workshop will use a mixture of directed, interactive lessons and GitHub Ski
 - 8:30-9:00 Introduction to Git and GitHub: Why we use it, basics and terminology, and an intro to GitHub Enterprise
 - 9:00-10:00 Introduction to GitHub - Tutorial
 - 10:00-10:15 Break
-- 10:15-10:45 Cloning and local repositories: Making changes to GitHub repositories on your local machine
-- 10:45-11:45 Cloning and local repositories - Tutorial and practice
+- 10:15-10:30 Cloning and local repositories: Making changes to GitHub repositories on your local machine
+- 10:30-11:45 Cloning and local repositories - Tutorial and practice
 - 11:45-12:30 Lunch
 - 12:30-13:00 Forking, Branches, and Pull Requests: Contributing to repositories
 - 13:00-14:00 Forking, Branches, and Pull Requests - Tutorial

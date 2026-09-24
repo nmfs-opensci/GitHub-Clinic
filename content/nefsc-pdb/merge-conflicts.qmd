@@ -1,0 +1,110 @@
+---
+title: "Merge Conflits in Git and GitHub"
+---
+
+Merge conflicts occur when you merge branches that have competing commits. Knowing how to address merge conflicts, and how to avoid them in the first place, is a key aspect to developing your workflows in Git and GitHub. This skills session will use directed, interactive lessons to provide NOAA Fisheries staff with an understanding of why merge conflicts happen, strategies to avoid merge conflicts, and how to address them if they do occur.
+
+## Addressing Merge Conflicts in Git and GitHub
+
+<iframe class="slide-deck" src="../../slides/merge-conflicts.html" width="900" height="600">
+
+</iframe>
+
+## Tutorial: Resolve merge conflicts with GitHub Skills
+
+[GitHub Skills: Resolve merge conflicts](https://github.com/skills/resolve-merge-conflicts)
+
+We'll be using the **Resolve merge conflicts** GitHub Skills tutorial to practice creating a resolving a merge conflict. Follow along with the tutorial using your own GitHub account.
+
+### Step 1: Start the course
+
+Open the GitHub Skills link, and make sure you are logged into GitHub. Use the "Start course" button to make a new repository on your account:
+
+![](../merge-conflicts/images/paste-1.png)
+
+When you open up the "Start course" link, you will be presented with the "Create a new repository" interface. Keep all of the defaults, and click the green "Create repository button:
+
+![](../merge-conflicts/images/paste-2.png)
+
+::: callout-important
+## GitHub Skills tutorials use GitHub Actions in the background.
+
+These actions use "minutes", which are limited in a private repository, but unlimited in a public one. We suggest keeping your GitHub Skills tutorial repositories public to avoid any minutes limitations.
+:::
+
+::: callout-tip
+## You'll notice that most steps in a GitHub Skills tutorial feature a message to wait about 20 seconds for the exercise to update.
+
+GitHub Actions can take a little bit of time to run, so waiting this requisite time is important! Refresh the instructions after 20 seconds to make sure everything updates properly.
+:::
+
+### Step 2: Start the exercise
+
+After waiting the suggested 20 seconds, refresh the repository.
+
+::: callout-tip
+I suggest moving the instructions tab into another window so you can work side-by-side with the instructions to limit switching back and forth between tabs.
+
+![](../merge-conflicts/images/paste-3.png)
+:::
+
+### Step 3: Follow the exercise
+
+In this exercise, we will be demonstrating how to resolve a merge conflict. GitHub Actions has introduced a change to a file on a branch that conflicts with another branch. We'll go through the process of merging that change in, creating the merge conflict, and fixing it.
+
+#### Create a pull request
+
+Since merge conflicts occur when merging from a pull request, we'll start by creating a new pull request.
+
+1.  On the **Pull requests** tab of the repository, open a new pull request by clicking the green **New** button. Keep `main` as the base branch, and set the compare branch to `my-resume`. Click the green **Create pull request** button.\
+    ![](../merge-conflicts/images/paste-4.png)
+2.  Enter "Resolving merge conflicts" as the title of the pull request, and click **Create pull request**.\
+    ![](../merge-conflicts/images/paste-5.png)
+3.  Wait 20 seconds and refresh the instructions README page.
+
+#### Resolve a merge conflict
+
+1.  The pull request we created has a conflict. Click the **Resolve conflicts** button in your pull request.\
+    ![](../merge-conflicts/images/paste-6.png)
+
+2.  Look for the line that starts with `<<<<<<< my-resume` and ends with `>>>>>>> main` (it should be lines 5-9). These are your merge conflict indicators.\
+    ![](../merge-conflicts/images/paste-7.png)
+
+3.  Now we have to choose what to keep and what to get rid of. For this exercise, we'll keep the changes made on the `my-resume` branch and remove the changes made on the `main` branch. Do this by deleting all content below the `=======` and above `>>>>>>> main` (this should just be one line).
+
+    ![](../merge-conflicts/images/paste-8.png)
+
+4.  Delete the merge conflict indicators on lines 5, 7, and 8 to retain only the change that was made on the `my-resume` branch.\
+    ![](../merge-conflicts/images/paste-9.png)
+
+5.  Click the **Mark as resolved** button in the upper right, and commit the merge.\
+    ![](../merge-conflicts/images/paste-11.png)
+
+6.  Wait about 20 seconds and refresh the instructions README page.
+
+#### Create your own conflict
+
+Now that we know how to resolve a merge conflict, let's create one of our own to see how they may occur. The GitHub Actions bot added a new file to the `main` branch. We'll create the same file in the `my-resume` branch that has different content.
+
+1.  On the **Code** tab, click the dropdown where it says `main` and switch to the `my-resume` branch.\
+    ![](../merge-conflicts/images/paste-12.png)
+2.  Click the **Add file** dropdown (it might look like a `+` if you're in a condensed window) and create a new file. Name it `references.md`.\
+    ![](../merge-conflicts/images/paste-13.png)
+3.  Add some content to the file. The content doesn't really matter, as long as it's different from the copy on `main`. Commit your changes directly to the `my-resume` branch with an appropriate commit message.\
+    ![](../merge-conflicts/images/paste-14.png)
+4.  Wait 20 seconds and refresh the instructions README page.
+
+#### Merge your pull request
+
+Our commit created a merge conflict in our existing pull request. Let's deal with that before we finalize our new merge.
+
+1.  In the **Pull requests** tab, open your "Resolving merge conflicts" merge request. Click the **Resolve conflicts** button at the bottom of the pull request.\
+    ![](../merge-conflicts/images/paste-15.png)
+2.  Following the instructions from above, resolve the merge conflict.\
+    ![](../merge-conflicts/images/paste-16.png)
+3.  Mark the conflict as resolved, and commit your merge.\
+    ![](../merge-conflicts/images/paste-17.png)
+4.  Merge your pull request, and delete the `my-resume` branch.\
+    ![](../merge-conflicts/images/paste-18.png)
+5.  Wait 20 seconds then refresh the instructions README page.
+6.  You're finished with the tutorial! Feel free to experiment with creating and resolving merge conflicts to get comfortable with the process.

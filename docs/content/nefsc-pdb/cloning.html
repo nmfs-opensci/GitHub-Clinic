@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>NOAA Fisheries GitHub Clinic</title>
+<title>Cloning and local repositories: Making changes to GitHub repositories on your local machine – NOAA Fisheries GitHub Clinic</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,28 +26,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./content/schedule.html" rel="next">
-<link href="./images/favicon-16x16.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-abc221fc48ed4c18702b5fda642c3695.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-d1eed930a3d9568fc4771a3219362500.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-abc221fc48ed4c18702b5fda642c3695.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../content/nefsc-pdb/forking-branches-prs.html" rel="next">
+<link href="../../content/nefsc-pdb/introduction.html" rel="prev">
+<link href="../../images/favicon-16x16.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-abc221fc48ed4c18702b5fda642c3695.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d1eed930a3d9568fc4771a3219362500.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-abc221fc48ed4c18702b5fda642c3695.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -249,11 +250,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images\noaa-logo-rgb-2022.png" alt="NOAA logo" class="navbar-logo light-content">
-    <img src="./images\noaa-logo-rgb-2022.png" alt="NOAA logo" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images\noaa-logo-rgb-2022.png" alt="NOAA logo" class="navbar-logo light-content">
+    <img src="../../images\noaa-logo-rgb-2022.png" alt="NOAA logo" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">NOAA Fisheries GitHub Clinic</span>
     </a>
   </div>
@@ -295,7 +296,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Welcome</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/introduction.html">Day 1: Working with Repositories</a></li><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/cloning.html">Cloning and local repositories</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -306,17 +307,23 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
+      <a href="../../index.html" class="sidebar-logo-link">
       <img src="https://github.com/nmfs-opensci/assets/blob/main/logo/nmfs-opensci-logo2.png?raw=true" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
       <img src="https://github.com/nmfs-opensci/assets/blob/main/logo/nmfs-opensci-logo2.png?raw=true" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/inperson/nefsc_pdb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Welcome</span></a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Day 1: Working with Repositories</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -324,14 +331,32 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./content/schedule.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
+  <a href="../../content/nefsc-pdb/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./content/setup/setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Setup</span></a>
+  <a href="../../content/nefsc-pdb/cloning.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Cloning and local repositories</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/nefsc-pdb/forking-branches-prs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Forking, Branches, and Pull Requests</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/nefsc-pdb/merge-conflicts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Merge Conflicts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/nefsc-pdb/workflows.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Workflows</span></a>
   </div>
 </li>
       </ul>
@@ -339,7 +364,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Tutorials</span></a>
+ <span class="menu-text">Day 2: Leveraging GitHub for Collaborative Work</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -347,113 +372,18 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./content/intro/intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Git and GitHub</span></a>
+  <a href="../../content/nefsc-pdb/issues-projects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project management</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./content/markdown/markdown.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Markdown and README files</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/github-pages/github-pages.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Hosting a repository as a website with GitHub Pages</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/forking/forking.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Forking Repositories in GitHub (and beyond)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/branches/branches.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Branches and Pull Requests</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/workflows/workflows.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Workflows in Git and GitHub</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/merge-conflicts/merge-conflicts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Merge Conflits in Git and GitHub</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/issues/issues.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Communicating in GitHub with Issues and Discussions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/projects/projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GitHub for Project Management</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/advanced/advanced.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Advanced Git: Git on the command line</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/actions/actions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../content/nefsc-pdb/actions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub Actions</span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Resources</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
- <span class="menu-text">In-Person Workshops</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/inperson/cb_genetics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GitHub Workshop for CB Genetics and Evolution Program</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./content/inperson/nefsc_pdb.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GitHub Workshop for Northeast Fisheries Science Center Population Dynamics Branch</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text"><img width="100px"></span>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text"><img width="100px"></span>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="https://fisheries.noaa.gov" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><img src="./images/noaa_emblem_logo-2022.png" width="100px"></span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -464,9 +394,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#aims-and-objectives-of-the-github-clinic" id="toc-aims-and-objectives-of-the-github-clinic" class="nav-link active" data-scroll-target="#aims-and-objectives-of-the-github-clinic">Aims and Objectives of the GitHub Clinic</a></li>
+  <li><a href="#cloning-and-local-repositories" id="toc-cloning-and-local-repositories" class="nav-link active" data-scroll-target="#cloning-and-local-repositories">Cloning and local repositories</a></li>
+  <li><a href="#working-in-github-desktop---tutorial" id="toc-working-in-github-desktop---tutorial" class="nav-link" data-scroll-target="#working-in-github-desktop---tutorial">Working in GitHub Desktop - Tutorial</a></li>
+  <li><a href="#demo-working-in-other-ides" id="toc-demo-working-in-other-ides" class="nav-link" data-scroll-target="#demo-working-in-other-ides">Demo: Working in other IDEs</a></li>
   </ul>
-<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/edit/main/content/nefsc-pdb/cloning.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/blob/main/content/nefsc-pdb/cloning.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -490,9 +422,9 @@ function googleTranslateElementInit() {
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/introduction.html">Day 1: Working with Repositories</a></li><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/cloning.html">Cloning and local repositories</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">NOAA Fisheries GitHub Clinic</h1>
+<h1 class="title">Cloning and local repositories: Making changes to GitHub repositories on your local machine</h1>
 </div>
 
 
@@ -509,39 +441,104 @@ function googleTranslateElementInit() {
 </header>
 
 
-<p>GitHub is an important platform for many NOAA Fisheries staff and teams to share and collaborate. In 2023, an Authorization To Use for GitHub Enterprise Cloud was signed, which provides a secure, private, access-controlled and managed platform for staff. In 2024, the GitHub Governance Team (GGT) provided a series of workshops to onboard NOAA Fisheries scientists to GitHub Enterprise and provide training in the use of Git and GitHub for NOAA Fisheries. In 2025, NMFS Open Science will be leading a second iteration of these workshops to provide NOAA Fisheries staff with the necessary skills to effectively incorporate Git and GitHub into existing workflows.</p>
-<p>The GGT has outlined several use cases for why you may want to incorporate Git and GitHub into your workflows:</p>
-<ul>
-<li><p>Development and distribution of scientific products and fundamental research communications.</p></li>
-<li><p>Development of software and statistical packages for data analysis, e.g.&nbsp;stock assessment models.</p></li>
-<li><p>Project/team management using GitHub project boards, issue tracking, task tracking.</p></li>
-<li><p>Collaborative development of reports that combine data, resource intensive analysis, and text.</p></li>
-<li><p>Automated report generation (using connection to online database and continuous integration).</p></li>
-<li><p>Educational resources and learning activities.</p></li>
-</ul>
-<section id="aims-and-objectives-of-the-github-clinic" class="level2">
-<h2 class="anchored" data-anchor-id="aims-and-objectives-of-the-github-clinic">Aims and Objectives of the GitHub Clinic</h2>
-<p>The GitHub Clinic will consist of several components:</p>
-<ul>
-<li><p>An introductory 2-hour introduction to Git and GitHub virtual workshop, repeated twice weekly for three weeks. These sessions will use a mixture of directed, interactive lessons and GitHub Skills to provide NOAA Fisheries staff with the knowledge required for basic repository management using Git commands, collaboration, and project management</p></li>
-<li><p>A series of 1-hour standalone skills workshops for deeper dives into several GitHub features including advanced branch management, Git workflows, GitHub pages, and forking</p></li>
-<li><p>Open Science Office Hours for individual help and coaching</p></li>
-</ul>
-<section id="schedule" class="level3">
-<h3 class="anchored" data-anchor-id="schedule">Schedule</h3>
-<p>See the <a href="./content/schedule.html">schedule page</a>.</p>
-<ul>
-<li>Intro workshops will be given Mondays at 10am PT/1pm ET and Tuesdays at 1pm PT/4pm ET for 3 weeks starting April 7th
-<ul>
-<li>These are 2 hour introductory sessions to get you started with Git and GitHub</li>
-<li>Intro sessions are identical; attend any that works for your schedule, or repeat sessions if you want to see the material twice</li>
-</ul></li>
-<li>Single-topic skills sessions will be given Thursdays at 12:30pm PT/3:30pm ET and Tuesdays at 11:00am PT/2:00pm ET, with topics switching every two weeks.</li>
-<li>See the <a href="https://sites.google.com/noaa.gov/nmfs-hq-st-open-science/trainings">NMFS Open Science Training Page</a> for the training calendar or add the <a href="#0">NMFS Open Science calendar</a> to your calendar to see all events.</li>
-</ul>
-
-
+<p>Oftentimes when we work with Git repositories, we want to make changes to the repository on our local machine rather than directly on GitHub. This is especially true when we are working with larger files or more complex changes. In this session, we will learn how to clone a repository from GitHub to our local machine, make changes, and push those changes back to GitHub.</p>
+<section id="cloning-and-local-repositories" class="level2">
+<h2 class="anchored" data-anchor-id="cloning-and-local-repositories">Cloning and local repositories</h2>
+<iframe class="slide-deck" src="../../slides/cloning.html" width="900" height="600">
+</iframe>
 </section>
+<section id="working-in-github-desktop---tutorial" class="level2">
+<h2 class="anchored" data-anchor-id="working-in-github-desktop---tutorial">Working in GitHub Desktop - Tutorial</h2>
+<p>To get a bit more experience working with GitHub repositories, we are going to clone our tutorial repository, create a repository in GitHub Desktop, make a commit, and push our changes up to GitHub.</p>
+<section id="step-1-log-into-github" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-log-into-github">Step 1: Log into GitHub</h3>
+<p>If this is your first time using GitHub Desktop, you will need to log in to your GitHub account. Open a browser window to GitHub, and make sure you’re logged in to your GitHub account. If you are on the NMFS GitHub Enterprise Cloud, you will also need to be logged in using SSO.</p>
+</section>
+<section id="step-2-open-github-desktop-and-clone-a-repository" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-open-github-desktop-and-clone-a-repository">Step 2: Open GitHub Desktop and clone a repository</h3>
+<p>On your local computer, open GitHub Desktop. Click “Clone a repository from the Internet…”</p>
+<p><img src="../intro/images/paste-39.png" class="img-fluid"></p>
+<p>Click “Sign in” and “Continue with browser” to open a browser window and sign into GitHub Desktop.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>When logging into GitHub Desktop for the first time, you will be presented with a tabbed window as shown below. To access GitHub Enterprise, do not use the Enterprise tab on the login window! This is for a locally-hosted GitHub Enterprise server. The NMFS GitHub Enterprise is cloud-hosted, so to access enterprise repositories from GitHub Desktop, you will need to be logged into the enterprise (via SSO) through your browser.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><img src="../intro/images/paste-38.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Enter the name of the GitHub Skills repository we just finished (skills-introduction-to-github) into the search box. Select the repository, choose where to clone the repository to on your local machine, and click “Clone”.</p>
+<p><img src="../intro/images/paste-40.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Where should you clone your repository to?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For transient repositories (i.e., repositories that you only plan to work on briefly or occasionally), I suggest creating a folder on your local file system just for these GitHub repositories. If you’re working on a project and already have a file folder structure for that project, you can clone and/or create your repository inside the existing folder structure.</p>
+</div>
+</div>
+</section>
+<section id="step-3-create-a-new-repository" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-create-a-new-repository">Step 3: Create a new repository</h3>
+<p>Click the dropdown where it says “Current repository” in the upper left corner of GitHub Desktop. This will bring up a list of your repositories available on your local machine. For those who are new to GitHub Desktop, this should only include our GitHub Skills repository. Click the “Add” dropdown menu, and click “Create new repository…”</p>
+<p><img src="../intro/images/paste-41.png" class="img-fluid"></p>
+<p>There are several aspects of a repository you will need to keep in mind when creating a new one from scratch:</p>
+<ul>
+<li><p><strong>Name</strong>: Make your name distinct and descriptive, but not too long. Don’t use spaces (remember, this will be included as part of the URL). Git and GitHub repositories often use <a href="https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case">kebab case</a>.</p></li>
+<li><p><strong>Description</strong>:Add a brief description to your repository that describes its purpose</p></li>
+<li><p><strong>Local path</strong>: Similarly to when you clone a repository into a folder, you need to tell GitHub Desktop where to start a new repository. This will autofill to the directory you specified when installing GitHub Desktop for the first time, but you are welcome to change it to wherever you want your repository stored on your local computer. You can always move a repository after creation.</p></li>
+<li><p><strong>README file</strong>: It is always a good idea to initialize the repository with a README file. This file will serve as the “front page” of your repository on GitHub. You can add a more detailed description of the repository, what it will be used for, instructions for how it should be used by others, etc. If your repository contains datasets, you can also use the README to add metadata. <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes">See this link for more information on README files</a>.</p></li>
+<li><p><strong>Git ignore</strong>: A .gitignore file tells Git what files and folders to <em>not</em> track. These files will still reside on your local repository, but will not be included in a Commit action or accessible on GitHub. Typically, these files are system files for the coding language or IDE you’re using, but can also include files that you don’t want to be shown on GitHub. This may include things like data files that are too big or too sensitive to be hosted on GitHub, code files that include sensitive material, and scratch or intermediate files. When creating a new repository, you can choose to pre-populate the .gitignore file based on the primary coding language you expect to use most in the repository.</p></li>
+<li><p><strong>License</strong>: Any public-hosted GitHub repository should contain a license for open source use. The latest NOAA recommendation is to use <strong>Apache License 2.0</strong></p></li>
+</ul>
+<p>Go ahead and fill in the fields and Create your repository.</p>
+<p><img src="../intro/images/paste-42.png" class="img-fluid"></p>
+</section>
+<section id="step-4-publish-your-repository-to-github" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-publish-your-repository-to-github">Step 4: Publish your repository to GitHub</h3>
+<p>After creating your repository, GitHub Desktop will open it automatically. However, at this point your repository is only available on your local machine. Go ahead and click the button to publish your repository to GitHub.<br>
+<img src="../intro/images/paste-43.png" class="img-fluid"></p>
+<p>You can choose whether to keep your repository private or let it be viewed by the public. You can also choose to publish the repo to your personal account, or to an organization (e.g., your center’s Enterprise account). In general, for the sake of open science we normally suggest keeping a repository public unless it contains sensitive or proprietary data. For now, we’ll keep this practice repo public.</p>
+<p><img src="../intro/images/paste-44.png" class="img-fluid"></p>
+</section>
+<section id="step-5-modify-the-readme-file-in-your-repository" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-modify-the-readme-file-in-your-repository">Step 5: Modify the README file in your repository</h3>
+<p>You can now open your repository in an editor or IDE (e.g., RStudio), show the files in a file explorer window, or view the repository on GitHub. We will take advantage of the ability to open the repo in the editor to make a change to our repository’s README file.</p>
+<p>Open your repository in whatever editor you choose (I have mine configured to use RStudio) by clicking the button in GitHub Desktop.</p>
+<p><img src="../intro/images/paste-46.png" class="img-fluid"></p>
+<p>In your editor, open the README.md file. You will notice that the README file is prepopulated with the title of your repository as a first-level header and your brief description. Make a change to your README file (maybe change the title and add a bit more context to the description), and save your changes. Close your editing program.</p>
+<p><img src="../intro/images/paste-47.png" class="img-fluid"></p>
+</section>
+<section id="step-5-commit-your-changes" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-commit-your-changes">Step 5: Commit your changes</h3>
+<p>In GitHub Desktop, you will notice that the README.md file has now been added to the “Changed files” list on the left-hand side, and the changes are shown in the main pane as a series of deletions and additions. The check-marks indicate that those changes are staged and should be included in the commit. If you change your mind and don’t want a change to be committed, you can click the check mark and it will change to an “unstaged” state. For now, leave all changes staged.</p>
+<p><img src="../intro/images/paste-48.png" class="img-fluid"></p>
+<p>In the bottom left, you will see a box for your commit message and a description. These allow you to describe the changes made in a particular commit. A more descriptive message can help others (and future you) to understand why you made a particular change. GitHub Desktop will prepopulate the message field if you’re only modifying one file, but it’s often a good idea to change this to something more descriptive. You can go into more details in the description field if necessary, but this is optional.</p>
+<p>Change your commit file, and commit to the “main” branch.<br>
+<img src="../intro/images/paste-50.png" class="img-fluid"></p>
+</section>
+<section id="step-6-push-your-commit-to-github" class="level3">
+<h3 class="anchored" data-anchor-id="step-6-push-your-commit-to-github">Step 6: Push your commit to GitHub</h3>
+<p>After you commit your changes, GitHub Desktop will prompt you to “Push commits to the origin remote”. This is how we will get our local changes up on GitHub. Click the “Push origin” button.</p>
+<p><img src="../intro/images/paste-52.png" class="img-fluid"></p>
+<p>Open the repository in GitHub in your browser to see what the changes we made to our README look like on GitHub.</p>
+<p><img src="../intro/images/paste-53.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="demo-working-in-other-ides" class="level2">
+<h2 class="anchored" data-anchor-id="demo-working-in-other-ides">Demo: Working in other IDEs</h2>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -960,10 +957,13 @@ function googleTranslateElementInit() {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../content/nefsc-pdb/introduction.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./content/schedule.html" class="pagination-link" aria-label="Schedule">
-        <span class="nav-page-text">Schedule</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../content/nefsc-pdb/forking-branches-prs.html" class="pagination-link" aria-label="Forking, Branches, and Pull Requests">
+        <span class="nav-page-text">Forking, Branches, and Pull Requests</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -975,7 +975,7 @@ function googleTranslateElementInit() {
     </div>   
     <div class="nav-footer-center">
 <p><img src="https://github.com/nmfs-opensci/assets/blob/main/logo/nmfs-opensci-logo2.png?raw=true" alt="NMFS Open Science logo" style="width:150px"><br>NMFS Open Science (2023)</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/edit/main/content/nefsc-pdb/cloning.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/blob/main/content/nefsc-pdb/cloning.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
