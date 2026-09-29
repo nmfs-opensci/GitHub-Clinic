@@ -1,0 +1,15 @@
+---
+title: "Putting it together: practice, hands-on work, Q&A"
+---
+
+Now it's your turn! Take some time this afternoon to practice and get comfortable with Git and GitHub. Here are some ideas to get you started:
+
+- Create a GitHub repository for an existing project
+
+- Practice creating a clone, fork, or branch of the PDB collaborations repo
+
+- Put the last piece of code that you shared via email on GitHub (no passwords or login info!)
+
+- Create a README file for one of your repositories, use the preview feature online to verify the formatting before committing
+
+- Make a list of ways that you want to start using GitHub more for 1) your own individual projects and 2) the branch

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>forking-branches-prs – NOAA Fisheries GitHub Clinic</title>
+<title>Putting it together: practice, hands-on work, Q&amp;A – NOAA Fisheries GitHub Clinic</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,41 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -67,8 +32,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../content/nefsc-pdb/merge-conflicts.html" rel="next">
-<link href="../../content/nefsc-pdb/cloning.html" rel="prev">
+<link href="../../content/nefsc-pdb/actions.html" rel="prev">
 <link href="../../images/favicon-16x16.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -331,7 +295,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/introduction.html">Day 1: Working with Repositories</a></li><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/forking-branches-prs.html">Forking, Branches, and Pull Requests</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/issues-projects.html">Day 2: Leveraging GitHub for Collaborative Work</a></li><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/practice.html">Putting it together</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -357,13 +321,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Day 1: Working with Repositories</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/nefsc-pdb/introduction.html" class="sidebar-item-text sidebar-link">
@@ -378,7 +342,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/nefsc-pdb/forking-branches-prs.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../content/nefsc-pdb/forking-branches-prs.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Forking, Branches, and Pull Requests</span></a>
   </div>
 </li>
@@ -398,13 +362,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Day 2: Leveraging GitHub for Collaborative Work</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/nefsc-pdb/issues-projects.html" class="sidebar-item-text sidebar-link">
@@ -419,7 +383,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/nefsc-pdb/practice.html" class="sidebar-item-text sidebar-link">
+  <a href="../../content/nefsc-pdb/practice.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Putting it together</span></a>
   </div>
 </li>
@@ -430,20 +394,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul class="collapse">
-  <li><a href="#what-is-a-fork" id="toc-what-is-a-fork" class="nav-link active" data-scroll-target="#what-is-a-fork">What is a Fork?</a></li>
-  <li><a href="#what-is-a-branch" id="toc-what-is-a-branch" class="nav-link" data-scroll-target="#what-is-a-branch">What is a Branch?</a></li>
-  <li><a href="#tutorial-forking-a-repository" id="toc-tutorial-forking-a-repository" class="nav-link" data-scroll-target="#tutorial-forking-a-repository">Tutorial: Forking a repository</a></li>
-  <li><a href="#tutorial-making-and-merging-a-branch" id="toc-tutorial-making-and-merging-a-branch" class="nav-link" data-scroll-target="#tutorial-making-and-merging-a-branch">Tutorial: Making and merging a branch</a></li>
-  </ul>
-<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/edit/main/content/nefsc-pdb/forking-branches-prs.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/blob/main/content/nefsc-pdb/forking-branches-prs.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/introduction.html">Day 1: Working with Repositories</a></li><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/forking-branches-prs.html">Forking, Branches, and Pull Requests</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content">
 
 <div id="google_translate_element"></div>
 
@@ -464,151 +419,35 @@ function googleTranslateElementInit() {
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/issues-projects.html">Day 2: Leveraging GitHub for Collaborative Work</a></li><li class="breadcrumb-item"><a href="../../content/nefsc-pdb/practice.html">Putting it together</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Putting it together: practice, hands-on work, Q&amp;A</h1>
+</div>
 
 
 
-<p>Forking is one of the main collaborative tools available that make GitHub such a powerful platform for open source development. Forks allow developers across all of GitHub to iterate on ideas and changes before they are proposed back to the parent repository. Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. They can be particularly useful when collaborating within a team, allowing for independent development of different areas of the repository that do not interfere with each other. This skills session will use directed, interactive lessons to provide NOAA Fisheries staff with a foundation in using forks for open source development in GitHub.</p>
-<section id="what-is-a-fork" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-a-fork">What is a Fork?</h2>
-<iframe class="slide-deck" src="../../slides/forking.html" width="900" height="600">
-</iframe>
-</section>
-<section id="what-is-a-branch" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-a-branch">What is a Branch?</h2>
-<iframe class="slide-deck" src="../../slides/branches.html" width="900" height="600">
-</iframe>
-</section>
-<section id="tutorial-forking-a-repository" class="level2">
-<h2 class="anchored" data-anchor-id="tutorial-forking-a-repository">Tutorial: Forking a repository</h2>
-<p>For this tutorial, we’re going to be forking a demo repository (<a href="https://github.com/nmfs-opensci/GitHub-Clinic-demos" class="uri">https://github.com/nmfs-opensci/GitHub-Clinic-demos</a>), editing our forked copies, and creating a pull request to contribute back to the main repository. Follow along on your own account.</p>
-<section id="step-1-fork-the-repository" class="level3">
-<h3 class="anchored" data-anchor-id="step-1-fork-the-repository">Step 1: Fork the repository</h3>
-<ol type="1">
-<li>Open <a href="https://github.com/nmfs-opensci/GitHub-Clinic-demos">the demo repository</a> in GitHub.<br>
-<img src="../forking/images/paste-1.png" class="img-fluid"></li>
-<li>At the top of the repository, click the <strong>Fork</strong> button<br>
-<img src="../forking/images/paste-2.png" class="img-fluid"></li>
-<li>Keep everything default (your account should be listed under <strong>Owner</strong>, and the <strong>Repository name</strong> should be pre-filled for you). Click the green <strong>Create Fork</strong> button.<br>
-<img src="../forking/images/paste-3.png" class="img-fluid"></li>
-<li>You now have a copy of the original repository in your account. Note that the fork is still connected to the parent repository, so when a change is made to the parent, you can sync it to your fork<br>
-<img src="../forking/images/paste-4.png" class="img-fluid"></li>
-</ol>
-</section>
-<section id="step-2-add-content-to-your-forked-repository" class="level3">
-<h3 class="anchored" data-anchor-id="step-2-add-content-to-your-forked-repository">Step 2: Add content to your forked repository</h3>
-<p>We’re going to add a recipe to our forked repository. You can add whatever recipe you’d like, with as many details as you’d like; for this demonstration, we’ll keep it simple (we’ve provided a more detailed chocolate chip recipe as an example to start out).</p>
-<ol type="1">
-<li>Click on the <code>recipes</code> folder in the file tree of your forked repository, click the <strong>Add file</strong> dropdown, and click “Create new file”<br>
-<img src="../forking/images/paste-5.png" class="img-fluid"></li>
-<li>Name your recipe file, and make sure it ends in <code>.md</code>. We’re making a markdown file here, so we need the <code>.md</code> file extension.<br>
-<img src="../forking/images/paste-6.png" class="img-fluid"></li>
-<li>Enter your recipe into the file contents. Remember that we can use markdown formatting here; let’s take advantage of that by adding a title and a couple headings for <code>## Ingredients</code> and <code>## Instructions</code>.<img src="../forking/images/paste-7.png" class="img-fluid"></li>
-<li>Commit your changes to the main branch of your repository.<br>
-<img src="../forking/images/paste-8.png" class="img-fluid"></li>
-</ol>
-</section>
-<section id="step-3-contribute-your-recipe-to-the-parent-repository" class="level3">
-<h3 class="anchored" data-anchor-id="step-3-contribute-your-recipe-to-the-parent-repository">Step 3: Contribute your recipe to the parent repository</h3>
-<ol type="1">
-<li>Open the <strong>Contribute</strong> drop-down on the repository, and click the green <strong>Open pull request</strong> button to contribute this recipe back to the parent repository.<br>
-<img src="../forking/images/paste-9.png" class="img-fluid"></li>
-<li>Your Pull Request (PR) will auto-populate the title with your commit message. You can edit this if you want, or add an extended description. Generally the more descriptive the better, especially if you’re fixing a bug or adding a feature to another repository. For now, we can be brief. Add a description, and click **Create pull request** <img src="../forking/images/paste-10.png" class="img-fluid"></li>
-<li>Once you create the PR, you’ll be brought to the PR on the parent repository. Note that if you do not have write permission on the parent repository, you will not have the option to merge the pull request. But if you do, you can review the pull request and merge it in if everything looks good!<br>
-<img src="../forking/images/paste-11.png" class="img-fluid"></li>
-</ol>
-</section>
-<section id="step-4-sync-changes-from-parent-to-your-fork" class="level3">
-<h3 class="anchored" data-anchor-id="step-4-sync-changes-from-parent-to-your-fork">Step 4: Sync changes from parent to your fork</h3>
-<p>If a change was made to the parent repository, you can sync that change to your forked repository. For this demo, I added the number of cookies that are made to the chocolate chip cookie recipe (on the main <code>nfms-opensci</code> repository). Let’s see how we can integrate that change to our fork.<br>
-<img src="../forking/images/paste-12.png" class="img-fluid"></p>
-<ol type="1">
-<li>Navigate to your forked repository.<br>
-<img src="../forking/images/paste-13.png" class="img-fluid"></li>
-<li>Notice that the repository notifies you of the number of commits ahead of the parent and behind the parent your fork is. In that same message box, click the <strong>Sync fork</strong> dropdown, and click <strong>Update branch</strong>. Note that if you have commits that have not been merged into the parent, you can either discard your commit before the merge (so your fork matches the parent) or keep it and merge the changes from the parent into your fork.**** <img src="../forking/images/paste-14.png" class="img-fluid"></li>
-<li>To verify that your merge worked, click the <strong>Sync fork</strong> dropdown again. If everything worked, you should have a message that your branch is not behind the upstream (parent) repository<br>
-<img src="../forking/images/paste-15.png" class="img-fluid"></li>
-</ol>
-</section>
-</section>
-<section id="tutorial-making-and-merging-a-branch" class="level2">
-<h2 class="anchored" data-anchor-id="tutorial-making-and-merging-a-branch">Tutorial: Making and merging a branch</h2>
-<p>For this tutorial, we’re going to be forking a demo repository (<a href="https://github.com/nmfs-opensci/GitHub-Clinic-demos" class="uri">https://github.com/nmfs-opensci/GitHub-Clinic-demos</a>), making a branch on our forked copies, editing our forked copies, and creating a pull request to contribute back to the main branch. Follow along on your own account.</p>
-<section id="step-1-fork-the-repository-1" class="level3">
-<h3 class="anchored" data-anchor-id="step-1-fork-the-repository-1">Step 1: Fork the repository</h3>
-<ol type="1">
-<li>Open <a href="https://github.com/nmfs-opensci/GitHub-Clinic-demos">the demo repository</a> in GitHub.<br>
-<img src="../branches/images/paste-1.png" class="img-fluid"></li>
-<li>At the top of the repository, click the <strong>Fork</strong> button<br>
-<img src="../branches/images/paste-2.png" class="img-fluid"></li>
-<li>Keep everything default (your account should be listed under <strong>Owner</strong>, and the <strong>Repository name</strong> should be pre-filled for you). Click the green <strong>Create Fork</strong> button.<br>
-<img src="../branches/images/paste-3.png" class="img-fluid"></li>
-</ol>
-</section>
-<section id="step-2-create-a-new-branch" class="level3">
-<h3 class="anchored" data-anchor-id="step-2-create-a-new-branch">Step 2: Create a new branch</h3>
-<ol type="1">
-<li>On the <strong>Code</strong> tab of your forked repository, click the dropdown menu where it says <code>main</code><img src="../branches/images/paste-4.png" class="img-fluid"></li>
-<li>In the text box where it says “Find or create a branch”, type the name of your branch. Let’s call it <code>tutorial</code>. Click the <strong>Create branch <code>tutorial</code></strong> <strong>from <code>main</code></strong> button to create your branch.<br>
-<img src="../branches/images/paste-5.png" class="img-fluid"></li>
-</ol>
-</section>
-<section id="step-2-add-content-to-your-new-branch" class="level3">
-<h3 class="anchored" data-anchor-id="step-2-add-content-to-your-new-branch">Step 2: Add content to your new branch</h3>
-<ol type="1">
-<li>Let’s add a new file to our repository. Click the <strong>Add file</strong> (<strong><code>+</code></strong>) drop-down menu, and click <strong>Create new file.</strong><br>
-<img src="../branches/images/paste-6.png" class="img-fluid"></li>
-<li>Name your file <code>intro.md</code> and add some content to your file. If you’d like, you can copy the following markdown chunk and paste it into your file.<br>
-<img src="../branches/images/paste-8.png" class="img-fluid"></li>
-</ol>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introduction</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>This repository serves as a sandbox demo for the NOAA Fisheries GitHub Clinic. Feel free to fork this repository and use it to practice Git and GitHub tools and methods.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<ol start="3" type="1">
-<li>Commit your changes to the <code>tutorial</code> branch.<br>
-<img src="../branches/images/paste-11.png" class="img-fluid"></li>
-</ol>
-</section>
-<section id="step-3-create-a-pull-request" class="level3">
-<h3 class="anchored" data-anchor-id="step-3-create-a-pull-request">Step 3: Create a pull request</h3>
-<ol type="1">
-<li>Click the <strong>Pull requests</strong> tab at the top of the repository. GitHub should recognize that you made a push to your <code>tutorial</code> branch. Click the green <strong>Compare &amp; pull request</strong> button to start a pull request to merge the pushes from <code>tutorial</code> into <code>main.</code><br>
-<img src="../branches/images/paste-9.png" class="img-fluid"></li>
-<li>Notice that because we’re working from a forked repository, GitHub will automatically fill in the parent repository (<code>nmfs-opensci/GitHub-Clinic-demos</code>) as the repository to merge into. For this tutorial, we instead will merge into the <code>main</code> branch of our forked copy of the repository. Click the drop-down menu where it says “base repository:” and select your forked copy.<br>
-<img src="../branches/images/paste-10.png" class="img-fluid"></li>
-<li>GitHub will pre-populate the title of our pull request based on the commit message. If we have multiple commits, we would need to make our own pull request title. Make sure the title is clear and concise, and add a detailed blurb to the description section. For our example, this can be as simple as describing the intent of the pull request. For more complex pull requests that involve adding to or modifying code and text in multiple files, we want to guide the reviewer through your changes as much as possible. Be as detailed as you need to be to convey the changes that were made and why they were made. You can even add images, screenshots, videos, and links to showcase how the changes you made are reflected for the end user.<br>
-<img src="../branches/images/paste-12.png" class="img-fluid"></li>
-<li>Click the green <strong>Create pull request</strong> button to finalize our pull request.<br>
-<img src="../branches/images/paste-13.png" class="img-fluid"></li>
-</ol>
-</section>
-<section id="step-4-review-and-merge-your-pull-request" class="level3">
-<h3 class="anchored" data-anchor-id="step-4-review-and-merge-your-pull-request">Step 4: Review and merge your pull request</h3>
-<p>Reviewing a pull request is an important step of the collaborative process on GitHub. Pull request reviews allow the owner of a repository or another collaborator to read through changes line-by-line, adding comments and proposing edits along the way. Think of a pull request review as being similar to a manuscript or report review using track changes.</p>
-<p>Before we merge our changes into our main branch, let’s get some practice with reviewing pull requests. This step is not as important when you’re the only one working on a repository (like in our tutorial), but it’s good practice for future collaborations.</p>
-<ol type="1">
-<li>Assign yourself as a reviewer to the pull request using the <strong>Assignees</strong> dropdown on the right-hand side of your pull request. In a collaborative setting, you can assign up to 10 of your collaborators.<br>
-<img src="../branches/images/paste-14.png" class="img-fluid"></li>
-<li>Navigate to the <strong>Files changed</strong> pane in the pull request. This is where we’ll conduct our review.<br>
-<img src="../branches/images/paste-15.png" class="img-fluid"></li>
-<li>Just like in a manuscript peer review, we can leave a narrative review with general comments and recommendations, and we can also add comments and propose edits to specific lines. Let’s add a comment to change the first-level heading of our markdown file. Hover your mouse in the space between the line numbers and the content. You’ll see a highlighted <code>+</code> icon appear next to each line. Click the <code>+</code> icon next to line 1.<br>
-<img src="../branches/images/paste-16.png" class="img-fluid"> <img src="../branches/images/paste-17.png" class="img-fluid">icon next to the <strong>Preview</strong> tab. This icon is the <strong>Add a suggestion</strong> icon. Notice that when you click this icon, it inserts a code snippet into our dialog box with the label <code>suggestion</code>. Inside this code snippet, suggest a change to the <code># Introduction</code> header to read <code># Purpose of this repository</code>.<br>
-<img src="../branches/images/paste-18.png" class="img-fluid"></li>
-<li>From here, we can either add our suggestion as a single comment to the pull request conversation, or start a review based on this suggestion. Let’s go ahead and click the green <strong>Start a review</strong> button.</li>
-<li>From here, we can add more line-by-line comments and suggestions, or we can finish our review with our general impressions. Let’s click the green <strong>Finish your review</strong> button (notice there is a ticker that tracks the number of line-by-line comments/suggestions).<br>
-<img src="../branches/images/paste-19.png" class="img-fluid"></li>
-<li>Add a comment to your review summarizing your comments and changes and giving overall impressions. Click the green <strong>Submit review</strong> button to finalize your review.<br>
-<img src="../branches/images/paste-20.png" class="img-fluid"></li>
-<li>As the original creator of the pull request, you can now commit the proposed change directly to the pull request, continue the conversation to refine the suggestion, or decline the suggestion and Resolve the conversation. Let’s commit the proposed change from the pull request review.<br>
-<img src="../branches/images/paste-21.png" class="img-fluid"></li>
-<li>Once your change has been committed, we’re ready to merge the pull request! Click the green <strong>Merge pull request</strong> button, and confirm your merge with a merge commit.<br>
-<img src="../branches/images/paste-22.png" class="img-fluid"><br>
-<img src="../branches/images/paste-23.png" class="img-fluid"></li>
-<li>Congratulations! You have merged a pull request from a branch. You can now optionally delete the branch (don’t worry, you can always restore it from the pull request). During the next GitHub Clinic session on Git Workflows, we’ll discuss reasons and scenarios where you may want to keep a permanent branch versus creating and deleting ephemeral branches for development. For now, let’s go ahead and delete our branch to close out this tutorial.</li>
-</ol>
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-</section>
-</section>
+</header>
+
+
+<p>Now it’s your turn! Take some time this afternoon to practice and get comfortable with Git and GitHub. Here are some ideas to get you started:</p>
+<ul>
+<li><p>Create a GitHub repository for an existing project</p></li>
+<li><p>Practice creating a clone, fork, or branch of the PDB collaborations repo</p></li>
+<li><p>Put the last piece of code that you shared via email on GitHub (no passwords or login info!)</p></li>
+<li><p>Create a README file for one of your repositories, use the preview feature online to verify the formatting before committing</p></li>
+<li><p>Make a list of ways that you want to start using GitHub more for 1) your own individual projects and 2) the branch</p></li>
+</ul>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1026,14 +865,11 @@ function googleTranslateElementInit() {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../content/nefsc-pdb/cloning.html" class="pagination-link" aria-label="Cloning and local repositories">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Cloning and local repositories</span>
+      <a href="../../content/nefsc-pdb/actions.html" class="pagination-link" aria-label="GitHub Actions">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">GitHub Actions</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../content/nefsc-pdb/merge-conflicts.html" class="pagination-link" aria-label="Merge Conflicts">
-        <span class="nav-page-text">Merge Conflicts</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -1044,7 +880,7 @@ function googleTranslateElementInit() {
     </div>   
     <div class="nav-footer-center">
 <p><img src="https://github.com/nmfs-opensci/assets/blob/main/logo/nmfs-opensci-logo2.png?raw=true" alt="NMFS Open Science logo" style="width:150px"><br>NMFS Open Science (2023)</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/edit/main/content/nefsc-pdb/forking-branches-prs.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/blob/main/content/nefsc-pdb/forking-branches-prs.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/edit/main/content/nefsc-pdb/practice.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/GitHub-Clinic/blob/main/content/nefsc-pdb/practice.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
