@@ -1,0 +1,47 @@
+---
+title: "GitHub for Managers"
+---
+
+GitHub is an important platform for many NOAA Fisheries staff and teams to share and collaborate. In 2023, an Authorization To Use for GitHub Enterprise Cloud was signed, which provides a secure, private, access-controlled and managed platform for staff. In 2024, the GitHub Governance Team (GGT) provided a series of workshops to onboard NOAA Fisheries scientists to GitHub Enterprise and provide training in the use of Git and GitHub for NOAA Fisheries. In 2025, NMFS Open Science led a second iteration of these workshops to provide NOAA Fisheries staff with the necessary skills to effectively incorporate Git and GitHub into existing workflows. As a result, many NOAA Fisheries staff have begun incorporating Git and GitHub into their daily work.
+
+## Aims and Objectives
+
+This session will use a mixture of interactive lessons and GitHub Skills to provide managers with the knowledge required for basic repository management using GitHub, collaboration, and project management.
+
+## Prerequisites: What do I need before this workshop to follow along on my own?
+
+We will be going through an interactive demonstration in the second half of this clinic. You're encouraged to follow along on your own, either synchronously or after the clinic. Here's what you'll need to follow along:
+
+1.  [Create a GitHub account](https://nmfs-opensci.github.io/GitHub-Guide/#create-a-github-user-account)
+2.  Request access to NMFS GitHub Enterprise Cloud (NMFS staff and affiliates only)
+    a.  You won't need access to an Enterprise organization for this demo specifically, but it's a good idea to request access for the future
+    b.  [Download the NMFS GitHub Enterprise Cloud user agreement](https://drive.google.com/file/d/1yP0mLpD5d5rsgNv5-_Z6OWpwhLROjxMg/view)
+    c.  Use [this Google form](https://docs.google.com/forms/d/e/1FAIpQLScvWB-gTtQKlFPdyt3Y_H_oya9EW6Nj-56jsWJsxVdT8RJwHw/viewform) to request access to Enterprise
+    d.  Wait for follow-up email and [confirm you're a member](https://github.com/enterprises/noaa-nmfs) (if you see a 404 page you haven't been added yet)
+3.  Log into GitHub using your GitHub account credentials
+
+## Why Git/GitHub?
+
+<iframe class="slide-deck" src="../../slides/why_git.html" width="900" height="600">
+
+</iframe>
+
+## GitHub Enterprise
+
+<iframe class="slide-deck" src="../../slides/ghec.html" width="900" height="600">
+
+</iframe>
+
+## GitHub for managers: The basics
+
+<iframe class="slide-deck" src="../../slides/git_managers.html" width="900" height="600">
+
+</iframe>
+
+## Demo: Issues and projects
+
+Follow along as we practice with a demonstration repository together: [nmfs-opensci/GitHub-Clinic-Managers](https://github.com/nmfs-opensci/GitHub-Clinic-Managers)
+
+## Q&A: What do you want to know about GitHub?
+
+Have a burning question about using GitHub at NOAA Fisheries? Ask away!

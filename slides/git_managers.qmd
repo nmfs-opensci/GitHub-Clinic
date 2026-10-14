@@ -1,0 +1,122 @@
+---
+title: "GitHub for managers: The Basics"
+author: "Jonathan Peake"
+brand: slides-light-brand.yml
+output-dir: ../docs/slides/
+format: 
+    nmfs-slides-revealjs: 
+        title-slide-attributes:
+          data-background-image: "styles/horiz-swoop-1.png"
+          data-background-color: '{{< brand color dark-blue >}}'
+        footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
+        controls: true
+        navigation-mode: linear
+        transition: slide
+        transition-speed: default
+        background-transition: none
+        scrollable: true
+---
+
+## Users, organizations, and teams
+
+::::: columns
+::: {.column width="60%" layout="[[-1], [1], [-1]]"}
+### Users
+
+- Your account
+
+- Connected to your NOAA email
+
+- Can add secondary email
+
+### 
+:::
+
+::: {.column width="40%"}
+![](images/paste-27.png)
+:::
+:::::
+
+## Users, organizations, and teams
+
+::::: columns
+::: {.column width="50%" layout="[[-1], [1], [-1]]"}
+### Organizations
+
+- Shared account with large number of people
+
+- Can be housed under Enterprise
+
+- Collaboration and controlled access
+:::
+
+::: {.column width="50%"}
+![](images/paste-28.png)
+:::
+:::::
+
+## Users, organizations, and teams
+
+::::: columns
+::: {.column width="50%" layout="[[-1], [1], [-1]]"}
+### Teams
+
+- Nested within organization
+
+- Sub-groups for collaboration and access
+
+- Can have teams within teams for more fine-scale structure
+:::
+
+::: {.column width="50%"}
+![](images/paste-29.png)
+:::
+:::::
+
+## Repositories - the main unit
+
+::::: columns
+::: column
+- Sets the folder and file structure
+
+- Contained and permissioned
+
+- Public, private, or internal (Enterprise)
+
+- Commits and issues - Contributing through GitHub
+:::
+
+::: column
+![](images/paste-30.png)
+:::
+:::::
+
+## Commit
+
+::::: columns
+::: column
+- A specific "thing" that you want to save and keep a record for
+
+- Snapshot of all the files in the entire project
+
+- Commit messages provide info about the "thing" you've done
+
+- Commits give a history of the project
+:::
+
+::: column
+![](images/paste-31.png)
+:::
+:::::
+
+## Projects
+
+- Adaptable, flexible tool for planning and tracking work on GitHub
+
+- Spreadsheet, task-board, and roadmap integrated with issues and pull requests
+
+- Provide multiple views by filtering, sorting, grouping issues/PRs
+
+- Visualize work with configurable charts
+
+- Add custom fields to track team-specific metadata
